@@ -2,7 +2,7 @@
 name: loom-foo-editorial-review
 description: "Diagnose and selectively correct an existing text for language, register, style and meaning. Not net-new drafting or factual research."
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   project: "loom-foo"
   family: "writing"
 compatibility: "Agent Skills-compatible runtimes; tools and authoritative language sources are optional. No persistence, automatic routing or external APIs required."
@@ -94,4 +94,4 @@ Stop when the requested correction/review is usable. Do not require a formal iss
 
 ## First-use guidance
 
-Representative positive, negative and sibling-owner checks are documented in [test cases](tests/cases.jsonl) and [first-use receipt](tests/FIRST_USE.md). These are **candidate evaluation inputs**; existence or static validation is not a behavioral PASS.
+Publisher-side fixtures `tests/cases.jsonl` and `tests/FIRST_USE.md` may exist in development source but are not part of the generic distribution. These are **candidate evaluation inputs**; their existence or static validation is not a behavioral PASS.

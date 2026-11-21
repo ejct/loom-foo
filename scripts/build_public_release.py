@@ -29,6 +29,8 @@ FORBIDDEN_NAMES = {
 BLOCKED_SUFFIXES = {".pyc", ".p12", ".pem", ".key", ".sqlite"}
 DRIVE_ID = re.compile(r"https?://(?:docs|drive)\.google\.com/(?:document/d/|file/d/|drive/folders/)[A-Za-z0-9_-]{16,}")
 EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+# Internal source identifiers must never enter the generic reviewed public payload.
+PRIVATE_SOURCE_REFERENCE = re.compile(r"ejct/" + r"LoomDev|plugin" + r"rel_[A-Za-z0-9_\-]+")
 
 class Reject(ValueError): pass
 
@@ -62,6 +64,8 @@ def scan_content(name: str, raw: bytes):
         try: s=raw.decode('utf-8')
         except UnicodeDecodeError: raise Reject(f'non-UTF8 text: {name}')
         if DRIVE_ID.search(s): raise Reject(f'private source locator detected: {name}')
+        if PRIVATE_SOURCE_REFERENCE.search(s):
+            raise Reject(f'private development source identifier: {name}')
         # A deliberately strict default: public author contact metadata must be
         # externally reviewed and stored in an expressly allowed manifest only.
         if EMAIL.search(s) and name not in ('plugin.json','.codex-plugin/plugin.json'):

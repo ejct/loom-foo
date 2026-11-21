@@ -2,7 +2,7 @@
 name: loom-foo-narrative-design
 description: "Structure the argument, narrative and reader progression of a written work. Not proofreading, ordinary prose drafting or visual layout."
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible procedural guidance; source retrieval and document tools are optional and host-dependent."
@@ -75,4 +75,4 @@ State concrete unresolved source gaps rather than sending the user into an open-
 
 - [Narrative methods](references/NARRATIVE_METHODS.md) — genre-appropriate structures, information dependencies and quality checks.
 - [Case studies](references/CASE_STUDIES.md) — evidence, attribution, trade-offs and publication limits.
-- [Representative cases](tests/cases.jsonl) — proposed routing/behavioral examples; not independent runtime outcomes.
+- Optional publisher-side fixture `tests/cases.jsonl` (not bundled in the generic distribution) contains proposed routing/behavioral examples, not independent runtime outcomes.

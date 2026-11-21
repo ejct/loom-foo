@@ -1,9 +1,8 @@
 {
   "schema": 1,
-  "status": "private_source_reconciliation_candidate_not_publicly_approved",
+  "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.40.0",
-  "plugin_release_id": "pluginrel_6b009e7d358881919448be7cb255996b",
+  "bundle_version": "0.40.1",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
@@ -51,11 +50,11 @@
     },
     {
       "id": "loom-foo-drafting",
-      "version": "0.4.0"
+      "version": "0.4.1"
     },
     {
       "id": "loom-foo-editorial-review",
-      "version": "0.4.0"
+      "version": "0.4.1"
     },
     {
       "id": "loom-foo-evidence-acquisition",
@@ -115,7 +114,7 @@
     },
     {
       "id": "loom-foo-narrative-design",
-      "version": "0.4.0"
+      "version": "0.4.1"
     },
     {
       "id": "loom-foo-onboarding",

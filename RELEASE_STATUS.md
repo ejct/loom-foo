@@ -1,14 +1,17 @@
-# Release status
+# loom-foo — release readiness
 
-**PRIVATE_CANDIDATE — NOT PUBLIC-APPROVED**
+**PRIVATE_CANDIDATE · PUBLICATION_BLOCKED**
 
-- **Repository:** `ejct/loom-foo` (PRIVATE).
-- **Imported source:** private `ejct/LoomDev@f2e0fe4e02e848ea06ce3e72028a7c58c5959f5b`.
-- **Baseline:** bundle version 0.40.0, 40 Skills; native manifests for OpenAI/Codex, Claude, Antigravity and Gemini.
-- **Source projection:** 254 exact text files from LoomDev plus this repository's own README and governance/CI/release files. Source import checks verify exact Git blob identities, not semantic public suitability.
-- **Missing original binary assets:** `assets/loom-foo-mark-v2.png`, `assets/loom-foo-mark-v3.png` — `UNVERIFIED_BINARY_PARITY`. Current manifests reference v3; do not assert host-native build readiness while unresolved.
-- **Privacy:** owner-private overlays, reconciliation history and legacy source folders intentionally excluded. Semantic review, publisher contact, license/dependency audit and link validation are still required.
-- **Public release gate:** `scripts/build_public_release.py` requires an external owner-approved SHA-256 file index. No index with `approved_by_owner: true` is generated automatically. Build passing would not grant publication authority.
-- **GitHub Actions:** static verification only; no artifact upload (GitHub Actions storage quota was previously exhausted), deploy or release workflow.
+- **Candidate:** `0.40.1`, 40 portable Agent Skills and five native host manifests. Individual Skills keep independent versions.
+- **Technical checks:** static source/inventory/manifest validation; relative Markdown links; negative package-release regression tests. CI PASS does not mean semantic/host QA PASS.
+- **Missing original brand assets:** `assets/loom-foo-mark-v2.png`, `assets/loom-foo-mark-v3.png` (v3 is referenced in native host manifests).
+- **Contact and legal review:** public author name/email, MIT provenance, third-party source/asset attributions, Privacy/Terms/Support/Security contact channels still require owner review.
+- **Confidential provenance:** this repository's earlier Git commits and PR-related refs contain internal development identifiers. Removing text from today's files does **not** clear previous history; **do not make this Git repository public as-is**.
+- **Builder:** an external, genuine owner-approved SHA-256 allowlist is required; no such public release approval has been granted.
+- **Distribution:** no public tag/release, marketplace listing, public visibility, plugin installation or consumer pin update.
 
-Before publication, complete semantic privacy review of the exact commit, confirm the legal/support/public URL surface, recover or approve replacement brand assets, enforce the approved-hash builder in the actual release job, and obtain a separate explicit decision to make the repository public or publish a release.
+## Remaining steps
+
+Complete reviewed publisher contact/legal source, recover or deliberately replace brand assets, review external links and all text for semantic privacy, produce a clean-history public source from approved bytes, verify that no old private refs/history will become public, obtain the distinct owner publication decision, then inspect the actual published artifacts and URLs.
+
+**This document describes the candidate's state, not permission to release it.**

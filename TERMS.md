@@ -1,7 +1,7 @@
 # loom-foo Terms of Use
 
 **Last updated:** 21 November 2026  
-**Project:** `loom-foo` — generic Agent Skills distribution, initial baseline v0.40.0  
+**Project:** `loom-foo` — generic Agent Skills distribution, initial baseline v0.40.1  
 **Maintainer:** Victor Cherniavsky (`ejct` on GitHub)
 
 ## 1. What loom-foo provides
@@ -34,7 +34,7 @@ A Skill may recommend or describe operations involving other services; such text
 
 ## 5. Third-party services and costs
 
-loom-foo's generic v0.40.0 package does not provide a publisher-operated paid subscription, checkout or dedicated remote backend. Your AI host, model provider or optional connected services may impose separate fees, usage quotas, data policies and terms. Those third-party arrangements are between you and the relevant provider.
+loom-foo's generic v0.40.1 package does not provide a publisher-operated paid subscription, checkout or dedicated remote backend. Your AI host, model provider or optional connected services may impose separate fees, usage quotas, data policies and terms. Those third-party arrangements are between you and the relevant provider.
 
 No particular model, connector, platform capability or uptime is guaranteed by this project.
 
