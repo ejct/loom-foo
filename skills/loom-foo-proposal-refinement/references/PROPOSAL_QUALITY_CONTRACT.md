@@ -1,6 +1,6 @@
 # Proposal Quality Contract
 
-This is a local construction contract inside the `loom-foo-proposal-refinement` skill. It does not create LoomLoom project authority, a Kernel primitive, or an independently accepted project policy. Its purpose is to keep known proposal-quality defects out of P0 so adversarial review can focus on harder defects.
+This is a local construction contract inside the `loom-foo-proposal-refinement` skill. It does not create project-wide authority, a Kernel primitive, or an independently accepted project policy. Its purpose is to keep known proposal-quality defects out of P0 so adversarial review can focus on harder defects.
 
 This reference expands the construction rules used before Proposal P0 enters adversarial refinement.
 

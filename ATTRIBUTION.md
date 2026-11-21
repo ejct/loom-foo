@@ -1,33 +1,25 @@
-# Source attribution and third-party license inventory
+# Attribution and source licensing
 
-**Status:** attribution inventory for the private `loom-foo` 0.41.1 generic candidate. This is not a comprehensive legal opinion or a clearance of future binaries.
+**Scope:** private, unreleased generic `loom-foo` source candidate. This file does not certify that all copyright interests have been assigned to any single publisher.
 
-## Project source license
+## License
 
-The repository's [`LICENSE`](LICENSE) is MIT and **retains the historical copyright notice**:
+The generic source currently carries the [MIT License](LICENSE) with the proposed current-project credit:
 
-> Copyright (c) 2026 LoomLoom contributors
+> Copyright (c) 2026 ejct and contributors
 
-That notice was already present in the older `LoomLoom` and separate `foo-loom` sources. It is not silently replaced by a single maintainer name or by the GitHub account handle. The MIT notice and permission text must accompany copies/substantial portions of covered source. A prospective new copyright line should only be added when its actual rights holder and scope are confirmed.
+The former project's copyright wording remains traceable in protected historical Git records, not in the current generic release content. This updated notice is a **candidate attribution**, pending confirmation that its rights holders authorize replacing the historical wording. If a third-party contribution requires preservation of an earlier notice, its applicable original notice must be retained in the eventual release. **Do not publish until this rights/notice question is resolved.**
 
-## Lucide / Feather icon licenses — conditional, not bundled
+## Third-party material
 
-The private development source contains the Lucide ISC license text and associated Feather MIT attribution. The current generic distribution source contains **no checked-in vector/raster icon images or fonts**. This file therefore does **not** claim that Lucide or Feather icon files are bundled, nor that their license text can be omitted if such files are added later.
+The current generic distribution source contains no bundled icon images, third-party icon artwork, fonts, or vendored third-party Python package source. Consequently, there are no icon-specific third-party license notices to distribute in this candidate.
 
-Before distributing any copied/derived Lucide or Feather graphics, identify the exact included artwork and carry the applicable original copyright notices and license permissions in the release artifact.
+External research citations, links and optional development dependencies are not themselves included third-party source code. Review actual included assets and copied source material again whenever the package contents change.
 
-Upstream license reference: https://lucide.dev/license
+## Deferred project icons
 
-## Tools and external references
+Per owner decision, the design/selection and licensing of logos and composer icons are deferred to a separate pass. The **generic** manifests intentionally omit image paths until files are selected and verified. A ChatGPT/Codex public package still requires a valid `logo` and `composerIcon`; the release builder must block packaging without them. The installed owner-private plugin and its historical art are unaffected.
 
-Some optional source validators import third-party Python modules such as PyYAML, but those dependencies are **not vendored as source files in this generic candidate**. Users and host environments remain responsible for obtaining and licensing external dependencies under their own terms.
+## Pre-publication checks
 
-Skills also link to outside projects and public publications as methodological references. Merely linking to them does not redistribute their code or confer a right to republish their examples, diagrams, text, fonts or assets. If material is copied into a later build, its provenance/license must be reviewed separately.
-
-## Original project brand assets — unresolved
-
-The manifest references `assets/loom-foo-mark-v3.png` as a required logo and composer icon; the original v2/v3 image binaries have not been recovered into this generic source. The release builder must reject the incomplete package. Before adding the assets, verify their actual file hashes, author/origin and redistribution rights. Do not classify a generated replacement as an original.
-
-## Final attribution check before release
-
-Confirm all included source files and their ownership/provenance, all actual bundled assets and copied third-party text, MIT notice continuity, the exact final release-file inventory, public publisher identity, and private reporting routes. **No owner-approved public release is implied by this inventory.**
+Verify exact source ownership, any retained copyright notices, future graphical assets and their rights, all included third-party code, and the owner's separately approved export index and destination. This is not publication authorization.

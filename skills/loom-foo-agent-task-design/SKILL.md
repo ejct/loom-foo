@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Runtime-specific project instruc
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.19.0"
+  version: "0.19.1"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->

@@ -17,8 +17,6 @@
         "shortDescription": "Design, research & agent work",
         "brandColor": "#F2B705",
         "brandColorDark": "#FFD24A",
-        "logo": "./assets/loom-foo-mark-v3.png",
-        "composerIcon": "./assets/loom-foo-mark-v3.png",
         "defaultPrompt": [
           "Help me turn a rough product idea into a focused concept and next steps.",
           "Review my interface design and suggest practical UX improvements.",
@@ -28,5 +26,5 @@
     }
   },
   "name": "loom-foo",
-  "version": "0.41.1"
+  "version": "0.42.0"
 }

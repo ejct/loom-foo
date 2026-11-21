@@ -159,7 +159,7 @@ For a small, low-ambiguity, reversible local task, use the smallest sufficient b
 
 Do not force eleven headings when four sentences are sufficient.
 
-Escalate detail only when consequence, ambiguity, irreversibility, evidence sensitivity, authority complexity, or review needs justify it. If LoomLoom rigor is already defined for the workstream, reuse it rather than inventing a second risk taxonomy.
+Escalate detail only when consequence, ambiguity, irreversibility, evidence sensitivity, authority complexity, or review needs justify it. If existing project rigor is already defined for the workstream, reuse it rather than inventing a second risk taxonomy.
 
 ## 7. Preserve implementation discretion
 

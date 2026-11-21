@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.42.0 — private generic candidate; not installed or released
+
+- Rebranded remaining source-facing legacy naming to project-neutral terminology, retaining exact technical legacy lock paths for compatibility.
+- Proposed current-project MIT copyright text, with publication held until rights/notice provenance is resolved.
+- Removed unbundled third-party icon licensing claims and deferred all logo/composer image metadata from generic native manifests until a dedicated artwork pass. Public builder continues to require valid icons for submission.
+- Documented GitHub-only public contact options with no author email.
+- Updated source-level handoff protocol label to the current skill identity; treat this as a compatibility-sensitive source change, not a silently deployed format.
+
+
 ## 0.41.1 — private candidate; not released
 
 - Aligned candidate publisher identity to GitHub handle `ejct` across supported manifests and legal-facing documentation, without exporting a personal contact email.

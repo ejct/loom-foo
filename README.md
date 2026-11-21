@@ -2,9 +2,9 @@
 
 Portable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
 
-**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.41.1**. It does not require any Core runtime, paid service or centralized agent orchestrator.
+**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.42.0**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
-**Proposed publisher identity:** [`ejct`](https://github.com/ejct). No personal email is included in public-bound manifests; final publisher approval and public GitHub contact availability remain separate release gates.
+**Publisher identity (email-free candidate):** [`ejct`](https://github.com/ejct). No personal email is included in public-bound manifests; final publisher approval and public GitHub contact availability remain separate release gates.
 
 ## What is inside
 
@@ -23,11 +23,11 @@ The independent `foo-loom` Core project is optional and is **not** required to u
 
 ## Optional creative composition
 
-The 0.41.1 private candidate integrates Creative Reasoning 0.3.0 with optional, explicitly named collaboration routes for Design, Icon Design, Experience Design, Architecture Design, Drafting, Narrative Design and Proposal Refinement. These are conceptual-method links, **not required dependencies, a global dispatcher or observed agent invocations**.
+The 0.42.0 private candidate integrates Creative Reasoning 0.3.0 with optional, explicitly named collaboration routes for Design, Icon Design, Experience Design, Architecture Design, Drafting, Narrative Design and Proposal Refinement. These are conceptual-method links, **not required dependencies, a global dispatcher or observed agent invocations**.
 
 ## Release readiness
 
-The current source is **not cleared for publication**. Brand assets referenced by native manifests have not been recovered, and publication requires a semantic privacy/legal review, verification of publisher identity and public support channels, an owner-approved exact file index, and a clean publishable Git history.
+The current source is **not cleared for publication**. Project icons are intentionally deferred and not yet referenced in generic manifests. A public plugin package requires a separately approved icon pass; publication also requires a semantic privacy/legal review, verification of publisher identity and public support channels, an owner-approved exact file index, and a clean publishable Git history.
 
 **Do not change repository visibility or create a public release based only on this candidate or its passing CI.**
 

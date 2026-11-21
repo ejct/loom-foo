@@ -5,7 +5,7 @@ compatibility: "Portable Agent Skills-compatible clients. Read-only assessment w
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.4.0"
+  version: "0.4.1"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->

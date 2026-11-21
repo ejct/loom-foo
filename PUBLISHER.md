@@ -19,6 +19,8 @@ Using an account handle for attribution does **not** establish copyright ownersh
 - **Privacy requests:** the repository currently has **no verified dedicated private privacy-contact channel**. A user may request one through a minimal non-sensitive issue; a practical private channel must be confirmed before claiming that confidential requests can be received.
 - **Public email:** **none committed to the generic candidate**. No personal mailbox should be copied from an installed private plugin without the owner's explicit choice.
 
+**Public contact options:** GitHub Issues for support and bug reports; optional GitHub Discussions for questions and ideas if enabled; links from [the maintainer's GitHub profile](https://github.com/ejct) to outside social/professional networks for private outreach. Neither Issues nor Discussions is a private messaging channel. Private vulnerability reporting applies only to security flaws, after it has been activated. No general-purpose private messaging channel is currently verified.
+
 **Release gate:** before publication, the owner confirms whether `ejct` is the desired public credit or whether a legal/brand name should replace it; confirms which private contact channels actually operate; and approves the exact future public source and audience. Do not make the existing private Git history public as-is.
 
 References: [Agent Plugins spec](https://agent-plugins.org/specification), [OpenAI submission rules](https://developers.openai.com/plugins/deploy/submission-errors), [GitHub vulnerability reporting](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).
