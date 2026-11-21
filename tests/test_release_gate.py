@@ -1,4 +1,4 @@
-"""Release packaging is fail closed. Synthetic fixtures never authorize real publication."""
+"""Fail-closed public packaging regressions; all fixture approvals are synthetic."""
 from __future__ import annotations
 
 import hashlib
@@ -21,60 +21,123 @@ class PublicReleaseBoundaryTests(unittest.TestCase):
         p = Path(self.tmp.name)
         self.source = p / "generic"
         self.source.mkdir()
-        (self.source / "plugin.json").write_text('{"name":"synthetic","version":"0.0.0"}', encoding="utf-8")
-        self.index = p / "approved.json"
+        self.index = p / "synthetic-review.json"
         self.output = p / "out.zip"
 
-    def index_with(self, approved: bool, entries=("plugin.json",)):
+        self.write("SKILL_INVENTORY.json", json.dumps({
+            "bundle": "loom-foo", "bundle_version": "0.0.0",
+            "skills": [{"id": "loom-foo-test", "version": "0.0.0"}]
+        }))
+        self.write("skills/loom-foo-test/SKILL.md",
+                   "---\nname: loom-foo-test\ndescription: Synthetic test fixture\n"
+                   "metadata:\n  version: '0.0.0'\n---\n\nTest body\n")
+        for name in ("README.md", "LICENSE", "PRIVACY.md", "TERMS.md",
+                     "SUPPORT.md", "SECURITY.md"):
+            self.write(name, "synthetic " + name + "\n")
+
+        logo = "./assets/loom-foo-mark-v3.png"
+        iface = {"logo": logo, "composerIcon": logo}
+        self.write("plugin.json", json.dumps({
+            "name": "loom-foo", "version": "0.0.0",
+            "extensions": {"com.openai": {"interface": iface}}
+        }))
+        self.write(".codex-plugin/plugin.json", json.dumps({
+            "name": "loom-foo", "version": "0.0.0", "interface": iface
+        }))
+        self.write(".claude-plugin/plugin.json", json.dumps({
+            "name": "loom-foo", "version": "0.0.0"
+        }))
+        self.write(".antigravity-plugin/plugin.json", json.dumps({
+            "name": "loom-foo", "version": "0.0.0", "logo": "assets/loom-foo-mark-v3.png"
+        }))
+        self.write("gemini-extension.json", json.dumps({
+            "name": "loom-foo", "version": "0.0.0"
+        }))
+        self.write("assets/loom-foo-mark-v3.png", "synthetic placeholder bytes")
+
+    def write(self, name: str, text: str):
+        file = self.source / name
+        file.parent.mkdir(parents=True, exist_ok=True)
+        file.write_text(text, encoding="utf-8")
+
+    def files(self):
+        return tuple(sorted(p.relative_to(self.source).as_posix()
+                            for p in self.source.rglob("*") if p.is_file()))
+
+    def index_with(self, approved=True, entries=None):
+        if entries is None:
+            entries = self.files()
         self.index.write_text(json.dumps({
             "schema": 1, "origin": "reviewed-generic-source",
             "approved_by_owner": approved,
-            "files": {
-                name: hashlib.sha256((self.source / name).read_bytes()).hexdigest()
-                for name in entries
-            },
+            "files": {name: hashlib.sha256((self.source / name).read_bytes()).hexdigest()
+                      for name in entries},
         }), encoding="utf-8")
 
-    def test_missing_approval_rejected(self):
+    def test_valid_complete_synthetic_package(self):
+        self.index_with()
+        self.assertEqual(gate.build(self.source, self.index, self.output), len(self.files()))
+        self.assertTrue(self.output.exists())
+
+    def test_unapproved_index_rejected(self):
         self.index_with(False)
-        with self.assertRaises(gate.Reject):
+        with self.assertRaisesRegex(gate.Reject, "owner review"):
             gate.build(self.source, self.index, self.output)
 
     def test_missing_index_rejected(self):
         with self.assertRaises(OSError):
             gate.build(self.source, self.index, self.output)
 
-    def test_synthetic_approved_index_can_build(self):
-        self.index_with(True)
-        self.assertEqual(gate.build(self.source, self.index, self.output), 1)
-        self.assertTrue(self.output.exists())
-
-    def test_byte_drift_refused(self):
-        self.index_with(True)
-        (self.source / "plugin.json").write_text("changed")
+    def test_byte_drift_rejected(self):
+        self.index_with()
+        self.write("plugin.json", "unexpected")
         with self.assertRaisesRegex(gate.Reject, "UNREVIEWED_BYTES"):
             gate.build(self.source, self.index, self.output)
 
-    def test_owner_private_path_refused(self):
-        p = self.source / "private" / "owner" / "PROFILE.md"
-        p.parent.mkdir(parents=True)
-        p.write_text("not shareable", encoding="utf-8")
-        self.index_with(True, ("plugin.json", "private/owner/PROFILE.md"))
+    def test_missing_brand_asset_rejected(self):
+        self.index_with(entries=[p for p in self.files() if not p.startswith("assets/")])
+        with self.assertRaisesRegex(gate.Reject, "MISSING_BRAND_ASSET"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_missing_skill_root_rejected(self):
+        self.index_with(entries=[p for p in self.files() if not p.endswith("/SKILL.md")])
+        with self.assertRaisesRegex(gate.Reject, "INCOMPLETE_SKILL_TREE"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_unapproved_new_reference_rejected(self):
+        self.index_with()
+        self.write("skills/loom-foo-test/references/extra.md", "source added after review")
+        with self.assertRaisesRegex(gate.Reject, "INCOMPLETE_SKILL_TREE"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_inconsistent_platform_version_rejected(self):
+        self.write(".claude-plugin/plugin.json",
+                   '{"name":"loom-foo","version":"99.0.0"}')
+        self.index_with()
+        with self.assertRaisesRegex(gate.Reject, "manifest identity/version drift"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_missing_terms_rejected(self):
+        self.index_with(entries=[p for p in self.files() if p != "TERMS.md"])
+        with self.assertRaisesRegex(gate.Reject, "INCOMPLETE_RELEASE"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_owner_private_path_rejected(self):
+        self.write("private/owner/PROFILE.md", "private")
+        self.index_with()
         with self.assertRaises(gate.Reject):
             gate.build(self.source, self.index, self.output)
 
-    def test_owner_document_locator_refused(self):
-        p = self.source / "skills" / "test" / "SKILL.md"
-        p.parent.mkdir(parents=True)
-        p.write_text("https://" + "docs.google.com/document/d/" + "12345678901234567890", encoding="utf-8")
-        self.index_with(True, ("plugin.json", "skills/test/SKILL.md"))
+    def test_private_document_locator_rejected(self):
+        self.write("skills/loom-foo-test/references/private.md",
+                   "https://" + "docs.google.com/document/d/" + "12345678901234567890")
+        self.index_with()
         with self.assertRaisesRegex(gate.Reject, "private source locator"):
             gate.build(self.source, self.index, self.output)
 
-    def test_reconciliation_root_refused(self):
-        p = self.source / "reconciliation"
-        p.mkdir()
-        self.index_with(True)
+    def test_reconciliation_tree_rejected(self):
+        (self.source / "reconciliation").mkdir()
+        self.index_with()
         with self.assertRaisesRegex(gate.Reject, "MIXED PRIVATE"):
             gate.build(self.source, self.index, self.output)
 
