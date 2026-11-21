@@ -2,7 +2,7 @@
 
 Portable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
 
-**Status: private release candidate, not published.** A separately installed private ChatGPT plugin has the same numeric version but different contents; version equality is **not package parity**. An exact reconciliation and distinct future release version are required. The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.42.0**. It does not require any Core runtime, paid service or centralized agent orchestrator.
+**Status: private release candidate, not published.** The installed private ChatGPT plugin remains 0.42.0 with different source bytes. This generic 0.43.0 candidate is not installed; exact installed-source reconciliation remains required before any update. The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.43.0**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
 **Publisher identity (email-free candidate):** [`ejct`](https://github.com/ejct). No personal email is included in public-bound manifests; final publisher approval and public GitHub contact availability remain separate release gates.
 
@@ -23,7 +23,7 @@ The independent `foo-loom` Core project is optional and is **not** required to u
 
 ## Optional creative composition
 
-The 0.42.0 private candidate integrates Creative Reasoning 0.3.0 with optional, explicitly named collaboration routes for Design, Icon Design, Experience Design, Architecture Design, Drafting, Narrative Design and Proposal Refinement. These are conceptual-method links, **not required dependencies, a global dispatcher or observed agent invocations**.
+This 0.43.0 private candidate retains the earlier Creative Reasoning integration, including Creative Reasoning 0.3.0 with optional, explicitly named collaboration routes for Design, Icon Design, Experience Design, Architecture Design, Drafting, Narrative Design and Proposal Refinement. These are conceptual-method links, **not required dependencies, a global dispatcher or observed agent invocations**.
 
 ## Release readiness
 

@@ -2,8 +2,9 @@
 
 **PRIVATE_CANDIDATE · PUBLICATION_BLOCKED**
 
-- **Candidate:** `0.42.0`, 40 portable Agent Skills and five native host manifests. Individual Skills keep independent versions.
-- **Composition:** incorporates the generic source-level v0.41.0 creative-composition contract while retaining local fixture-link repairs. New bundle candidate `0.42.0` is source-only and is not claimed installed, routed or published.
+- **Candidate:** `0.43.0`, 40 portable Agent Skills and five native host manifests. Individual Skills keep independent versions.
+- **Composition:** incorporates the generic source-level v0.41.0 creative-composition contract while retaining local fixture-link repairs. New bundle candidate `0.43.0` is source-only and is not claimed installed, routed or published.
+- **Execution reliability:** P1 routing observations; P2 source-signed task slices; P3 semantic readback; P4 runtime permissions/oracle integrity. Static or synthetic checks are not host routing, delivery or permission proof.
 - **Technical checks:** static source/inventory/manifest validation; relative Markdown links; negative package-release regression tests. CI PASS does not mean semantic/host QA PASS.
 - **Icons deliberately deferred:** Generic manifests do not reference logos or composer icons. A separate design/attribution pass is required for eventual ChatGPT/Codex submission. Installed private plugin art remains untouched.
 - **Publisher identity (private candidate):** GitHub handle `ejct` with profile URL; personal author email omitted from public-bound root/Codex manifests. This minimizes exposure but **does not replace the owner's final choice** or any verified platform developer identity.
@@ -11,7 +12,7 @@
 - **Contact channels:** GitHub Issues for non-sensitive reports only when public; private vulnerability reporting and a private privacy-request route still need setup/verification before publication.
 - **Confidential provenance:** this repository's earlier Git commits and PR-related refs contain internal development identifiers. Removing text from today's files does **not** clear previous history; **do not make this Git repository public as-is**.
 - **Builder:** an external, genuine owner-approved SHA-256 allowlist is required; no such public release approval has been granted.
-- **Source/runtime version collision:** a separately installed PRIVATE plugin also reports `0.42.0` but has **different source bytes** (including legacy naming, personal author contact and historical image metadata). This generic Git candidate is **not** that installation. Never treat matching version strings as package parity; reconcile exact installed source and choose a distinct future release version before any installation or publication.
+- **Source/runtime distinction:** the separately installed PRIVATE plugin remains `0.42.0` with different source bytes, while this generic `0.43.0` candidate is **not installed**. Preserve private overlays and verify exact source before any install; names or version labels do not prove parity.
 - **Distribution:** no public tag/release, marketplace listing, public visibility, plugin installation or consumer pin update.
 
 ## Remaining steps
