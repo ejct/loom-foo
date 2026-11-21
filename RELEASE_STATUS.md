@@ -1,6 +1,6 @@
 # loom-foo — release status
 
-**PUBLIC_SOURCE · DISTRIBUTION_NOT_RELEASED**
+**PUBLIC_SOURCE · PUBLICATION_BLOCKED · DISTRIBUTION_NOT_RELEASED**
 
 As of 21 November 2026, `ejct/loom-foo` is publicly accessible. This is a **source preview**, not a vetted tagged distribution or a marketplace release.
 

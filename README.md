@@ -86,7 +86,7 @@ Individual skills have their own versions, separate from the bundle version.
 
 ## Status and limitations
 
-**Public source preview.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation.
+**Public source preview.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation. The current candidate is **not cleared for publication** as a tagged or marketplace distribution; public source visibility does not constitute release approval.
 
 Skills are methods for AI agents, not guarantees of correctness. Actual selection, tool use, and verification depend on your AI host and its permissions. A passing static test does not prove that a host selected or executed a skill.
 
