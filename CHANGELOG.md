@@ -1,5 +1,12 @@
 # Changelog
 
+## Documentation update — 21 November 2026
+
+- Reworked README around practical tasks, skill selection and direct use.
+- Corrected public source status in repository documentation without claiming a released distribution.
+- Kept history, attribution, private contact and host compatibility gates explicit; no runtime or consumer pin changes.
+
+
 ## 0.42.0 — private generic candidate; not installed or released
 
 - Rebranded remaining source-facing legacy naming to project-neutral terminology, retaining exact technical legacy lock paths for compatibility.

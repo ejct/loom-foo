@@ -1,7 +1,7 @@
 # loom-foo Privacy Policy
 
 **Last updated:** 21 November 2026  
-**Applies to:** the generic, distributable `loom-foo` Agent Skills package (initial release baseline v0.42.0)  
+**Applies to:** the public generic `loom-foo` source candidate (v0.42.0 metadata; no tagged distribution yet)  
 **Project maintainer:** `ejct` (GitHub account; https://github.com/ejct)
 
 ## 1. Scope
@@ -69,4 +69,4 @@ Requests concerning data held by OpenAI, GitHub, your AI host or another connect
 
 This policy may be updated when the distributed package, support channels or processing practices change. The date at the top identifies the published version. Material changes should be reflected in the repository's change history.
 
-**Publication note:** This document is prepared in a currently private repository. A GitHub URL becomes a public policy URL only when readers without repository access can open it.
+**Publication note:** This document is accessible in the public source repository. A separately vetted, tagged distribution has not yet been released.

@@ -1,6 +1,6 @@
 # Attribution and source licensing
 
-**Scope:** private, unreleased generic `loom-foo` source candidate. This file does not certify that all copyright interests have been assigned to any single publisher.
+**Scope:** public, unreleased generic `loom-foo` source candidate. This file does not certify that all copyright interests have been assigned to any single publisher.
 
 ## License
 
@@ -8,7 +8,7 @@ The generic source currently carries the [MIT License](LICENSE) with the propose
 
 > Copyright (c) 2026 ejct and contributors
 
-The former project's copyright wording remains traceable in protected historical Git records, not in the current generic release content. This updated notice is a **candidate attribution**, pending confirmation that its rights holders authorize replacing the historical wording. If a third-party contribution requires preservation of an earlier notice, its applicable original notice must be retained in the eventual release. **Do not publish until this rights/notice question is resolved.**
+Earlier copyright wording remains traceable in historical Git records, which may now be publicly accessible, but is not in the current generic source candidate. This updated notice is a **candidate attribution**, pending confirmation that its rights holders authorize replacing the historical wording. If a third-party contribution requires preservation of an earlier notice, its applicable original notice must be retained in the eventual release. **Do not publish until this rights/notice question is resolved.**
 
 ## Third-party material
 

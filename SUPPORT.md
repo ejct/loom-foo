@@ -32,4 +32,4 @@ There is no guaranteed response time, service-level agreement or paid priority-s
 - [Terms of Use](TERMS.md)
 - [Security Policy](SECURITY.md)
 
-**Access status:** This repository is currently private, so these GitHub links are visible only to authorized accounts. They are intended public support links once an authorized publication surface is established. No public support availability is claimed yet.
+**Access status:** The repository and its Issues are publicly accessible. Use Issues only for non-sensitive reports; a confidential contact route has not yet been verified.

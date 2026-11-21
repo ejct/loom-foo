@@ -1,6 +1,6 @@
-# Publisher identity and contact — private release candidate
+# Publisher identity and contact — public source preview
 
-**Status:** proposed generic publisher metadata, not final authorization to publish.
+**Status:** publicly accessible source metadata; final distribution approval remains outstanding.
 
 ## Source-facing identity
 
@@ -14,13 +14,13 @@ Using an account handle for attribution does **not** establish copyright ownersh
 
 ## Contacts and publication limits
 
-- **Non-sensitive support:** [GitHub Issues](https://github.com/ejct/loom-foo/issues) *after* a public repository and issue access actually exist.
+- **Non-sensitive support:** [GitHub Issues](https://github.com/ejct/loom-foo/issues) for non-sensitive support reports.
 - **Security reports:** GitHub's private vulnerability reporting **only if enabled**. Enable and test that feature before stating that the channel is operational. If disabled, a minimal non-sensitive issue may request a private reporting route; never submit vulnerability details publicly.
 - **Privacy requests:** the repository currently has **no verified dedicated private privacy-contact channel**. A user may request one through a minimal non-sensitive issue; a practical private channel must be confirmed before claiming that confidential requests can be received.
 - **Public email:** **none committed to the generic candidate**. No personal mailbox should be copied from an installed private plugin without the owner's explicit choice.
 
 **Public contact options:** GitHub Issues for support and bug reports; optional GitHub Discussions for questions and ideas if enabled; links from [the maintainer's GitHub profile](https://github.com/ejct) to outside social/professional networks for private outreach. Neither Issues nor Discussions is a private messaging channel. Private vulnerability reporting applies only to security flaws, after it has been activated. No general-purpose private messaging channel is currently verified.
 
-**Release gate:** before publication, the owner confirms whether `ejct` is the desired public credit or whether a legal/brand name should replace it; confirms which private contact channels actually operate; and approves the exact future public source and audience. Do not make the existing private Git history public as-is.
+**Release gate:** before a tagged release or directory submission, the owner confirms attribution, private contact channels and the exact reviewed package. This repository is already public, and its history still requires a confidentiality review.
 
 References: [Agent Plugins spec](https://agent-plugins.org/specification), [OpenAI submission rules](https://developers.openai.com/plugins/deploy/submission-errors), [GitHub vulnerability reporting](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/configure-vulnerability-reporting/configure-for-a-repository).

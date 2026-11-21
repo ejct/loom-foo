@@ -58,4 +58,4 @@ See the [Privacy Policy](PRIVACY.md). The data practices of AI hosts, connected 
 
 Questions about these Terms can be raised using the process in [Support](SUPPORT.md). Any material revision should update the date and be recorded in repository history.
 
-**Publication note:** These Terms are staged in a private GitHub repository and are not represented as publicly accessible until the corresponding GitHub URL is available without repository access.
+**Publication note:** These Terms are accessible in the public source repository. A separately vetted tagged distribution has not yet been released.
