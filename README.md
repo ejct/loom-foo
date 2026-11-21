@@ -82,6 +82,7 @@ You need an AI client capable of reading and following the skills and any tools 
 - [`SKILL_INVENTORY.json`](SKILL_INVENTORY.json) — exact skill IDs and versions
 - [`plugin.json`](plugin.json) and platform manifests — distribution metadata
 - [`CHANGELOG.md`](CHANGELOG.md) — source evolution
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — proposing and checking changes
 - [`SUPPORT.md`](SUPPORT.md), [`SECURITY.md`](SECURITY.md), [`PRIVACY.md`](PRIVACY.md), [`TERMS.md`](TERMS.md) — support and project policies
 
 Individual skills have their own versions, separate from the bundle version.

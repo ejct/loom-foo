@@ -1,5 +1,12 @@
 # Changelog
 
+## Maintenance — 21 November 2026 (no bundle version bump)
+
+- Added public contribution instructions and a purpose-oriented PR template.
+- Linked both README languages to contribution guidance and added a small source-doc regression check.
+- Adopted a scoped PR/CI workflow, without claiming GitHub branch protection or public release approval.
+
+
 ## 0.43.0 — source integration (21 November 2026; no tagged distribution)
 
 - Integrated P1–P4 skill execution reliability into generic source: host-trace comparison, source-signed task context slices, semantic saved-output readback, and permission/oracle integrity guidance.
