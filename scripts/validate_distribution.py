@@ -149,7 +149,7 @@ def check(root: Path = ROOT) -> dict:
             if SECRET.search(text) or PRIVATE_LOCATOR.search(text):
                 fail(f"secret or owner document locator: {rel}")
 
-    for mandatory in ("README.md", "AGENTS.md", "LICENSE", "PRIVACY.md", "SECURITY.md",
+    for mandatory in ("README.md", "AGENTS.md", "LICENSE", "PUBLISHER.md", "ATTRIBUTION.md", "PRIVACY.md", "SECURITY.md",
                       "SUPPORT.md", "TERMS.md", "RELEASE_STATUS.md",
                       "scripts/build_public_release.py"):
         if not (root / mandatory).is_file():

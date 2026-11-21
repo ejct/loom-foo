@@ -4,6 +4,8 @@ Portable Agent Skills for design, research, product development, planning, writi
 
 **Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.41.1**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
+**Proposed publisher identity:** [`ejct`](https://github.com/ejct). No personal email is included in public-bound manifests; final publisher approval and public GitHub contact availability remain separate release gates.
+
 ## What is inside
 
 - `skills/<skill-id>/SKILL.md`: task-specific behavior and activation boundaries.
@@ -29,4 +31,4 @@ The current source is **not cleared for publication**. Brand assets referenced b
 
 **Do not change repository visibility or create a public release based only on this candidate or its passing CI.**
 
-[License](LICENSE) · [Support](SUPPORT.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · [Terms](TERMS.md) · [Release status](RELEASE_STATUS.md)
+[License](LICENSE) · [Publisher](PUBLISHER.md) · [Attribution](ATTRIBUTION.md) · [Support](SUPPORT.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · [Terms](TERMS.md) · [Release status](RELEASE_STATUS.md)

@@ -11,7 +11,8 @@
     "Help me prepare a precise task for an AI coding agent, with scope and acceptance checks."
   ],
   "author": {
-    "name": "Loom-foo"
+    "name": "ejct",
+    "url": "https://github.com/ejct"
   },
   "keywords": [
     "agent-skills",

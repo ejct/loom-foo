@@ -8,7 +8,7 @@ The current development baseline is `loom-foo v0.41.1`. Older versions and indep
 
 ## Reporting vulnerabilities
 
-Use the repository's **Security → Report a vulnerability** feature if private vulnerability reporting is enabled. Its availability has not been independently confirmed.
+Use the repository's **Security → Report a vulnerability** feature if private vulnerability reporting is enabled. Its availability has not been independently confirmed; this candidate does not represent the channel as operational until it is enabled and tested.
 
 If private reporting is unavailable, open a **minimal, non-sensitive** [GitHub issue](https://github.com/ejct/loom-foo/issues) requesting a private reporting channel. **Do not publish proofs of concept, credentials, exploitation steps, private data, or unpublished project material in the issue.**
 

@@ -74,7 +74,7 @@ def scan_content(name: str, raw: bytes):
             raise Reject(f'owner/history-specific prose: {name}')
 
 REQUIRED_PUBLIC_FILES = {
-    "README.md", "LICENSE", "PRIVACY.md", "TERMS.md", "SUPPORT.md", "SECURITY.md",
+    "README.md", "LICENSE", "PUBLISHER.md", "ATTRIBUTION.md", "PRIVACY.md", "TERMS.md", "SUPPORT.md", "SECURITY.md",
     "SKILL_INVENTORY.json", "plugin.json", ".codex-plugin/plugin.json",
     ".claude-plugin/plugin.json", ".antigravity-plugin/plugin.json", "gemini-extension.json",
 }

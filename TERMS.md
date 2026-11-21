@@ -2,7 +2,7 @@
 
 **Last updated:** 21 November 2026  
 **Project:** `loom-foo` — generic Agent Skills distribution, initial baseline v0.41.1  
-**Maintainer:** Victor Cherniavsky (`ejct` on GitHub)
+**Maintainer:** `ejct` (GitHub account; https://github.com/ejct)
 
 ## 1. What loom-foo provides
 
