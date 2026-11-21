@@ -8,7 +8,7 @@ As of 21 November 2026, `ejct/loom-foo` is publicly accessible. This is a **sour
 
 - `main`: source candidate **0.43.0**, 40 independently versioned Agent Skills and five native host manifests.
 - P1–P4 execution reliability source changes are integrated: routing-observation comparison, source-signed context slices, semantic delivery readback, and host-permission/oracle integrity guidance. Static and synthetic checks do not prove host routing or enforcement.
-- The separately installed owner-private ChatGPT plugin also reports **0.43.0**; its owner-specific profiles and assets mean it is **not byte-identical** to this generic source. Its installation is not a public distribution.
+- Owner-private ChatGPT plugin releases are managed independently and can advance ahead of this generic source. Owner-specific profiles and assets are excluded from this repository; matching version labels do not establish byte parity. A private plugin installation is not a public distribution.
 - GitHub Issues is available for non-sensitive support; no confidential reporting channel has been verified.
 - There are **no published GitHub Releases** as of this status check.
 
