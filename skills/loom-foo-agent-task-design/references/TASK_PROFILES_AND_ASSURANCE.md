@@ -44,6 +44,10 @@ A review PASS does not automatically accept, merge, publish, or promote the subj
 
 
 
+### P4 — role permissions and oracle boundaries
+
+When a delegated review depends on independence or read-only operation, preserve the actual host capability and allowed mutating tools in the Task Brief. A role named reviewer, a no-edits prompt, fresh context or lack of Write/Edit tools is only `INSTRUCTION_ONLY` unless the host truly prevents mutation via shell and other interfaces. Use host sandbox/permissions where supported, report `NOT_CONFIRMED` when enforcement cannot be observed, and check the protected oracle's pre/post baseline when material. Never call a simulated reviewer a host-enforced one. Review independence and test immutability are different properties.
+
 ## 12. Repair / remediation profile
 
 

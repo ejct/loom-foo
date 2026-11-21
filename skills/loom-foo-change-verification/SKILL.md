@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Repository/project sources, test
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.7.0"
+  version: "0.8.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -35,7 +35,7 @@ Freeze candidate and criteria; map each property to a check at the required fide
 **Conditional method index (read the selected file before its detailed method is needed):**
 
 - **A nontrivial check requires choosing methods, environment fidelity, specialist evidence composition or a fast-path example** → `references/PD_VERIFICATION_METHODS.md` (source H2 sections 7,8,9,15,19).
-- **Verifier/golden integrity, regression across interfaces, negative probes, builder claims or independent-verifier status materially affect a verdict** → `references/PD_VERIFICATION_INTEGRITY.md` (source H2 sections 12,13,14,16,17,22,23).
+- **Verifier/golden integrity, candidate-editable acceptance tests, claimed read-only agent permissions, regression across interfaces, negative probes, builder claims or independent-verifier status materially affect a verdict** → `references/PD_VERIFICATION_INTEGRITY.md` (source H2 sections 11–17,21–23). If oracle mutation or host-enforced permissions are in question, also read `references/VERIFIER_INTEGRITY.md`.
 
 **No-trigger:** a short, resolved ordinary case does not require all detailed references merely because this skill was selected. Existing specialist references linked inside these materials remain conditional on their original situations. A moved section does not grant new permissions or replace the owning L1 safeguards.
 

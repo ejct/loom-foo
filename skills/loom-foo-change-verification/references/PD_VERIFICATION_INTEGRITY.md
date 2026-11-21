@@ -20,6 +20,10 @@ Possible evidence:
 - exact environment/tool version.
 
 Do not create a universal verifier registry/object.
+### P4 — reviewer runtime boundary
+
+If a read-only claim matters, inspect whether the host actually blocks writes through available tools (including subprocesses), not only the role's frontmatter. If the candidate can change acceptance tests or the test runner, compare the pre-change oracle before accepting a green verdict. Separate `HOST_ENFORCED_READ_ONLY`, `INSTRUCTION_ONLY` and `NOT_CONFIRMED` as evidence qualifiers; these are not new global state primitives. A local/synthetic mutation test cannot certify host protection.
+
 ## 12. Bounded regression
 
 Verify:

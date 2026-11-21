@@ -37,3 +37,11 @@ Same-context self-review is valuable for finding a defect but never counts as in
 ## Validator-of-validator regression
 
 When changing version, run a deliberate invalid-version mutation and confirm the mutation **actually changed the candidate** before accepting a green negative test. Run a missing-reference mutation in a supplementary `references/` file, not only `SKILL.md`. This guards against vacuous tests that PASS merely because the original package is valid.
+
+## P1 — actual host observation comparison
+
+Existing `tests/routing_cases.json` are expected-owner oracles, not activation results. For a representative fresh-context request made **without naming the expected skill**, collect only genuine host/session observations: `case_id`, `origin: "HOST_TRACE"`, nonempty `trace_ref`, `selected_owner` and `root_read_observed` where a real SKILL.md read is visible. Record the exact activated version and L2 reference reads separately if available; absence of a field means not confirmed. A model self-report or correct output does not prove a skill was loaded.
+
+The optional offline comparator `python scripts/evaluate_routing_observations.py --cases <routing-cases.json> --observations <host-observations.json>` compares the recorded owner to the frozen fixtures and reports root delivery independently. It never invokes a host, authenticates trace provenance, or infers correctness from expected fixtures. Missing trace evidence is `NOT_CONFIRMED`, not a PASS. No permanent global telemetry service, mandatory broad study or new routing owner follows from this evaluator.
+
+The production Skill package may omit developer test fixtures: always supply `--cases` explicitly. A missing fixture must fail rather than silently scoring against an invented oracle.
