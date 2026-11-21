@@ -1,0 +1,4 @@
+interface:
+  display_name: Failure Learning
+  short_description: Diagnose observed agent failures and minimal fixes
+  brand_color: '#F2B705'

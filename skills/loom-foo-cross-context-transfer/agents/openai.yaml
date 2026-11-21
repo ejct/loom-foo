@@ -1,0 +1,4 @@
+interface:
+  display_name: Cross-Context Transfer
+  short_description: Transfer evidence-backed methods between contexts
+  brand_color: '#F2B705'

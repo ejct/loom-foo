@@ -1,0 +1,4 @@
+interface:
+  display_name: Icon Design
+  short_description: Design and verify icons at target sizes
+  brand_color: '#F2B705'

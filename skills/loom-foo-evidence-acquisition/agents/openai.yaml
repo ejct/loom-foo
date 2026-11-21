@@ -1,0 +1,4 @@
+interface:
+  display_name: Evidence Acquisition
+  short_description: Gather evidence for a bounded research question
+  brand_color: '#F2B705'

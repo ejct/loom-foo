@@ -1,0 +1,4 @@
+interface:
+  display_name: Agent Task Design
+  short_description: Prepare bounded executable task briefs for agents
+  brand_color: '#F2B705'

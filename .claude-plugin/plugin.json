@@ -1,0 +1,17 @@
+{
+  "name": "loom-foo",
+  "displayName": "Loom-foo",
+  "version": "0.40.0",
+  "description": "Clarify product ideas, improve designs, research evidence, plan work, and prepare AI-agent tasks with focused skills.",
+  "author": {
+    "name": "Loom-foo"
+  },
+  "keywords": [
+    "agent-skills",
+    "design",
+    "research",
+    "planning",
+    "engineering",
+    "verification"
+  ]
+}

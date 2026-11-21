@@ -1,0 +1,8 @@
+interface:
+  display_name: Sanity Check
+  short_description: Check consequential claims against available evidence
+  brand_color: '#F2B705'
+  default_prompt: Check the specific questionable claim or action against actual evidence, correct only what fails, and continue
+    the original task.
+policy:
+  allow_implicit_invocation: true

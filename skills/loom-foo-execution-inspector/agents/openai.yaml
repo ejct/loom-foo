@@ -1,0 +1,4 @@
+interface:
+  display_name: Execution Inspector
+  short_description: Inspect agent execution and evidence claims
+  brand_color: '#F2B705'

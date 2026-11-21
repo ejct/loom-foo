@@ -1,0 +1,4 @@
+interface:
+  display_name: Work Decomposition
+  short_description: Divide accepted work into bounded units
+  brand_color: '#F2B705'

@@ -1,0 +1,4 @@
+interface:
+  display_name: Architecture Review
+  short_description: Review architecture against evidence and failure risks
+  brand_color: '#F2B705'

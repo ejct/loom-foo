@@ -1,0 +1,4 @@
+interface:
+  display_name: Proposal Refinement
+  short_description: Refine proposals and assess consequential trade-offs
+  brand_color: '#F2B705'
