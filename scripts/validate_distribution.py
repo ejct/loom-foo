@@ -25,6 +25,44 @@ PRIVATE_LOCATOR = re.compile(
 ASSETS = ("assets/loom-foo-mark-v2.png", "assets/loom-foo-mark-v3.png")
 
 
+# Plain local Markdown links only; external targets and fragment anchors are not
+# resolution-tested by this static checker. No network requests occur.
+LOCAL_MARKDOWN_LINK = re.compile(r"(?<!!)\[[^\]\n]+\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+PRIVATE_PUBLIC_DOCS = ("README.md", "AGENTS.md", "CHANGELOG.md", "RELEASE_STATUS.md")
+PRIVATE_SOURCE_MARKERS = ("ejct/Loom" + "Dev", "plugin" + "rel_")
+
+
+def broken_relative_markdown_links(root: Path) -> list[str]:
+    errors = []
+    home = root.resolve()
+    for path in sorted(root.rglob("*.md")):
+        if path.is_symlink() or ".git" in path.relative_to(root).parts:
+            continue
+        try:
+            content = path.read_text(encoding="utf-8")
+        except UnicodeError:
+            errors.append(f"non-UTF8 Markdown: {path.relative_to(root)}")
+            continue
+        fenced = False
+        for line_no, line in enumerate(content.splitlines(), 1):
+            if line.lstrip().startswith((chr(96) * 3, "~~~")):
+                fenced = not fenced
+                continue
+            if fenced:
+                continue
+            for m in LOCAL_MARKDOWN_LINK.finditer(line):
+                href = m.group(1)
+                if href.startswith(("http://", "https://", "mailto:", "data:", "app:", "skills:", "#")):
+                    continue
+                target_name = href.split("#", 1)[0].split("?", 1)[0]
+                if not target_name:
+                    continue
+                target = (path.parent / target_name).resolve()
+                if not target.is_relative_to(home) or not target.exists():
+                    errors.append(f"{path.relative_to(root)}:{line_no} -> {href}")
+    return errors
+
+
 def check(root: Path = ROOT) -> dict:
     errors, warnings = [], []
     def fail(msg: str):
@@ -40,6 +78,14 @@ def check(root: Path = ROOT) -> dict:
             return {}
 
     inventory = read_json("SKILL_INVENTORY.json")
+    if "plugin_release_id" in inventory:
+        fail("private installed plugin release identifier must not be distributed")
+    for public_doc in PRIVATE_PUBLIC_DOCS:
+        doc = root / public_doc
+        if doc.is_file():
+            data = doc.read_text(encoding="utf-8")
+            if any(marker in data for marker in PRIVATE_SOURCE_MARKERS):
+                fail(f"private development provenance in distribution-facing {public_doc}")
     expected = {}
     if inventory.get("bundle") != "loom-foo" or len(inventory.get("skills", [])) != 40:
         fail("expected 40-item loom-foo inventory")
@@ -108,6 +154,9 @@ def check(root: Path = ROOT) -> dict:
                       "scripts/build_public_release.py"):
         if not (root / mandatory).is_file():
             fail(f"missing distribution control document: {mandatory}")
+
+    for problem in broken_relative_markdown_links(root):
+        fail("broken local Markdown link: " + problem)
 
     missing_assets = [p for p in ASSETS if not (root / p).is_file()]
     if missing_assets:

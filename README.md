@@ -1,31 +1,28 @@
 # loom-foo
 
-Reusable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
+Portable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
 
-Use the relevant skill for the work at hand. Skills are independently versioned, support progressive disclosure and remain usable without the optional [foo-loom](https://github.com/ejct/foo-loom) project infrastructure.
+**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.40.1**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
-## Source and distribution status
+## What is inside
 
-**Private release-preparation repository — not published.** This repository is being populated from a reviewed, generic-only projection of private development source `ejct/LoomDev`. Its content is not automatically approved for a public audience. No release tag, marketplace listing or runtime installation is implied.
+- `skills/<skill-id>/SKILL.md`: task-specific behavior and activation boundaries.
+- Each skill may include `references/`, `scripts/`, `assets/` and `agents/` if needed.
+- `SKILL_INVENTORY.json`: exact skill IDs and versions.
+- Native host manifests: `plugin.json`, `.codex-plugin/`, `.claude-plugin/`, `.antigravity-plugin/`, `gemini-extension.json`.
+- `scripts/validate_distribution.py`: static and relative-link checks.
+- `scripts/build_public_release.py`: fail-closed packager using a separately reviewed, owner-approved per-file SHA-256 index.
 
-- **Development authority:** private `ejct/LoomDev`, for Core and Skills source.
-- **Distribution:** `ejct/loom-foo` for portable skills; `ejct/foo-loom` independently for optional Core infrastructure.
-- **Baseline:** `loom-foo` 0.40.0 / 40 Skill IDs; individual Skills retain their own versions.
-- **Known gap:** original brand assets `assets/loom-foo-mark-v2.png` and `assets/loom-foo-mark-v3.png` have not yet been verified as recovered.
-- **Public release:** requires semantic privacy/license review, exact approved file hashes, verified platform assets, and explicit publication authorization.
+## Using a Skill
 
-## Structure
+Choose `skills/<skill-id>/SKILL.md` for the actual task and load its conditional references only when needed. Each host has its own supported installation and discovery mechanisms; a Git checkout or passing static test does not demonstrate runtime discovery, routing or execution.
 
-`skills/<skill-id>/SKILL.md` defines a portable skill; `references/`, `scripts/`, `agents/`, and `assets/` belong to individual skills where needed. Native manifests at the repository root describe supported hosts.
+The independent `foo-loom` Core project is optional and is **not** required to use these portable Skills.
 
-`scripts/build_public_release.py` is the fail-closed packager; it must never treat the private development source or a plugin's private installed archive as approved public input.
+## Release readiness
 
-The current package must not contain private owner profiles, private development reconciliation material, historical incident transcripts or legacy development archives.
+The current source is **not cleared for publication**. Brand assets referenced by native manifests have not been recovered, and publication requires a semantic privacy/legal review, verification of publisher identity and public support channels, an owner-approved exact file index, and a clean publishable Git history.
 
-## Usage and validation
+**Do not change repository visibility or create a public release based only on this candidate or its passing CI.**
 
-For a compatible agent host, select the skill that fits the task and follow its `SKILL.md`; installation/discovery behavior varies by host. Source presence and CI checks alone do not prove automatic routing or runtime behavior.
-
-Publication and support details will be finalized before a public release.
-
-[MIT License](LICENSE) · [Release status](RELEASE_STATUS.md)
+[License](LICENSE) · [Support](SUPPORT.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · [Terms](TERMS.md) · [Release status](RELEASE_STATUS.md)

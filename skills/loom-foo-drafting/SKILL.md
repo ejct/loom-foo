@@ -2,7 +2,7 @@
 name: loom-foo-drafting
 description: "Draft or substantially rewrite practical prose for an audience and purpose, preserving facts and voice. Not proofreading or narrative-only analysis."
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible guidance for multilingual written artifacts; no paid API, persistent storage or other skill is required."
@@ -72,4 +72,4 @@ If a transformation cannot be performed without violating protected content, avo
 
 - [Language and genre](references/LANGUAGE_AND_GENRE.md) — controlled multilingual drafting, genre and rewrite invariants.
 - [Agent-directed artifacts](references/AGENT_ARTIFACTS.md) — boundaries for instructions to other agents or runtimes.
-- [Representative cases](tests/cases.jsonl) — candidate prompts and acceptance properties, not observed model test results.
+- Optional publisher-side fixture `tests/cases.jsonl` (not bundled in the generic distribution) contains candidate prompts and acceptance properties, not observed model test results.

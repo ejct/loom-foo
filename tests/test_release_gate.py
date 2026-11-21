@@ -135,6 +135,21 @@ class PublicReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(gate.Reject, "private source locator"):
             gate.build(self.source, self.index, self.output)
 
+    def test_installed_private_plugin_id_rejected(self):
+        path = self.source / "SKILL_INVENTORY.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["plugin_release_id"] = "plugin" + "rel_synthetic-private-install"
+        self.write("SKILL_INVENTORY.json", json.dumps(data))
+        self.index_with()
+        with self.assertRaisesRegex(gate.Reject, "private development source identifier"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_internal_upstream_identifier_rejected(self):
+        self.write("README.md", "Source: ejct/" + "LoomDev")
+        self.index_with()
+        with self.assertRaisesRegex(gate.Reject, "private development source identifier"):
+            gate.build(self.source, self.index, self.output)
+
     def test_reconciliation_tree_rejected(self):
         (self.source / "reconciliation").mkdir()
         self.index_with()
