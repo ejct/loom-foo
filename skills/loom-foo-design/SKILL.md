@@ -3,7 +3,7 @@ name: loom-foo-design
 description: "Create integrated cross-disciplinary visual/product design where no narrower specialist owns the whole result. Not a mandatory design router."
 metadata:
   family: "design"
-  version: "0.6.0"
+  version: "0.7.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills-compatible guidance; specialist tools and editable design environments are optional, host-dependent."
 ---
@@ -12,6 +12,9 @@ compatibility: "Portable Agent Skills-compatible guidance; specialist tools and 
 **Answer Receipt.** Finish user-facing prose with one compact receipt naming only actually consulted/applied skills and versions, `SKILL.md` model-visible delivery (`FULL | PARTIAL | METADATA_ONLY | NOT_CONFIRMED | FAILED`), triggered L2 coverage, sources, checks, actions and limits. `FULL` requires complete contiguous exact text to EOF; a successful tool fetch alone is insufficient. Use ordered **Process Trail** for actual material review/repair/recheck stages, with artifact identity and honest `SAME_CONTEXT` versus observed separate actors. Never invent independent reviews, tests, host routing, publication or external effects. Omit the footer only for strict machine/code-only output contracts.
 
 # Design — cross-disciplinary design competence in loom-foo
+
+**Optional conceptual collaboration (L1).** Use `loom-foo-creative-reasoning` only when a multidisciplinary design task has a genuinely unresolved conceptual principle, meaningfully different mechanisms matter, or repeated attempts are conceptually fixated. The narrow subject owner still delivers the artifact. Do not use for routine production, agreed concept refinements, local rendering fixes, or simply to increase novelty. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
+
 
 ## Critical contract
 

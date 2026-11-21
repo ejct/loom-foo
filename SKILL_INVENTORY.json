@@ -2,7 +2,7 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.40.1",
+  "bundle_version": "0.41.1",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
@@ -10,7 +10,7 @@
     },
     {
       "id": "loom-foo-architecture-design",
-      "version": "0.7.0"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-architecture-review",
@@ -26,7 +26,7 @@
     },
     {
       "id": "loom-foo-creative-reasoning",
-      "version": "0.2.0"
+      "version": "0.3.0"
     },
     {
       "id": "loom-foo-cross-context-transfer",
@@ -38,7 +38,7 @@
     },
     {
       "id": "loom-foo-design",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-design-review",
@@ -50,7 +50,7 @@
     },
     {
       "id": "loom-foo-drafting",
-      "version": "0.4.1"
+      "version": "0.5.1"
     },
     {
       "id": "loom-foo-editorial-review",
@@ -70,7 +70,7 @@
     },
     {
       "id": "loom-foo-experience-design",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-failure-learning",
@@ -86,7 +86,7 @@
     },
     {
       "id": "loom-foo-icon-design",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-identity-design",
@@ -114,7 +114,7 @@
     },
     {
       "id": "loom-foo-narrative-design",
-      "version": "0.4.1"
+      "version": "0.5.1"
     },
     {
       "id": "loom-foo-onboarding",
@@ -138,7 +138,7 @@
     },
     {
       "id": "loom-foo-proposal-refinement",
-      "version": "0.9.0"
+      "version": "0.10.0"
     },
     {
       "id": "loom-foo-research-design",

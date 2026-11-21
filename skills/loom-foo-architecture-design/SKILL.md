@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Can use repository/project sourc
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.7.0"
+  version: "0.8.0"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->
@@ -14,6 +14,9 @@ metadata:
 **Core boundaries.** Preserve the user's actual result, current controlling sources and accepted decisions. Tool access, source possession and ability to write do **not** grant authority to mutate project state, adopt a proposal/specification/architecture, spend money, publish, merge, change permissions or disclose private data. Stop only for a real material missing authority/source/decision; continue independently safe work. Use the smallest useful artifact and proportionate evidence; neither a successful reader call nor a named method proves execution. For durable text-first work, prefer native project conventions (often Markdown), keep provenance and distinguish a draft, saved artifact, project acceptance and publication.
 
 # Architecture Design
+
+**Optional conceptual collaboration (L1).** When established architecture alternatives fail to resolve a genuinely open design tension or a new causal mechanism could change the choice, optionally use `loom-foo-creative-reasoning` to expand mechanism families. Keep architecture drivers, accepted constraints, design authority and artifact ownership here. Do not activate for routine trade-off comparison, settled implementation or empirical performance verification. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
+
 
 **Owner / normal outcome.** Create, compare or evolve a coherent system architecture. Use `loom-foo-architecture-review` instead for read-only evaluation. This skill produces an architectural artifact; it does not automatically accept, implement or canonicalize it.
 

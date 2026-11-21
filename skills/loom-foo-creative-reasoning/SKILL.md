@@ -3,12 +3,19 @@ name: loom-foo-creative-reasoning
 description: "Use for explicit cross-domain creative exploration, problem reframing, materially different solution principles, synthesis of competing concepts, or recovery from repeated conceptual fixation. Supports design, product, architecture, writing and research without replacing their output owners. Do not use for exact edits, settled implementation, routine production, factual retrieval, or ordinary critique."
 metadata:
   family: "design"
-  version: "0.2.0"
+  version: "0.3.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills-compatible guidance; specialist tools and runtimes are optional and separately owned."
 ---
 
 # Creative Reasoning
+
+## Named specialist composition (optional, not a dispatcher)
+
+This skill may contribute a conceptual mechanism to `loom-foo-design`, `loom-foo-icon-design`, `loom-foo-experience-design`, `loom-foo-architecture-design`, `loom-foo-drafting`, `loom-foo-narrative-design` or `loom-foo-proposal-refinement`. Those specialists still own the requested artifact, constraints, implementation and validation; Creative Reasoning owns a bounded conceptual decision only when ideation itself is the task. A named relationship means **possible method composition**, never a required sub-agent call, a dependency, or confirmed runtime invocation.
+
+For cross-skill use, establish the subject owner and the smallest unresolved conceptual question; retain `FIXED` constraints and user authority, supply a materially different valid principle with risks, hand it to the original owner, and return to production. If the owner already has an adequate solution, skip this skill. Do not escalate local geometry, tool failures, missed constraints, ordinary alternatives or settled execution. Exact skill IDs document relationships; do not infer that source mentions automatically trigger a host skill.
+
 
 ## Contract and boundary
 

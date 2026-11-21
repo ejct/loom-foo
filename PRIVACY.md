@@ -1,7 +1,7 @@
 # loom-foo Privacy Policy
 
 **Last updated:** 21 November 2026  
-**Applies to:** the generic, distributable `loom-foo` Agent Skills package (initial release baseline v0.40.1)  
+**Applies to:** the generic, distributable `loom-foo` Agent Skills package (initial release baseline v0.41.1)  
 **Project maintainer:** Victor Cherniavsky (`ejct` on GitHub)
 
 ## 1. Scope
@@ -12,7 +12,7 @@ This policy describes the data practices of the **generic distributed loom-foo p
 
 ## 2. What the distributed package does and does not collect
 
-As provided in v0.40.1, the generic package does not include a publisher-operated account system, advertising system, analytics tracker, remote telemetry endpoint, or backend that automatically receives users' conversations.
+As provided in v0.41.1, the generic package does not include a publisher-operated account system, advertising system, analytics tracker, remote telemetry endpoint, or backend that automatically receives users' conversations.
 
 Merely installing or invoking a loom-foo Skill does **not** send the user's prompts, files, or workspace content to the project maintainer through an infrastructure service operated by this package.
 
@@ -43,7 +43,7 @@ If you voluntarily submit a bug report, issue, contribution or other project cor
 
 Where a legal basis is required, this processing may be based on the user's requested interaction, legitimate interests in maintaining a secure and usable project, or a relevant legal obligation, depending on the context and applicable law. This description does not assert that the maintainer controls data processed independently by a third-party host.
 
-No sale of user conversation content or publisher-operated advertising profiling is part of the distributed v0.40.1 package.
+No sale of user conversation content or publisher-operated advertising profiling is part of the distributed v0.41.1 package.
 
 ## 6. Sharing, retention and deletion
 
