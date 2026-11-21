@@ -72,4 +72,4 @@ When a validated specialist framework is required for a material judgment:
 - preserve its native outputs and assumptions;
 - map only the decision-relevant result/limits into the Evidence Assessment.
 
-Do not replace domain-specific statistical, scientific, safety, security, or architecture review with generic LoomLoom labels.
+Do not replace domain-specific statistical, scientific, safety, security, or architecture review with generic project labels.

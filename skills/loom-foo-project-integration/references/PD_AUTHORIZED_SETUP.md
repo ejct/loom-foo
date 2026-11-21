@@ -6,7 +6,7 @@
 
 When the project is explicitly approved for Core setup:
 
-1. Resolve the **exact, available** foo-loom source commit or immutable package and compatible installer. Do not point a new install at mutable branch HEAD, and do not change historical `LoomLoom` pins.
+1. Resolve the **exact, available** foo-loom source commit or immutable package and compatible installer. Do not point a new install at mutable branch HEAD, and do not change historical Core pins.
 2. Preview proposed changes to `.foo-loom/`, `.agents/skills/foo-loom-bootstrap/` and the managed portion of `AGENTS.md` using available safe reads/diffs. If the actual installer has no native `--dry-run`, do **not** invent one; use a copy/snapshot or equivalent preflight before approved writes. Protect symlinks, changed managed blocks and unrelated instructions.
 3. Apply only the explicitly approved project-local writes using the actual available installer, verify exact pin, installed files, managed block and preserved neighboring content. Any new Core policies remain **unadopted** until the project authority explicitly accepts them. Never silently upgrade.
 4. Default to **one ordinary primary agent and no custom `.codex/agents/*.toml` profiles**. Native delegation remains on demand. Install optional specialized profiles only with separate specific authorization and host-supported runtime validation.

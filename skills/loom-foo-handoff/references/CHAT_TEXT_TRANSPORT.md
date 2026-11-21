@@ -4,7 +4,7 @@
 
 Transport-specific profile derived from historical OCHP v3.4.2 evidence.
 
-It is not generic LoomLoom handoff semantics.
+It is not generic handoff semantics.
 
 ## Framing
 
@@ -13,8 +13,8 @@ Use one fresh collision-checked boundary token:
 ```text
 ===== BEGIN OPERATIONAL HANDOFF :: <BOUNDARY> =====
 
-Protocol: LoomLoom Chat/Text Handoff v0.2
-Compiler: LoomLoom handoff skill <current-skill-version>
+Protocol: loom-foo Chat/Text Handoff v0.3
+Compiler: loom-foo handoff skill <current-skill-version>
 
 ===== BEGIN HANDOFF CONTROL :: <BOUNDARY> =====
 

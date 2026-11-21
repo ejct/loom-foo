@@ -44,7 +44,7 @@ Useful dimensions may include:
 - action/transition authority;
 - epistemic status.
 
-These are a handoff representation technique, not a replacement for the LoomLoom Kernel lifecycle/state model.
+These are a handoff representation technique, not a replacement for the foo-loom Core lifecycle/state model.
 
 Do not force all dimensions onto trivial items.
 ## 8. Compile draft checkpoint H0

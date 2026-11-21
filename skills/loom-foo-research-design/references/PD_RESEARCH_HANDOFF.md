@@ -37,7 +37,7 @@ Under current constraints no credible observation can discriminate the live alte
 ### `PLANNING_REQUIRED`
 The request contains multiple materially independent evidence questions that should be decomposed first.
 
-These are skill-local workflow states, not LoomLoom Kernel states and not project acceptance decisions.
+These are skill-local workflow states, not foo-loom Core Kernel states and not project acceptance decisions.
 ## 17. Composition boundaries
 
 - `loom-foo-proposal-refinement` may hand off a `VALIDATION_REQUIRED` uncertainty to `loom-foo-research-design`.

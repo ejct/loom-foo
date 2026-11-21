@@ -1,11 +1,11 @@
 ---
 name: loom-foo-research-design
 description: "Design the smallest credible evidence or experiment plan for a material decision uncertainty. Not routine checking or evidence collection."
-compatibility: Agent Skills-compatible clients. External sources, project context, specialist research methods, and execution harnesses are optional. The skill must remain useful without LoomLoom.
+compatibility: Agent Skills-compatible clients. External sources, project context, specialist research methods, and execution harnesses are optional. The skill must remain useful without foo-loom Core.
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.7.0"
+  version: "0.7.1"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->

@@ -160,6 +160,20 @@ class PublicReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(gate.Reject, "private development source identifier"):
             gate.build(self.source, self.index, self.output)
 
+    def test_public_export_rejects_deprecated_brand(self):
+        self.write("README.md", "Former product " + "Loom" + "Loom")
+        self.index_with()
+        with self.assertRaisesRegex(gate.Reject, "deprecated product brand"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_missing_composer_icon_field_rejected(self):
+        data = json.loads((self.source / "plugin.json").read_text(encoding="utf-8"))
+        del data["extensions"]["com.openai"]["interface"]["composerIcon"]
+        self.write("plugin.json", json.dumps(data))
+        self.index_with()
+        with self.assertRaisesRegex(gate.Reject, "missing native brand reference"):
+            gate.build(self.source, self.index, self.output)
+
     def test_reconciliation_tree_rejected(self):
         (self.source / "reconciliation").mkdir()
         self.index_with()

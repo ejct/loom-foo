@@ -66,6 +66,8 @@ def scan_content(name: str, raw: bytes):
         if DRIVE_ID.search(s): raise Reject(f'private source locator detected: {name}')
         if PRIVATE_SOURCE_REFERENCE.search(s):
             raise Reject(f'private development source identifier: {name}')
+        if ("Loom" + "Loom") in s:
+            raise Reject(f'deprecated product brand in public package: {name}')
         # A deliberately strict default: public author contact metadata must be
         # externally reviewed and stored in an expressly allowed manifest only.
         if EMAIL.search(s) and name not in ('plugin.json','.codex-plugin/plugin.json'):

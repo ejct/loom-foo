@@ -1,6 +1,5 @@
-"""Publisher/attribution candidate checks: static only, no legal clearance."""
+"""Static candidate checks: publisher, old-brand exclusion, icons deferred."""
 from __future__ import annotations
-
 import json
 from pathlib import Path
 import unittest
@@ -8,6 +7,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 MANIFESTS = ("plugin.json", ".codex-plugin/plugin.json",
              ".claude-plugin/plugin.json", ".antigravity-plugin/plugin.json")
+TEXT_SUFFIXES = {".md", ".json", ".yaml", ".yml", ".py", ".txt", ".sh"}
 
 
 class PublisherAttributionCandidateTests(unittest.TestCase):
@@ -27,35 +27,62 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
                 })
                 self.assertNotIn("email", source["author"])
         root = self.manifest("plugin.json")
-        compat = self.manifest(".codex-plugin/plugin.json")
+        codex = self.manifest(".codex-plugin/plugin.json")
         self.assertEqual("ejct", root["extensions"]["com.openai"]["interface"]["developerName"])
-        self.assertEqual("ejct", compat["interface"]["developerName"])
-        self.assertEqual(root["extensions"]["com.openai"]["interface"], compat["interface"])
+        self.assertEqual("ejct", codex["interface"]["developerName"])
+        self.assertEqual(root["extensions"]["com.openai"]["interface"], codex["interface"])
 
-    def test_original_legacy_mit_copyright_preserved(self):
+    def test_current_mit_notice_and_unresolved_original_rights(self):
         license_text = self.read("LICENSE")
         self.assertTrue(license_text.startswith("MIT License\n"))
-        self.assertIn("Copyright (c) 2026 LoomLoom contributors", license_text)
+        self.assertIn("Copyright (c) 2026 ejct and contributors", license_text)
         self.assertIn("The above copyright notice and this permission notice", license_text)
         self.assertIn("WITHOUT WARRANTY", license_text)
-        self.assertIn("LoomLoom contributors", self.read("ATTRIBUTION.md"))
+        attribution = self.read("ATTRIBUTION.md")
+        self.assertIn("pending confirmation", attribution)
+        self.assertIn("third-party", attribution)
+        self.assertIn("Do not publish", attribution)
 
-    def test_unverified_private_reporting_and_asset_claims_not_promoted(self):
+    def test_no_brand_retained_in_current_generic_source(self):
+        old_name = "Loom" + "Loom"
+        scanned = 0
+        for path in ROOT.rglob("*"):
+            if (not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES
+                    or ".git" in path.relative_to(ROOT).parts):
+                continue
+            with self.subTest(path=path.relative_to(ROOT).as_posix()):
+                self.assertNotIn(old_name, path.read_text(encoding="utf-8"))
+            scanned += 1
+        self.assertGreater(scanned, 240)
+
+    def test_unverified_private_reporting_and_icon_deferment(self):
         publisher = self.read("PUBLISHER.md")
         status = self.read("RELEASE_STATUS.md")
         attribution = self.read("ATTRIBUTION.md")
         self.assertIn("no verified dedicated private privacy-contact channel", publisher)
         self.assertIn("only if enabled", publisher)
-        self.assertIn("NOT", publisher.upper())
         self.assertIn("not cleared for publication", self.read("README.md"))
-        self.assertIn("publication", status.lower())
-        self.assertIn("Lucide", attribution)
-        self.assertIn("no checked-in vector/raster icon images or fonts", attribution)
-        self.assertIn("have not been recovered", attribution)
+        self.assertIn("PUBLICATION_BLOCKED", status)
+        self.assertIn("no bundled icon images", attribution)
+        self.assertIn("separate pass", attribution)
+        self.assertNotIn("Lucide", attribution)
+        root = self.manifest("plugin.json")["extensions"]["com.openai"]["interface"]
+        codex = self.manifest(".codex-plugin/plugin.json")["interface"]
+        for iface in (root, codex):
+            self.assertNotIn("logo", iface)
+            self.assertNotIn("composerIcon", iface)
+        self.assertNotIn("logo", self.manifest(".antigravity-plugin/plugin.json"))
+        self.assertFalse((ROOT / "assets").exists())
 
-    def test_bundle_version_is_unchanged(self):
+    def test_rebranded_handoff_contract_is_not_an_old_protocol_claim(self):
+        handoff = self.read("skills/loom-foo-handoff/SKILL.md")
+        framing = self.read("skills/loom-foo-handoff/references/CHAT_TEXT_TRANSPORT.md")
+        self.assertIn('version: "0.9.0"', handoff)
+        self.assertIn("Protocol: loom-foo Chat/Text Handoff v0.3", framing)
+
+    def test_bundle_version_and_skill_versions(self):
         inventory = self.manifest("SKILL_INVENTORY.json")
-        self.assertEqual("0.41.1", inventory["bundle_version"])
+        self.assertEqual("0.42.0", inventory["bundle_version"])
         self.assertEqual(40, len(inventory["skills"]))
         for rel in MANIFESTS + ("gemini-extension.json",):
             with self.subTest(manifest=rel):

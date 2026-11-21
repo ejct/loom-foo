@@ -7,7 +7,7 @@ name: loom-foo-specification-design
 description: "Define precise behavioral specifications from accepted intent, obligations and edge cases. Not architecture, implementation or verification."
 
 
-compatibility: Agent Skills-compatible clients. Project sources, accepted proposals/decisions, existing specifications, external standards, schemas, and formal modeling tools are optional. The skill remains useful without LoomLoom.
+compatibility: Agent Skills-compatible clients. Project sources, accepted proposals/decisions, existing specifications, external standards, schemas, and formal modeling tools are optional. The skill remains useful without foo-loom Core.
 
 
 metadata:
@@ -17,7 +17,7 @@ metadata:
   project: "loom-foo"
 
 
-  version: "0.6.0"
+  version: "0.6.1"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->

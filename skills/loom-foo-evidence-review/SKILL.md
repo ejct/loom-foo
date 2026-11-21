@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Evidence Packages, source artifa
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->

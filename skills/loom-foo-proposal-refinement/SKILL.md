@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. External research, connected pro
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.10.0"
+  version: "0.10.1"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->

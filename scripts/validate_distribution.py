@@ -22,7 +22,7 @@ SECRET = re.compile(r"(?:ghp|gho|ghs|github_pat)_[A-Za-z0-9_]{20,}|sk-proj-[A-Za
 PRIVATE_LOCATOR = re.compile(
     r"https?://(?:docs|drive)\.google\.com/(?:document/d/|file/d/|drive/folders/)[A-Za-z0-9_-]{16,}"
 )
-ASSETS = ("assets/loom-foo-mark-v2.png", "assets/loom-foo-mark-v3.png")
+ASSETS = ()  # UI artwork is intentionally deferred in generic sources
 
 
 # Plain local Markdown links only; external targets and fragment anchors are not
@@ -155,12 +155,18 @@ def check(root: Path = ROOT) -> dict:
         if not (root / mandatory).is_file():
             fail(f"missing distribution control document: {mandatory}")
 
+    for path in root.rglob("*"):
+        if path.is_file() and path.suffix.lower() in {".md", ".json", ".yaml", ".yml", ".py", ".txt", ".sh"}:
+            if ("Loom" + "Loom") in path.read_text(encoding="utf-8"):
+                fail("deprecated product brand in current source: " + str(path.relative_to(root)))
+
     for problem in broken_relative_markdown_links(root):
         fail("broken local Markdown link: " + problem)
 
     missing_assets = [p for p in ASSETS if not (root / p).is_file()]
     if missing_assets:
-        warnings.append("RELEASE_BLOCKED_MISSING_ORIGINAL_ASSETS: " + ", ".join(missing_assets))
+        warnings.append("UNEXPECTED_UNRECOVERED_ART: " + ", ".join(missing_assets))
+    warnings.append("PUBLIC_SUBMISSION_ICON_PASS_PENDING: generic manifests omit UI artwork")
     return {
         "status": "STATIC_PASS_PRIVATE_CANDIDATE" if not errors else "STATIC_FAIL",
         "skills": len(actual),

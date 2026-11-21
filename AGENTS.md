@@ -10,7 +10,7 @@ This repository contains the portable generic Agent Skills distribution. Optiona
 - Keep source provenance and any private approval/review evidence in the protected development environment, not in public-bound package files.
 - Existing Git history may contain private development provenance: **never change this repository to PUBLIC as-is**. Publication requires a separately inspected clean-history export and an explicit owner decision.
 - Do not infer publication approval from source presence, CI, tests or a generated `approved_by_owner` flag. The real file-hash review/approval record must be independently authorized.
-- Never fabricate missing original brand PNGs or claim replacement assets are byte-identical.
+- Do not import previously installed project artwork into the generic distribution. Icons are deferred until a separate approved pass; do not invent icon files or claim brand asset parity.
 - Do not install/update an existing private plugin or migrate pinned consumers merely by preparing this repository.
 
 ## Validation
@@ -20,4 +20,4 @@ python3 scripts/validate_distribution.py
 python3 -m unittest discover -s tests -v
 ```
 
-The fail-closed `scripts/build_public_release.py` packages **only** exact reviewed source bytes. Native build readiness also requires verified logo files. Static validation is not proof of runtime discovery, selection or output quality.
+The fail-closed `scripts/build_public_release.py` packages **only** exact reviewed source bytes. Native public submission also requires separately reviewed verified logo and composer-icon files. Static validation is not proof of runtime discovery, selection or output quality.

@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Connected project sources and wr
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.8.0"
+  version: "0.9.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -20,7 +20,7 @@ metadata:
 
 Compile the smallest high-signal checkpoint sufficient for correct continuation.
 
-This skill implements the accepted LoomLoom handoff model:
+This skill implements the accepted handoff model:
 - handoff is a compiler output, not a chronological transcript;
 - project state and handoff are different artifacts;
 - handoff creates no authority;
@@ -30,7 +30,7 @@ This skill implements the accepted LoomLoom handoff model:
 - producer handoff and receiver Context Receipt remain separate;
 - transport framing is transport-specific.
 
-The historical OCHP v3.4.2 is evidence for the Chat/Text transport profile, not universal LoomLoom semantics.
+The historical OCHP v3.4.2 is evidence for the Chat/Text transport profile, not universal handoff semantics.
 
 ## L1 — ordinary execution and L2 selection
 

@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. External/project sources and spe
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.6.0"
+  version: "0.6.1"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -53,7 +53,7 @@ Do not force source->target framing when evidence implies synthesis, a shared su
 
 ## 2. Authority boundary
 
-A transfer request authorizes analysis and production of candidate knowledge. It does not by itself accept source claims as target truth, change target authority, modify canonical docs/code/configuration, create a reusable LoomLoom primitive, copy external code, or implement anything.
+A transfer request authorizes analysis and production of candidate knowledge. It does not by itself accept source claims as target truth, change target authority, modify canonical docs/code/configuration, create a reusable Core primitive, copy external code, or implement anything.
 
 Default to **knowledge transfer**, not artifact reuse.
 

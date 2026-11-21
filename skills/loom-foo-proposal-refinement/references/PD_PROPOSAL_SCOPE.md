@@ -56,7 +56,7 @@ Before freezing a project proposal or setting its milestones, restate the actual
 
 `UNVERIFIED`, `VALIDATION_REQUIRED` and evidence gaps are epistemic descriptions, not automatic stop gates, priority changes or new research tasks. Before including any proof/benchmark/validation stage, require a concrete link to the owner's objective, material risk, correctness or live choice, and prefer the smallest direct check. Keep three check types separate: (1) operation correctness/safety, (2) normal functional feedback/dogfood, (3) comparative or confirmatory validation. Never waive mandatory integrity, safety, authority or source-fidelity checks.
 
-Regression principle: planning functional development must produce a usable roadmap without imposing comparative proof experiments. A distinct explicit request to prove an advantage legitimately routes to research-design. Cite the accepted LoomLoom Agent Operating Behavior GOAL FIDELITY amendment dated 2026-10-11. This is a composition guard, not an extra proposal artifact or audit round.
+Regression principle: planning functional development must produce a usable roadmap without imposing comparative proof experiments. A distinct explicit request to prove an advantage legitimately routes to research-design. Cite the accepted Agent Operating Behavior GOAL FIDELITY amendment dated 2026-10-11. This is a composition guard, not an extra proposal artifact or audit round.
 ## 3. Preserve authority and side-effect boundaries
 
 A request to create or refine a proposal authorizes analysis and production of the proposal artifact. It does **not** by itself authorize:
