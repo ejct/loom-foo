@@ -1,5 +1,7 @@
 # loom-foo
 
+**Language:** English · [Українська](README.uk.md)
+
 **Focused Agent Skills for design, research, product development, writing, and agent workflows.**
 
 Explore a product idea. Improve an interface. Investigate evidence. Plan a change. Brief a coding agent. Check what it actually delivered.
