@@ -11,6 +11,7 @@
 - **Contact channels:** GitHub Issues for non-sensitive reports only when public; private vulnerability reporting and a private privacy-request route still need setup/verification before publication.
 - **Confidential provenance:** this repository's earlier Git commits and PR-related refs contain internal development identifiers. Removing text from today's files does **not** clear previous history; **do not make this Git repository public as-is**.
 - **Builder:** an external, genuine owner-approved SHA-256 allowlist is required; no such public release approval has been granted.
+- **Source/runtime version collision:** a separately installed PRIVATE plugin also reports `0.42.0` but has **different source bytes** (including legacy naming, personal author contact and historical image metadata). This generic Git candidate is **not** that installation. Never treat matching version strings as package parity; reconcile exact installed source and choose a distinct future release version before any installation or publication.
 - **Distribution:** no public tag/release, marketplace listing, public visibility, plugin installation or consumer pin update.
 
 ## Remaining steps

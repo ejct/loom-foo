@@ -2,7 +2,7 @@
 
 Portable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
 
-**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.42.0**. It does not require any Core runtime, paid service or centralized agent orchestrator.
+**Status: private release candidate, not published.** A separately installed private ChatGPT plugin has the same numeric version but different contents; version equality is **not package parity**. An exact reconciliation and distinct future release version are required. The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.42.0**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
 **Publisher identity (email-free candidate):** [`ejct`](https://github.com/ejct). No personal email is included in public-bound manifests; final publisher approval and public GitHub contact availability remain separate release gates.
 
