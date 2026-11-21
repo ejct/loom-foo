@@ -82,6 +82,7 @@ git clone https://github.com/ejct/loom-foo.git
 - [`SKILL_INVENTORY.json`](SKILL_INVENTORY.json) — точні ідентифікатори й версії навичок
 - [`plugin.json`](plugin.json) та маніфести інших середовищ — метадані пакета
 - [`CHANGELOG.md`](CHANGELOG.md) — історія змін вихідного коду
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — пропозиція та перевірка змін
 - [`SUPPORT.md`](SUPPORT.md), [`SECURITY.md`](SECURITY.md), [`PRIVACY.md`](PRIVACY.md), [`TERMS.md`](TERMS.md) — підтримка та правила проєкту
 
 Кожна навичка має власну версію, незалежну від версії всього пакета.

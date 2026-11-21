@@ -1,4 +1,4 @@
-name: Validate private loom-foo distribution candidate
+name: Validate loom-foo source preview
 on:
   push:
     branches: [main, 'work/**', 'release/**']
