@@ -3,7 +3,7 @@ name: loom-foo-skill-engineering
 description: "Assess, create, revise, compare or deliver Agent Skills and diagnose skill routing. Not ordinary coding or GitHub operations."
 metadata:
   family: "engineering"
-  version: "0.12.0"
+  version: "0.13.0"
   project: "loom-foo"
 compatibility: Agent Skills-compatible clients; existing specialist skills, creator tools, Git, CI, and runtime installation may be unavailable.
 ---
@@ -24,7 +24,7 @@ compatibility: Agent Skills-compatible clients; existing specialist skills, crea
 1. **Choose surface and owner:** Compare existing skill, targeted revision, project instructions, one-off prompt, reference, deterministic script/tool, native plugin/connector and **no new skill**. Create a new ID only for distinct reusable output, activation and acceptance boundary. Do not invent a central router, mandatory parent skill, global case registry or system service from one failure.
 2. **Source truth and alternatives:** Resolve current installed version, accepted constraints, runtime, user-private boundaries, exact candidate/source. For consequential redesign/new skill, explore plausible alternatives *before* bounded external prior art, reconcile findings, and pick smallest useful method. Keep facts, inferred conclusions and unverified claims separate.
 3. **Author the smallest usable package:** `SKILL.md` must be concise and executable: positive/negative trigger, goal, authority, main procedure, result, conditional references. Longer methods/examples → `references/`; scripts only for deterministic benefit; fixtures → `tests/`. Preserve frontmatter `name` = folder, `metadata.family` and actual versions; no third-party/private raw data in public skill. Never silently copy untrusted executable package instructions into authority.
-4. **Check and use:** Test source/refs/metadata and only material positive, negative, neighboring-owner, authority and privacy regressions. Measure STATIC, DISCOVERY, ROUTING, EXECUTION and FIELD separately; static PASS cannot prove routing. Use first in a real authorized task after proportionate checks, not a mandated comparative campaign. Same-context self-review is not independent audit.
+4. **Check and use:** Test source/refs/metadata and only material positive, negative, neighboring-owner, authority and privacy regressions. Measure STATIC, DISCOVERY, ROUTING, EXECUTION and FIELD separately; static PASS cannot prove routing. For an automatic-routing claim, require fresh-context observations of the host-selected owner and actual root/reference loading, not merely expected-owner fixtures or the model's own account. Missing host evidence remains NOT_CONFIRMED. Use first in a real authorized task after proportionate checks, not a mandated comparative campaign. Same-context self-review is not independent audit.
 5. **Deliver accurately:** Use Behavioral SemVer based on changed contract: PATCH for non-contract repair, MINOR for new compatible behavior/changed default, MAJOR for breaking after 1.x (0.x breaking → next MINOR + explicit note). Preserve old release, consumer pins, plugin identity/private overlays; update only authorized runtime, read back installed bytes. `ZIP ≠ INSTALLED`, `INSTALLED ≠ ROUTED`, `TEST PASS ≠ ACCEPTED`. Do not ship or merge to Git without authority.
 6. **Self-failure:** Recover user's active task first. Check `ROUTING`, `DELIVERY`, `COMPOSITION`, source and tool defects before editing a skill because of one output. Fix smallest evidenced cause and rerun affected regression.
 
@@ -37,7 +37,7 @@ compatibility: Agent Skills-compatible clients; existing specialist skills, crea
 - **Assess creation, owner overlap or discover skills:** `references/PD_SKILL_CHOICES.md` (original §§1–3); for nontrivial ownership `references/COMPOSITION_AND_OWNERSHIP.md`; for search/comparison `references/SKILL_EXPLORER.md`.
 - **Design new consequential mechanism/architecture or external research:** additionally `references/SOLUTION_SPACE_AND_DELIVERY.md` and `references/EXTERNAL_PRIOR_ART.md`; check external current source/alternative rather than making up prior art.
 - **Draft/change package, progressive disclosure, activation contract or taxonomy:** `references/PD_SKILL_AUTHORING.md` (original §§4–5); `references/SKILL_TAXONOMY.md` for loom-foo-owned skill releases.
-- **Verify/install/release:** `references/PD_SKILL_VERIFY_AND_RELEASE.md` (original §§6–7); `references/VERIFICATION_AND_CASES.md`; `references/PACKAGE_AND_DELIVERY.md`. For source-forwarding errors `references/FULL_SOURCE_DELIVERY.md`.
+- **Verify/install/release or assess automatic activation:** `references/PD_SKILL_VERIFY_AND_RELEASE.md` (original §§6–7); `references/VERIFICATION_AND_CASES.md` (includes optional offline host-observation evaluation); `references/PACKAGE_AND_DELIVERY.md`. For source-forwarding errors `references/FULL_SOURCE_DELIVERY.md`.
 - **Diagnose recurring failures, self-apply, or prepare exact final engineering receipt:** `references/PD_SKILL_RECOVERY.md` (original §§8–9). For cross-project historical transfer, `references/EXPERIENCE_AND_EVIDENCE.md`.
 
 ## Completion
