@@ -1,0 +1,4 @@
+interface:
+  display_name: Decision Reconciliation
+  short_description: Reconcile bounded alternatives and decision evidence
+  brand_color: '#F2B705'

@@ -1,0 +1,4 @@
+interface:
+  display_name: Project Integration
+  short_description: Prepare persistent agent projects for loom-foo
+  brand_color: '#F2B705'

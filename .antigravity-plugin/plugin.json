@@ -1,0 +1,24 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "loom-foo",
+  "displayName": "Loom-foo",
+  "description": "Clarify product ideas, improve designs, research evidence, plan work, and prepare AI-agent tasks with focused skills.",
+  "version": "0.40.0",
+  "logo": "assets/loom-foo-mark-v3.png",
+  "suggestedPrompts": [
+    "Help me turn a rough product idea into a focused concept and next steps.",
+    "Review my interface design and suggest practical UX improvements.",
+    "Help me prepare a precise task for an AI coding agent, with scope and acceptance checks."
+  ],
+  "author": {
+    "name": "Loom-foo"
+  },
+  "keywords": [
+    "agent-skills",
+    "design",
+    "research",
+    "planning",
+    "engineering",
+    "verification"
+  ]
+}

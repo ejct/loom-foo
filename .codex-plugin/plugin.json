@@ -1,0 +1,33 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "developerName": "Victor Cherniavsky",
+    "displayName": "loom-foo",
+    "longDescription": "Turn complex product ideas and messy tasks into clear decisions and usable outputs. Explore UX directions, investigate evidence, shape plans and specifications, prepare AI-agent tasks, and review results with specialized skills matched to the work.",
+    "shortDescription": "Design, research & agent work",
+    "brandColor": "#F2B705",
+    "brandColorDark": "#FFD24A",
+    "logo": "./assets/loom-foo-mark-v3.png",
+    "composerIcon": "./assets/loom-foo-mark-v3.png",
+    "defaultPrompt": [
+      "Help me turn a rough product idea into a focused concept and next steps.",
+      "Review my interface design and suggest practical UX improvements.",
+      "Help me prepare a precise task for an AI coding agent, with scope and acceptance checks."
+    ]
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/loom-foo-onboarding/SKILL.md"
+    }
+  },
+  "name": "loom-foo",
+  "version": "0.40.0",
+  "description": "Explore design, research, planning, writing and agent engineering with focused skills for clearer decisions and concrete deliverables.",
+  "author": {
+    "name": "Victor Cherniavsky",
+    "email": "alt.eject@gmail.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

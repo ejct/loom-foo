@@ -1,0 +1,4 @@
+interface:
+  display_name: Design Review
+  short_description: Critique visual and interaction design artifacts
+  brand_color: '#F2B705'

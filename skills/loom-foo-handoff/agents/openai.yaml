@@ -1,0 +1,4 @@
+interface:
+  display_name: Handoff
+  short_description: Prepare and restore operational handoffs
+  brand_color: '#F2B705'

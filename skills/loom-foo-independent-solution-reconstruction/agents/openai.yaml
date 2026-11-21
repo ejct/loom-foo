@@ -1,0 +1,4 @@
+interface:
+  display_name: Independent Solution Reconstruction
+  short_description: Reconstruct independent alternatives before comparison
+  brand_color: '#F2B705'

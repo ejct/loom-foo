@@ -1,0 +1,4 @@
+interface:
+  display_name: Link Intake
+  short_description: Inspect links and acquire source-grounded content
+  brand_color: '#F2B705'

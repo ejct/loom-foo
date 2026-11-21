@@ -1,0 +1,4 @@
+interface:
+  display_name: Loom-foo Onboarding
+  short_description: Start with a relevant Loom-foo skill and real task
+  brand_color: '#F2B705'

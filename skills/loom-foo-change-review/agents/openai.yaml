@@ -1,0 +1,4 @@
+interface:
+  display_name: Change Review
+  short_description: Review bounded code, UI and integration changes
+  brand_color: '#F2B705'

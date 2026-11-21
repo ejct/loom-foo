@@ -1,0 +1,4 @@
+interface:
+  display_name: Editorial Review
+  short_description: Review text for language, style and meaning fidelity
+  brand_color: '#F2B705'

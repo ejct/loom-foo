@@ -1,0 +1,4 @@
+interface:
+  display_name: Typography
+  short_description: Design and inspect typography across media
+  brand_color: '#F2B705'

@@ -1,0 +1,4 @@
+interface:
+  display_name: Evidence Review
+  short_description: Assess collected evidence and uncertainty
+  brand_color: '#F2B705'

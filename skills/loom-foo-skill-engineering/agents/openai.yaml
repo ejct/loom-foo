@@ -1,0 +1,4 @@
+interface:
+  display_name: Skill Engineering
+  short_description: Design and maintain reusable Agent Skills
+  brand_color: '#F2B705'

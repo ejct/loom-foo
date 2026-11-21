@@ -1,0 +1,4 @@
+interface:
+  display_name: Knowledge Retrieval
+  short_description: Retrieve evidence-grounded project knowledge
+  brand_color: '#F2B705'

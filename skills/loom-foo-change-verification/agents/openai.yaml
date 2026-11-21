@@ -1,0 +1,4 @@
+interface:
+  display_name: Change Verification
+  short_description: Verify changes against explicit acceptance criteria
+  brand_color: '#F2B705'
