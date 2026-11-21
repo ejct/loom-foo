@@ -69,6 +69,81 @@ def scan_content(name: str, raw: bytes):
         if re.search(r'(?i)(owner.private|private user context|reported missed activation on \d{4}-\d{2}-\d{2})',s):
             raise Reject(f'owner/history-specific prose: {name}')
 
+REQUIRED_PUBLIC_FILES = {
+    "README.md", "LICENSE", "PRIVACY.md", "TERMS.md", "SUPPORT.md", "SECURITY.md",
+    "SKILL_INVENTORY.json", "plugin.json", ".codex-plugin/plugin.json",
+    ".claude-plugin/plugin.json", ".antigravity-plugin/plugin.json", "gemini-extension.json",
+}
+
+def validate_complete_release(source: Path, contents: dict[str, bytes]):
+    """Ensure approved bytes also form a complete, installable Skills source package."""
+    missing = REQUIRED_PUBLIC_FILES - set(contents)
+    if missing:
+        raise Reject("INCOMPLETE_RELEASE: missing reviewed files: " + ", ".join(sorted(missing)))
+
+    try:
+        inventory = json.loads(contents["SKILL_INVENTORY.json"])
+        entries = inventory["skills"]
+        bundle_version = inventory["bundle_version"]
+        if inventory["bundle"] != "loom-foo" or not isinstance(entries, list) or not entries:
+            raise ValueError("invalid skill inventory")
+        ids = [x["id"] for x in entries]
+        if len(ids) != len(set(ids)) or not all(isinstance(x, str) for x in ids):
+            raise ValueError("duplicate/invalid Skill IDs")
+    except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        raise Reject(f"INCOMPLETE_RELEASE: invalid Skill inventory: {exc}") from exc
+
+    skills_dir = source / "skills"
+    if not skills_dir.is_dir() or skills_dir.is_symlink():
+        raise Reject("INCOMPLETE_RELEASE: missing skills root")
+    current_roots = {p.name for p in skills_dir.iterdir() if p.is_dir()}
+    if current_roots != set(ids):
+        raise Reject("INCOMPLETE_RELEASE: source Skill roots differ from inventory")
+    source_paths = set()
+    for file in skills_dir.rglob("*"):
+        if file.is_symlink():
+            raise Reject(f"INCOMPLETE_RELEASE: symlink in skills/: {file}")
+        if file.is_file():
+            rel = file.relative_to(source).as_posix()
+            safe_path(rel)
+            source_paths.add(rel)
+    if not source_paths.issubset(contents):
+        raise Reject("INCOMPLETE_SKILL_TREE: missing reviewed files: " +
+                     ", ".join(sorted(source_paths - set(contents))))
+    for name in ids:
+        if f"skills/{name}/SKILL.md" not in contents:
+            raise Reject("INCOMPLETE_RELEASE: Skill root missing: " + name)
+
+    manifests = {}
+    for rel in ("plugin.json", ".codex-plugin/plugin.json", ".claude-plugin/plugin.json",
+                ".antigravity-plugin/plugin.json", "gemini-extension.json"):
+        try:
+            manifests[rel] = json.loads(contents[rel])
+        except (ValueError, TypeError) as exc:
+            raise Reject(f"INCOMPLETE_RELEASE: invalid manifest {rel}: {exc}") from exc
+        if manifests[rel].get("name") != "loom-foo" or manifests[rel].get("version") != bundle_version:
+            raise Reject("INCOMPLETE_RELEASE: native manifest identity/version drift: " + rel)
+
+    root = manifests["plugin.json"]
+    codex = manifests[".codex-plugin/plugin.json"]
+    try:
+        openai_interface = root["extensions"]["com.openai"]["interface"]
+        codex_interface = codex["interface"]
+        logo_paths = [
+            openai_interface["logo"], openai_interface["composerIcon"],
+            codex_interface["logo"], codex_interface["composerIcon"],
+            manifests[".antigravity-plugin/plugin.json"]["logo"],
+        ]
+        if any(not isinstance(value, str) or not value.strip() for value in logo_paths):
+            raise ValueError("missing brand asset field")
+    except (KeyError, TypeError, ValueError) as exc:
+        raise Reject(f"INCOMPLETE_RELEASE: missing native brand reference: {exc}") from exc
+    for path in logo_paths:
+        rel = path.removeprefix("./")
+        safe_path(rel)
+        if rel not in contents:
+            raise Reject("MISSING_BRAND_ASSET: " + rel)
+
 def build(source:Path, index_path:Path, output:Path):
     source=source.resolve();output=output.resolve()
     if (source/'PRIVATE_BUILD_README.md').exists() or (source/'docs/OWNER_PRIVATE_GOOGLE_DRIVE_OPERATING_POLICY.md').exists():
@@ -92,6 +167,7 @@ def build(source:Path, index_path:Path, output:Path):
         contents[rel]=raw
     if 'plugin.json' not in contents and '.codex-plugin/plugin.json' not in contents:
         raise Reject('no reviewed plugin manifest')
+    validate_complete_release(source, contents)
     output.parent.mkdir(parents=True,exist_ok=True)
     if output.exists(): raise Reject('refuse to overwrite an existing release archive')
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED) as z:
