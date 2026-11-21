@@ -2,7 +2,7 @@
 
 Portable Agent Skills for design, research, product development, planning, writing, verification and agent workflows.
 
-**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.40.1**. It does not require any Core runtime, paid service or centralized agent orchestrator.
+**Status: private release candidate, not published.** The current generic distribution candidate contains **40 independently versioned Skills**; bundle candidate version **0.41.1**. It does not require any Core runtime, paid service or centralized agent orchestrator.
 
 ## What is inside
 
@@ -18,6 +18,10 @@ Portable Agent Skills for design, research, product development, planning, writi
 Choose `skills/<skill-id>/SKILL.md` for the actual task and load its conditional references only when needed. Each host has its own supported installation and discovery mechanisms; a Git checkout or passing static test does not demonstrate runtime discovery, routing or execution.
 
 The independent `foo-loom` Core project is optional and is **not** required to use these portable Skills.
+
+## Optional creative composition
+
+The 0.41.1 private candidate integrates Creative Reasoning 0.3.0 with optional, explicitly named collaboration routes for Design, Icon Design, Experience Design, Architecture Design, Drafting, Narrative Design and Proposal Refinement. These are conceptual-method links, **not required dependencies, a global dispatcher or observed agent invocations**.
 
 ## Release readiness
 

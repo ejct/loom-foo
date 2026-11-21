@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.40.1 — private candidate; not released
+## 0.41.1 — private candidate; not released
 
 - Fixed broken optional test-fixture hyperlinks in `drafting`, `editorial-review`, `narrative-design`; those three Skills move from 0.4.0 to 0.4.1, other Skill versions unchanged.
 - Removed private plugin release identity from the generic inventory and internal development checkout references from the current distribution-facing documentation.

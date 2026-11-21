@@ -7,7 +7,7 @@
 
 For non-sensitive support questions, installation problems, documentation errors, feature suggestions and bug reports, use the repository's [GitHub Issues](https://github.com/ejct/loom-foo/issues) when accessible to you.
 
-Before filing, check whether a relevant issue already exists. A useful report includes the Skill name, package version (for example `0.40.1`), host/runtime, what you expected, what happened, and minimal reproducible steps or a sanitized example.
+Before filing, check whether a relevant issue already exists. A useful report includes the Skill name, package version (for example `0.41.1`), host/runtime, what you expected, what happened, and minimal reproducible steps or a sanitized example.
 
 If you are reporting a bug, clearly separate observed behavior from assumptions. Do not describe a simulated result as a completed external action.
 

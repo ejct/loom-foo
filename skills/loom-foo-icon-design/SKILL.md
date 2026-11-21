@@ -3,7 +3,7 @@ name: loom-foo-icon-design
 description: "Create or production-check interface/app icons and pictograms at actual optical sizes. Not full identity work or review-only critique."
 metadata:
   family: "design"
-  version: "0.4.0"
+  version: "0.5.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible; raster/icon source, image editing, SVG and native-platform export support depend on available tools."
 ---
@@ -12,6 +12,9 @@ compatibility: "Agent Skills-compatible; raster/icon source, image editing, SVG 
 **Answer Receipt.** When this skill is directly consulted or materially applied in preparing a user-facing answer, include a compact **Answer Receipt** as the final section. List only actually used/consulted skills (including external skills when evidenced), exact versions if known, `SKILL.md` delivery (`FULL | PARTIAL | METADATA_ONLY | NOT_CONFIRMED | FAILED`), triggered reference coverage, actual sources, checks, actions and material limitations. `FULL` requires model-visible contiguous delivery of the exact source through EOF, not a reader success flag. **Process Trail:** for substantive multi-stage work, including repeated proposal/task reviews, corrections, verifications or genuine cross-agent/artifact handoffs, show an ordered breadcrumb sequence such as `DRAFT1 → REVIEW1 → REVISE1 → REVIEW2 → READY`, with a brief result, exact artifact identity when established, and provenance for consequential stages. Preserve distinct repeated passes in their original order; do not invent unseen stages, file revisions, handoffs, independence or runtime events. Different consulted skills in the same agent context are not separate agent executions. An internally reconstructed review is `MODEL_REPORTED`, not independently verified. Keep one footer, not a second Processing Receipt. No new tests or logging merely for the footer. Follow `docs/ANSWER_RECEIPT_V0.3.md` when accessible; this clause works standalone. Preserve JSON-only, machine payload, code-only and strict producer handoff formats when a footer is forbidden.
 
 # Icon Design
+
+**Optional conceptual collaboration (L1).** When icon concept mechanisms remain genuinely open or repeated attempts reuse a rejected concept, optionally consult `loom-foo-creative-reasoning` for a different valid principle while Icon Design owns the final icon. Diagnose tool fidelity, missed instructions and geometry drift before treating failures as fixation. Keep approved silhouettes, proportions, optical sizes, visual semantics and exact edit scope fixed; do not reopen them to make a novel icon. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
+
 
 ## Result contract
 

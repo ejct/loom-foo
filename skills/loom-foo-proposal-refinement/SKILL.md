@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. External research, connected pro
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.9.0"
+  version: "0.10.0"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->
@@ -14,6 +14,9 @@ metadata:
 **Core boundaries.** Preserve the user's actual result, current controlling sources and accepted decisions. Tool access, source possession and ability to write do **not** grant authority to mutate project state, adopt a proposal/specification/architecture, spend money, publish, merge, change permissions or disclose private data. Stop only for a real material missing authority/source/decision; continue independently safe work. Use the smallest useful artifact and proportionate evidence; neither a successful reader call nor a named method proves execution. For durable text-first work, prefer native project conventions (often Markdown), keep provenance and distinguish a draft, saved artifact, project acceptance and publication.
 
 # Proposal Refinement
+
+**Optional conceptual collaboration (L1).** When a consequential proposal remains trapped in one rejected mechanism family or its problem framing excludes credible alternatives, optionally consult `loom-foo-creative-reasoning` for a bounded reframe/divergence. Proposal Refinement keeps the final recommendation, evidence challenge and authority boundary. Ordinary proposal alternatives, reviews and settled decision execution do not require it. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
+
 
 **Owner / normal outcome.** Turn a project decision request into one useful, appropriately scrutinized proposal, without making an audit or comparative proof a precondition. Own proposals; NOT architecture-only design, a runnable agent task, or implementing accepted proposals.
 

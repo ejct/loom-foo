@@ -2,7 +2,8 @@
 
 **PRIVATE_CANDIDATE · PUBLICATION_BLOCKED**
 
-- **Candidate:** `0.40.1`, 40 portable Agent Skills and five native host manifests. Individual Skills keep independent versions.
+- **Candidate:** `0.41.1`, 40 portable Agent Skills and five native host manifests. Individual Skills keep independent versions.
+- **Composition:** incorporates the generic source-level v0.41.0 creative-composition contract while retaining local fixture-link repairs. New bundle candidate `0.41.1` is source-only and is not claimed installed, routed or published.
 - **Technical checks:** static source/inventory/manifest validation; relative Markdown links; negative package-release regression tests. CI PASS does not mean semantic/host QA PASS.
 - **Missing original brand assets:** `assets/loom-foo-mark-v2.png`, `assets/loom-foo-mark-v3.png` (v3 is referenced in native host manifests).
 - **Contact and legal review:** public author name/email, MIT provenance, third-party source/asset attributions, Privacy/Terms/Support/Security contact channels still require owner review.
