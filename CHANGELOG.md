@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.43.0 — source integration (21 November 2026; no tagged distribution)
+
+- Integrated P1–P4 skill execution reliability into generic source: host-trace comparison, source-signed task context slices, semantic saved-output readback, and permission/oracle integrity guidance.
+- Updated exact skill inventory and five host manifests while preserving 40 Skill IDs and existing public README translations.
+- Installation of a separate owner-private ChatGPT plugin is not a marketplace release or evidence of automatic host routing. P5 cross-platform smoke remains excluded.
+
+
 ## Documentation update — 21 November 2026
 
 - Reworked README around practical tasks, skill selection and direct use.

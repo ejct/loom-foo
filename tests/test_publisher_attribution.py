@@ -82,7 +82,7 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
 
     def test_bundle_version_and_skill_versions(self):
         inventory = self.manifest("SKILL_INVENTORY.json")
-        self.assertEqual("0.42.0", inventory["bundle_version"])
+        self.assertEqual("0.43.0", inventory["bundle_version"])
         self.assertEqual(40, len(inventory["skills"]))
         for rel in MANIFESTS + ("gemini-extension.json",):
             with self.subTest(manifest=rel):

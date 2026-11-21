@@ -2,11 +2,11 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.42.0",
+  "bundle_version": "0.43.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
-      "version": "0.19.1"
+      "version": "0.20.0"
     },
     {
       "id": "loom-foo-architecture-design",
@@ -22,7 +22,7 @@
     },
     {
       "id": "loom-foo-change-verification",
-      "version": "0.7.0"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-creative-reasoning",
@@ -150,7 +150,7 @@
     },
     {
       "id": "loom-foo-skill-engineering",
-      "version": "0.12.0"
+      "version": "0.13.0"
     },
     {
       "id": "loom-foo-specification-design",

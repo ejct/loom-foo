@@ -148,6 +148,14 @@ Apply the following **counterexample checks** internally, not as a new required 
 
 If a mismatch can be fixed locally, correct it before `TASK_READY`. A concrete goal-substitution issue is also an observable `GOAL_SUBSTITUTION` signal for L1 event-conditioned assurance; use multi-pass only when local correction leaves material competing requirements, dependent invariants or consequential regressions. A missing criterion alone does not justify adding review ceremony.
 
+## 5A. Conditional source-signed context slices (P2)
+
+Use a short inlined excerpt when a target executor would otherwise lose an exact acceptance condition, authority boundary or consequential edge case due to compression, or when direct source retrieval is unavailable or disproportionate. This is a selective refinement of source pointers, not a new universal Task Brief schema.
+
+For a decision-bearing excerpt preserve **source** (resolvable path/URL/provider ID plus section or acceptance ID), **identity** (commit/revision/hash when mutable drift matters), and **fidelity** (`verbatim` or `abridged`, with omitted material not silently presented as complete). The current authoritative source has precedence if the slice is stale, ambiguous, incomplete or contradicted by the observed system; where source authorities genuinely conflict, report the conflict instead of guessing.
+
+A signed excerpt documents origin, **not permission to disclose it**. First verify target-runtime reachability and the exact worker audience; use an authorized direct source or narrower staged slice over unnecessary copying. Do not force every short task to duplicate documentation or turn a mutable excerpt into an independently canonical source. When the target cannot retrieve a link, including essential exact wording is preferable to an unusable bare citation.
+
 ## 6. Compact fast path
 
 For a small, low-ambiguity, reversible local task, use the smallest sufficient brief. Usually this is issue-like prose containing:
