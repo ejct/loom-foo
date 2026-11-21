@@ -16,7 +16,7 @@ If you are reporting a bug, clearly separate observed behavior from assumptions.
 **Do not publish passwords, tokens, private files, customer data, conversation exports, internal URLs or exploit details in an issue.**
 
 - For a **security vulnerability**, consult the [Security Policy](SECURITY.md) and use GitHub's private vulnerability-reporting feature if enabled. If it is unavailable, open only a minimal non-sensitive issue asking how to establish private contact; do not post the vulnerability itself.
-- For a **privacy request**, open only a minimal issue asking for a private contact route. Do not include identifying or sensitive information in public.
+- For a **privacy request**, open only a minimal, non-sensitive issue requesting a private contact route, or use a project-specific contact method once it has been explicitly published. A dedicated private privacy contact channel is not yet verified; do not include identifying or sensitive information in a public issue.
 - For content held by **ChatGPT, GitHub or a third-party connector**, use that provider's support and privacy controls; the loom-foo maintainer cannot access or delete their internal account data.
 
 ## Scope of support

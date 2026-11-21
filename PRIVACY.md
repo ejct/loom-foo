@@ -2,7 +2,7 @@
 
 **Last updated:** 21 November 2026  
 **Applies to:** the generic, distributable `loom-foo` Agent Skills package (initial release baseline v0.41.1)  
-**Project maintainer:** Victor Cherniavsky (`ejct` on GitHub)
+**Project maintainer:** `ejct` (GitHub account; https://github.com/ejct)
 
 ## 1. Scope
 

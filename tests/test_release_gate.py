@@ -31,8 +31,8 @@ class PublicReleaseBoundaryTests(unittest.TestCase):
         self.write("skills/loom-foo-test/SKILL.md",
                    "---\nname: loom-foo-test\ndescription: Synthetic test fixture\n"
                    "metadata:\n  version: '0.0.0'\n---\n\nTest body\n")
-        for name in ("README.md", "LICENSE", "PRIVACY.md", "TERMS.md",
-                     "SUPPORT.md", "SECURITY.md"):
+        for name in ("README.md", "LICENSE", "PUBLISHER.md", "ATTRIBUTION.md",
+                     "PRIVACY.md", "TERMS.md", "SUPPORT.md", "SECURITY.md"):
             self.write(name, "synthetic " + name + "\n")
 
         logo = "./assets/loom-foo-mark-v3.png"
@@ -115,6 +115,16 @@ class PublicReleaseBoundaryTests(unittest.TestCase):
                    '{"name":"loom-foo","version":"99.0.0"}')
         self.index_with()
         with self.assertRaisesRegex(gate.Reject, "manifest identity/version drift"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_missing_attribution_rejected(self):
+        self.index_with(entries=[p for p in self.files() if p != "ATTRIBUTION.md"])
+        with self.assertRaisesRegex(gate.Reject, "INCOMPLETE_RELEASE"):
+            gate.build(self.source, self.index, self.output)
+
+    def test_missing_publisher_rejected(self):
+        self.index_with(entries=[p for p in self.files() if p != "PUBLISHER.md"])
+        with self.assertRaisesRegex(gate.Reject, "INCOMPLETE_RELEASE"):
             gate.build(self.source, self.index, self.output)
 
     def test_missing_terms_rejected(self):

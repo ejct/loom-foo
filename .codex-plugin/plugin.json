@@ -2,7 +2,7 @@
   "interface": {
     "capabilities": [],
     "category": "Productivity",
-    "developerName": "Victor Cherniavsky",
+    "developerName": "ejct",
     "displayName": "loom-foo",
     "longDescription": "Turn complex product ideas and messy tasks into clear decisions and usable outputs. Explore UX directions, investigate evidence, shape plans and specifications, prepare AI-agent tasks, and review results with specialized skills matched to the work.",
     "shortDescription": "Design, research & agent work",
@@ -25,8 +25,8 @@
   "version": "0.41.1",
   "description": "Explore design, research, planning, writing and agent engineering with focused skills for clearer decisions and concrete deliverables.",
   "author": {
-    "name": "Victor Cherniavsky",
-    "email": "alt.eject@gmail.com"
+    "name": "ejct",
+    "url": "https://github.com/ejct"
   },
   "keywords": [],
   "skills": "./skills"
