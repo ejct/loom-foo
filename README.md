@@ -1,8 +1,8 @@
-# loom-foo
-
-**Language:** English · [Українська](README.uk.md)
+# loom-foo · v0.50.1
 
 **Focused Agent Skills for design, research, product development, writing, and agent workflows.**
+
+**Language:** English · [Українська](README.uk.md)
 
 Explore a product idea. Improve an interface. Investigate evidence. Plan a change. Brief a coding agent. Check what it actually delivered.
 
@@ -89,7 +89,7 @@ Individual skills have their own versions, separate from the bundle version.
 
 ## Status and limitations
 
-**Public source preview, bundle source candidate 0.46.0.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation. The current candidate is **not cleared for publication** as a tagged or marketplace distribution; public source visibility does not constitute release approval.
+**Public source preview, bundle source candidate 0.50.1.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation. The current candidate is **not cleared for publication** as a tagged or marketplace distribution; public source visibility does not constitute release approval.
 
 Skills are methods for AI agents, not guarantees of correctness. Actual selection, tool use, and verification depend on your AI host and its permissions. A passing static test does not prove that a host selected or executed a skill.
 
