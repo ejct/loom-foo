@@ -2,7 +2,7 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.47.0",
+  "bundle_version": "0.50.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",

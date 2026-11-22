@@ -1,5 +1,12 @@
 # Changelog
 
+## Generic source 0.50.0 — 2026-11-22 (VERSION CORRECTION; SOURCE PREVIEW)
+
+- Corrected the unauthorized `0.47.0` generic bundle version assignment to **0.50.0 / 42 Skills**, matching the already-installed owner-private ChatGPT plugin's bundle label. The portable Skill contracts and individual versions are unchanged.
+- Fixed duplicate GitHub workflow notifications: `validate` now runs on PR into `main` and `push` to `main`, with cancellation of obsolete runs for the same PR/ref; no simultaneous work-branch push and PR validations.
+- Existing generic content and owner-private installed package are not byte-identical: private Knowledge profiles/assets are excluded and some independently maintained generic Skill patch versions differ. No marketplace publication, public tagged release, consumer pin migration or installation has occurred.
+
+
 ## Generic source 0.47.0 — 2026-11-22 (SOURCE PREVIEW, NOT RELEASED)
 
 - Reconciled the verified installed owner-private ChatGPT 0.50.0 into **42 public-safe portable Skills**, following ChatGPT-first delivery order. Installed plugin and source bundle remain independently versioned.
