@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.46.0 — source integration (22 November 2026; no tagged distribution)
+
+- Updated `loom-foo-project-integration` from 0.4.1 to 0.5.0 with explicit partial-setup diagnosis, safe repair preflight and project-local continuation semantics.
+- Added `PROJECT_STATE_RECOVERY.md`, refined authorized setup/Codex handoff references, and development-only static and expected-behavior fixtures.
+- Preserved immutable Core pins, existing authority boundaries and original task priority. This is generic source only; no tagged distribution, automatic routing or runtime Core validation is claimed.
+
+
 ## 0.45.0 — source integration (22 November 2026; no tagged distribution)
 
 - Updated `loom-foo-onboarding` 0.3.0, `loom-foo-execution-inspector` 0.4.0, `loom-foo-identity-design` 0.5.0, and `loom-foo-graphic-design` 0.5.0 with matching conditional references and generic development tests.
