@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "kind": "expected_dispositions_not_behavioral_results",
+  "cases": [
+    {
+      "id": "D1",
+      "input": "A final answer says SKILL.md was read FULL; visible forwarded output ends halfway through the file.",
+      "expected": "PARTIAL",
+      "rationale": "Known contiguous delivery gap"
+    },
+    {
+      "id": "D2",
+      "input": "A tool reports successful fetch of 30k bytes; downstream source forwarding/model reception is unknown.",
+      "expected": "NOT_CONFIRMED",
+      "rationale": "Fetch is not model delivery"
+    },
+    {
+      "id": "D3",
+      "input": "The only visible evidence is the skill description and version in a catalog.",
+      "expected": "METADATA_ONLY",
+      "rationale": "No root body read"
+    },
+    {
+      "id": "D4",
+      "input": "Answer says six tests passed; supplied partial trace has no test run output.",
+      "expected": "UNVERIFIED",
+      "rationale": "Absence of run in partial trace is not NOT_RUN"
+    },
+    {
+      "id": "D5",
+      "input": "A complete trusted trace explicitly records tests were skipped.",
+      "expected": "NOT_RUN",
+      "rationale": "Positive scoped negative evidence"
+    },
+    {
+      "id": "D6",
+      "input": "A test on SHA A passed but the claimed delivered artifact is SHA B.",
+      "expected": "NOT_COVERED",
+      "rationale": "The run did not verify exact claimed candidate"
+    },
+    {
+      "id": "D7",
+      "input": "Two REVIEW steps are named in one model response with no other actor.",
+      "expected": "SAME_CONTEXT",
+      "rationale": "Role headings do not create independent execution"
+    },
+    {
+      "id": "D8",
+      "input": "A packaging command generated a ZIP and the report says the plugin is installed.",
+      "expected": "UNVERIFIED",
+      "rationale": "ZIP is not installation evidence"
+    },
+    {
+      "id": "D9",
+      "input": "A tool directly returns success and exact destination for file upload; no independent readback.",
+      "expected": "PASS_SCOPED_UPLOAD_ONLY",
+      "rationale": "Only write action supported, not broader deployment/readback"
+    },
+    {
+      "id": "D10",
+      "input": "Agent says no regressions and provided evidence supports all checked claims.",
+      "expected": "NO_MATERIAL_MISMATCH_FOUND",
+      "rationale": "Do not fabricate criticism"
+    }
+  ]
+}

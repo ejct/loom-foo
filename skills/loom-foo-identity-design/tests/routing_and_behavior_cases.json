@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "kind": "proposed_oracle_not_execution_observation",
+    "version": "0.5.0",
+    "base_version": "0.4.0"
+  },
+  "cases": [
+    {
+      "id": "I1",
+      "prompt": "Візьми затверджений логотип: посунь центр спіралі лівіше, але залиш ці самі літери й шрифт.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "latest approved baseline",
+        "PRESERVE glyphs",
+        "CHANGE center only",
+        "compare result"
+      ]
+    },
+    {
+      "id": "I2",
+      "prompt": "Зроби цілісну двомовну айдентику нового бренду з логотипом, типографікою і палітрою.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "new identity system",
+        "not just a preview",
+        "scripts and use cases"
+      ]
+    },
+    {
+      "id": "I3",
+      "prompt": "На нашому старому логотипі лише збільш відстань між літерами; інші виправлення вже затверджені.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "cumulative acceptance",
+        "no concept restart",
+        "controlled edit"
+      ]
+    },
+    {
+      "id": "I4",
+      "prompt": "Відтворити мою затверджену векторну монограму лише із JPG, з абсолютно тими самими кривими.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "no exact vector fidelity claim from JPG",
+        "approximation or scoped blocker"
+      ]
+    },
+    {
+      "id": "I5",
+      "prompt": "Намалюй набір 12 toolbar icons для аплікації.",
+      "owner": "loom-foo-icon-design",
+      "expect": [
+        "do not intercept"
+      ]
+    },
+    {
+      "id": "I6",
+      "prompt": "Мені треба лише підібрати шрифт для тексту на лендингу, без змін айдентики.",
+      "owner": "loom-foo-typography",
+      "expect": [
+        "do not intercept"
+      ]
+    },
+    {
+      "id": "I7",
+      "prompt": "Оціни два готові логотипи і нічого не змінюй.",
+      "owner": "loom-foo-design-review",
+      "expect": [
+        "review only"
+      ]
+    },
+    {
+      "id": "I8",
+      "prompt": "Зроби рекламний постер за моїм бренд-гайдом; логотип залиш без змін.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "do not redesign mark"
+      ]
+    },
+    {
+      "id": "I9",
+      "prompt": "Після останньої ітерації зміни лише колір знака, збережи форму і вже прийнятий кернінг.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "updated dimension only",
+        "preserve all prior accepted decisions"
+      ]
+    },
+    {
+      "id": "I10",
+      "prompt": "Перенеси фірмовий знак у вектор точно як затверджено, але в мене немає початкового файла і шрифту.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "state source limitation",
+        "no invented exact match"
+      ]
+    }
+  ]
+}

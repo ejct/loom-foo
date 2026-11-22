@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.45.0 — source integration (22 November 2026; no tagged distribution)
+
+- Updated `loom-foo-onboarding` 0.3.0, `loom-foo-execution-inspector` 0.4.0, `loom-foo-identity-design` 0.5.0, and `loom-foo-graphic-design` 0.5.0 with matching conditional references and generic development tests.
+- Extended first-use guidance, evidence-grounded retrospective inspection, controlled visual identity and graphic revisions; preserved sibling skill ownership, source confidentiality and runtime authority boundaries.
+- Kept public generic source separate from the owner-private ChatGPT plugin; public distribution remains blocked pending independent release gates. No automatic host routing, external production verification or tagged release is claimed.
+
+
 ## Maintainer clarification — 22 November 2026 (no bundle version bump)
 
 - Recorded owner confirmation that the prior product name describes the same project; current MIT attribution is not blocked by the rename alone.

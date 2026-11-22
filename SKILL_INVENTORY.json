@@ -2,7 +2,7 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.44.0",
+  "bundle_version": "0.45.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
@@ -70,7 +70,7 @@
     },
     {
       "id": "loom-foo-execution-inspector",
-      "version": "0.3.0"
+      "version": "0.4.0"
     },
     {
       "id": "loom-foo-experience-design",
@@ -82,7 +82,7 @@
     },
     {
       "id": "loom-foo-graphic-design",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-handoff",
@@ -94,7 +94,7 @@
     },
     {
       "id": "loom-foo-identity-design",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-independent-solution-reconstruction",
@@ -122,7 +122,7 @@
     },
     {
       "id": "loom-foo-onboarding",
-      "version": "0.2.0"
+      "version": "0.3.0"
     },
     {
       "id": "loom-foo-problem-understanding",
