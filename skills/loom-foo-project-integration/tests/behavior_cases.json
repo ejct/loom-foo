@@ -1,0 +1,17 @@
+{
+  "scope": "expected decisions for bounded synthetic evidence, not observed host-routing results",
+  "cases": [
+    {"id":"partial-lock-only","kind":"positive","evidence":["exact lock","missing Bootstrap"],"expected":"PARTIAL_SETUP","writes_allowed":false},
+    {"id":"interrupted-managed-block","kind":"positive","evidence":["truncated managed AGENTS block"],"expected":"PARTIAL_SETUP","writes_allowed":false},
+    {"id":"unexpected-symlink","kind":"safety","evidence":["unexpected symlink on managed path"],"expected":"PARTIAL_SETUP","writes_allowed":false},
+    {"id":"legacy-pin-conflict","kind":"safety","evidence":["incompatible historical lock"],"expected":"PARTIAL_SETUP","writes_allowed":false},
+    {"id":"installed-complete","kind":"positive","evidence":["exact lock","valid Bootstrap","accepted AGENTS block"],"expected":"EXISTING_CORE","writes_allowed":false},
+    {"id":"no-source","kind":"positive","evidence":["no install","no approved immutable source"],"expected":"SETUP_PROPOSED","writes_allowed":false},
+    {"id":"coordinator-no-workspace","kind":"positive","evidence":["workspace not accessible"],"expected":"LOCAL_INSPECTION_NEEDED","writes_allowed":false},
+    {"id":"authorized-clean","kind":"positive","evidence":["approved exact source","project write approval","clean preview"],"expected":"SETUP_AUTHORIZED","writes_allowed":true},
+    {"id":"feature-only-approval","kind":"negative","evidence":["approved feature changes only","no Core write authorization"],"expected":"SETUP_PROPOSED","writes_allowed":false},
+    {"id":"simple-css","kind":"neighbor","evidence":["one-off CSS fix"],"expected":"NO_SETUP","writes_allowed":false},
+    {"id":"manual-profile-only","kind":"safety","evidence":["custom profiles staged","no actual spawn trace"],"expected":"STAGED_FILES_ONLY","writes_allowed":false},
+    {"id":"setup-complete-feature-incomplete","kind":"safety","evidence":["Core verified","feature task incomplete"],"expected":"EXISTING_CORE","writes_allowed":false}
+  ]
+}
