@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "kind": "expected_owner_fixtures_not_host_results",
+  "cases": [
+    {
+      "id": "P1",
+      "prompt": "Inspect this agent run and tell me which tools really executed and whether the tests passed.",
+      "expected_owner": "loom-foo-execution-inspector",
+      "reason": "Retrospective claimed execution"
+    },
+    {
+      "id": "P2",
+      "prompt": "Audit this execution receipt against the tool log and identify unsupported claims.",
+      "expected_owner": "loom-foo-execution-inspector",
+      "reason": "Receipt provenance"
+    },
+    {
+      "id": "P3",
+      "prompt": "A second agent supposedly reviewed this change. Check whether the trace shows a separate reviewer.",
+      "expected_owner": "loom-foo-execution-inspector",
+      "reason": "Observed actor identity"
+    },
+    {
+      "id": "P4",
+      "prompt": "Can you verify whether the package was actually installed or merely zipped? Here is the run trace.",
+      "expected_owner": "loom-foo-execution-inspector",
+      "reason": "Delivery state audit"
+    },
+    {
+      "id": "N1",
+      "prompt": "Please run the unit tests for this new code and fix any failures.",
+      "expected_owner": "loom-foo-change-verification",
+      "reason": "New tests, not retrospective inspection"
+    },
+    {
+      "id": "N2",
+      "prompt": "Improve this onboarding page design and produce an updated layout.",
+      "expected_owner": "loom-foo-experience-design",
+      "reason": "Design production"
+    },
+    {
+      "id": "N3",
+      "prompt": "Write an ordinary final answer with a brief record of which sources you used.",
+      "expected_owner": "none",
+      "reason": "Answer receipt should be local to owner"
+    },
+    {
+      "id": "N4",
+      "prompt": "I have a single suspicious statement in this summary; check whether it has a source.",
+      "expected_owner": "loom-foo-sanity-check",
+      "reason": "Isolated judgment warning"
+    },
+    {
+      "id": "N5",
+      "prompt": "Restore the last coding session handoff and continue the task.",
+      "expected_owner": "loom-foo-handoff",
+      "reason": "Handoff restoration"
+    },
+    {
+      "id": "N6",
+      "prompt": "Review the changed source file for defects and side effects.",
+      "expected_owner": "loom-foo-change-review",
+      "reason": "Code change assessment"
+    }
+  ]
+}

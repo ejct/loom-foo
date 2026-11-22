@@ -6,7 +6,8 @@ As of 22 November 2026, `ejct/loom-foo` is publicly accessible. This is a **sour
 
 ## Current state
 
-- `main`: source candidate **0.44.0**, 41 independently versioned Agent Skills and five native host manifests.
+- `main`: source candidate **0.45.0**, 41 independently versioned Agent Skills and five native host manifests.
+- Onboarding 0.3.0, Execution Inspector 0.4.0, Identity Design 0.5.0 and Graphic Design 0.5.0 are integrated as generic source changes; runtime activation remains unverified.
 - Email Intake 0.8.0 adds read-only correspondence reconstruction, with Link Intake 0.8.0 native email-link handoff; only source, not an installed plugin.
 - P1–P4 execution reliability source changes are integrated: routing-observation comparison, source-signed context slices, semantic delivery readback, and host-permission/oracle integrity guidance. Static and synthetic checks do not prove host routing or enforcement.
 - Owner-private ChatGPT plugin releases are managed independently and can advance ahead of this generic source. Owner-specific profiles and assets are excluded from this repository; matching version labels do not establish byte parity. A private plugin installation is not a public distribution.

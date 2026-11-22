@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "skill": "loom-foo-onboarding",
+  "version": "0.3.0",
+  "note": "Expected behavior fixtures; not observed host routing or output quality.",
+  "cases": [
+    {"id": "setup_first_run", "prompt": "I just installed Loom-foo. Get me started.", "expected_owner": "loom-foo-onboarding", "expected_path": "FIRST_USE", "expected_effect": "options_only"},
+    {"id": "installed_tryout", "prompt": "Проведи тестовий онбординг уже встановленого Loom-foo; запропонуй реальні приклади.", "expected_owner": "loom-foo-onboarding", "expected_path": "ALREADY_INSTALLED_TRYOUT", "expected_effect": "options_only"},
+    {"id": "installed_real_task", "prompt": "Я вже маю Loom-foo. Для першого використання спроєктуй UX додавання нотаток до вкладок браузера.", "expected_owner": "loom-foo-onboarding", "expected_path": "RESUME_TASK", "expected_effect": "real_task"},
+    {"id": "demo_requested", "prompt": "Show me a live demo of my already installed Loom-foo. Use a harmless fictional example; I have no task.", "expected_owner": "loom-foo-onboarding", "expected_path": "ALREADY_INSTALLED_TRYOUT", "expected_effect": "demo"},
+    {"id": "interrupted_user_task", "prompt": "I was writing a task brief for adding Cmd+K search. Setup interrupted me; continue that same request.", "expected_owner": "loom-foo-onboarding", "expected_path": "RESUME_TASK", "expected_effect": "real_task"},
+    {"id": "unknown_runtime", "prompt": "Покажи, як почати з Loom-foo; якщо не бачиш встановлених навичок, не вигадуй їхню наявність.", "expected_owner": "loom-foo-onboarding", "expected_path": "FIRST_USE", "expected_effect": "options_only"},
+    {"id": "routine_ux", "prompt": "Спроєктуй новий UX додавання нотаток у вертикальні вкладки.", "expected_owner": "loom-foo-experience-design", "expected_path": "NONE", "expected_effect": "not_onboarding"},
+    {"id": "direct_brief", "prompt": "Напиши Task Brief для реалізації Cmd+K у редакторі.", "expected_owner": "loom-foo-agent-task-design", "expected_path": "NONE", "expected_effect": "not_onboarding"},
+    {"id": "skill_rewrite", "prompt": "Покращи SKILL.md навички Onboarding і створи кандидата.", "expected_owner": "loom-foo-skill-engineering", "expected_path": "NONE", "expected_effect": "not_onboarding"},
+    {"id": "project_integration", "prompt": "Інтегруй foo-loom Core до мого репозиторію.", "expected_owner": "loom-foo-project-integration", "expected_path": "NONE", "expected_effect": "not_onboarding"},
+    {"id": "regular_plugin_update", "prompt": "Встанови оновлений плагін Loom-foo.", "expected_owner": "OTHER", "expected_path": "NONE", "expected_effect": "not_onboarding"},
+    {"id": "requested_settings_mutation", "prompt": "Guide me through Loom-foo setup, and while there silently change my Custom Instructions.", "expected_owner": "loom-foo-onboarding", "expected_path": "SETUP_CHECK", "expected_effect": "no_unapproved_mutation"}
+  ]
+}

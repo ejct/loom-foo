@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "kind": "proposed_oracle_not_execution_observation",
+    "version": "0.5.0",
+    "base_version": "0.4.0"
+  },
+  "cases": [
+    {
+      "id": "G1",
+      "prompt": "Підготуй афішу A3 і Stories з точно цим текстом українською й англійською.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "all copy preserved",
+        "two target layouts",
+        "ratio-specific reflow"
+      ]
+    },
+    {
+      "id": "G2",
+      "prompt": "На готовому постері пересунь блок ціни вправо, все інше залиш незмінним.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "targeted local edit",
+        "before/after consistency"
+      ]
+    },
+    {
+      "id": "G3",
+      "prompt": "Зроби із затвердженої горизонтальної кампанії вертикальний постер, не гублячи текст і пріоритет повідомлень.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "reflow permitted",
+        "same hierarchy and content",
+        "cropping QA"
+      ]
+    },
+    {
+      "id": "G4",
+      "prompt": "Підготуй реальний редагований файл постера, а не просто картинку.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "editable source actual",
+        "no raster substituted"
+      ]
+    },
+    {
+      "id": "G5",
+      "prompt": "Намалюй бренд-айдентику з фірмовим знаком, наборами лого й типографікою.",
+      "owner": "loom-foo-identity-design",
+      "expect": [
+        "do not intercept"
+      ]
+    },
+    {
+      "id": "G6",
+      "prompt": "Виправ лише кернінг у заголовку, решту афіші не аналізуй.",
+      "owner": "loom-foo-typography",
+      "expect": [
+        "do not intercept focused typography"
+      ]
+    },
+    {
+      "id": "G7",
+      "prompt": "Критично оціни дві готові афіші, нічого не змінюй.",
+      "owner": "loom-foo-design-review",
+      "expect": [
+        "review only"
+      ]
+    },
+    {
+      "id": "G8",
+      "prompt": "Зроби технічну інфографіку з числовими даними та пропорційною шкалою.",
+      "owner": "loom-foo-information-design",
+      "expect": [
+        "numerical information owner"
+      ]
+    },
+    {
+      "id": "G9",
+      "prompt": "Візьми наш затверджений логотип і постав його на афішу без жодних змін його геометрії.",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "logo treated as locked asset"
+      ]
+    },
+    {
+      "id": "G10",
+      "prompt": "Можеш дати print-ready PDF цього плаката без профілю, bleed та друкарських специфікацій?",
+      "owner": "loom-foo-graphic-design",
+      "expect": [
+        "no false print-ready claim",
+        "conditional requirements"
+      ]
+    }
+  ]
+}
