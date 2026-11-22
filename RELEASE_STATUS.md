@@ -6,12 +6,12 @@ As of 22 November 2026, `ejct/loom-foo` is publicly accessible. This is a **sour
 
 ## Current state
 
-- `main`: source candidate **0.47.0**, 42 independently versioned Agent Skills and five native host manifests.
+- `main`: source candidate **0.50.0**, 42 independently versioned Agent Skills and five native host manifests.
 - Project Integration 0.5.0 adds partial setup detection and guarded recovery; actual local Core repair remains unverified.
 - Onboarding 0.3.0, Execution Inspector 0.4.0, Identity Design 0.5.0 and Graphic Design 0.5.0 are integrated as generic source changes; runtime activation remains unverified.
 - Generic Email Intake 0.9.0 adds a caller-owned recurring-monitor evidence composition; Link Intake 0.8.0 remains independently versioned. New UX Writing 0.2.0 owns in-product copy and content-design decisions. These sources were reconciled from an independently installed owner-private ChatGPT plugin; no public package or host-routing guarantee follows.
 - P1–P4 execution reliability source changes are integrated: routing-observation comparison, source-signed context slices, semantic delivery readback, and host-permission/oracle integrity guidance. Static and synthetic checks do not prove host routing or enforcement.
-- Owner-private ChatGPT plugin releases are installed and managed independently; the ChatGPT-first update was already installed before this generic-source synchronization. Subsequent releases may advance separately. Owner-specific profiles and assets are excluded from this repository; matching version labels do not establish byte parity. A private plugin installation is not a public distribution.
+- The owner-private ChatGPT plugin was installed at **0.50.0 / 42 Skills** before this portable source version correction; both now intentionally use the **0.50.0 bundle label**. The public repository remains a *portable generic subset*: it retains separately maintained Skill patch versions and excludes owner-only Knowledge profiles and binary assets. **Equal version labels do not assert identical source bytes or installed runtime behavior.** A private plugin installation is not a public distribution.
 - GitHub Issues is available for non-sensitive support; no confidential reporting channel has been verified.
 - There are **no published GitHub Releases** as of this status check.
 
