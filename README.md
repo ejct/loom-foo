@@ -6,7 +6,7 @@
 
 Explore a product idea. Improve an interface. Investigate evidence. Plan a change. Brief a coding agent. Check what it actually delivered.
 
-**loom-foo** brings together **40 portable Agent Skills**. Each skill defines when it is useful, how to approach its kind of problem, what to produce, and which boundaries to respect. Use one skill when one is enough, or combine complementary skills when a task requires it.
+**loom-foo** brings together **41 portable Agent Skills**. Each skill defines when it is useful, how to approach its kind of problem, what to produce, and which boundaries to respect. Use one skill when one is enough, or combine complementary skills when a task requires it.
 
 ## Start with a real task
 
@@ -35,9 +35,9 @@ You don't need to memorize skill names. A client with supported skill discovery 
 | **Decisions & planning** | [Problem Understanding](skills/loom-foo-problem-understanding/SKILL.md) · [Decision Reconciliation](skills/loom-foo-decision-reconciliation/SKILL.md) · [Project Planning](skills/loom-foo-project-planning/SKILL.md) | Clearer problems, reasoned decisions, actionable plans |
 | **Engineering & agent work** | [Architecture Design](skills/loom-foo-architecture-design/SKILL.md) · [Agent Task Design](skills/loom-foo-agent-task-design/SKILL.md) · [Change Verification](skills/loom-foo-change-verification/SKILL.md) | Architecture options, agent task briefs, evidence-based verification |
 | **Writing & communication** | [Drafting](skills/loom-foo-drafting/SKILL.md) · [Narrative Design](skills/loom-foo-narrative-design/SKILL.md) · [Editorial Review](skills/loom-foo-editorial-review/SKILL.md) | Useful drafts, stronger arguments, targeted revisions |
-| **Knowledge & continuity** | [Knowledge Retrieval](skills/loom-foo-knowledge-retrieval/SKILL.md) · [Handoff](skills/loom-foo-handoff/SKILL.md) · [Execution Inspector](skills/loom-foo-execution-inspector/SKILL.md) | Source-grounded context, durable handoffs, checks of claimed work |
+| **Knowledge & continuity** | [Knowledge Retrieval](skills/loom-foo-knowledge-retrieval/SKILL.md) · [Email Intake](skills/loom-foo-email-intake/SKILL.md) · [Handoff](skills/loom-foo-handoff/SKILL.md) · [Execution Inspector](skills/loom-foo-execution-inspector/SKILL.md) | Source-grounded context, durable handoffs, checks of claimed work |
 
-Other skills cover creative reasoning, visual identity, icons, typography, design systems, cross-context transfer, failure learning, skill engineering, and more. Browse [all 40 skills](skills/) or their exact versions in [SKILL_INVENTORY.json](SKILL_INVENTORY.json).
+Other skills cover creative reasoning, visual identity, icons, typography, design systems, cross-context transfer, failure learning, skill engineering, and more. Browse [all 41 skills](skills/) or their exact versions in [SKILL_INVENTORY.json](SKILL_INVENTORY.json).
 
 ## How the skills work
 
@@ -89,7 +89,7 @@ Individual skills have their own versions, separate from the bundle version.
 
 ## Status and limitations
 
-**Public source preview, bundle source candidate 0.43.0.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation. The current candidate is **not cleared for publication** as a tagged or marketplace distribution; public source visibility does not constitute release approval.
+**Public source preview, bundle source candidate 0.44.0.** The repository is publicly readable, but no tagged public distribution or marketplace release has been published. Release preparation, Git-history confidentiality and host compatibility are documented in [Release Status](RELEASE_STATUS.md). The source checkout is not a validated plugin installation. The current candidate is **not cleared for publication** as a tagged or marketplace distribution; public source visibility does not constitute release approval.
 
 Skills are methods for AI agents, not guarantees of correctness. Actual selection, tool use, and verification depend on your AI host and its permissions. A passing static test does not prove that a host selected or executed a skill.
 

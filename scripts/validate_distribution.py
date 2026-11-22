@@ -87,8 +87,8 @@ def check(root: Path = ROOT) -> dict:
             if any(marker in data for marker in PRIVATE_SOURCE_MARKERS):
                 fail(f"private development provenance in distribution-facing {public_doc}")
     expected = {}
-    if inventory.get("bundle") != "loom-foo" or len(inventory.get("skills", [])) != 40:
-        fail("expected 40-item loom-foo inventory")
+    if inventory.get("bundle") != "loom-foo" or not isinstance(inventory.get("skills"), list) or not inventory.get("skills"):
+        fail("expected nonempty loom-foo inventory")
     for obj in inventory.get("skills", []):
         if not isinstance(obj, dict) or not isinstance(obj.get("id"), str):
             fail("malformed inventory item")

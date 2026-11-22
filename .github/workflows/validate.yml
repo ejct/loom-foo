@@ -19,3 +19,5 @@ jobs:
         run: python scripts/validate_distribution.py
       - name: Verify fail-closed release builder
         run: python -m unittest discover -s tests -v
+      - name: Check email intake source package
+        run: python skills/loom-foo-email-intake/tests/test_static.py
