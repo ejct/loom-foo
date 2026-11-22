@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.44.0 — source integration (22 November 2026; no tagged distribution)
+
+- Added `loom-foo-email-intake` 0.8.0: read-only mailbox evidence, episode reconstruction, deltas, optional Gmail and security references; anonymized predecessor-method lineage.
+- Updated `loom-foo-link-intake` to 0.8.0 with email-link routing to the specialized intake owner, preserving generic bare-link behavior.
+- Updated 41-item inventory, five host manifest versions, both README languages and source validation to avoid stale hard-coded skill counts.
+- Source-only integration. No public distribution clearance, private plugin installation, consumer migration or measured automatic routing is implied.
+
 ## Documentation and confidentiality follow-up — 22 November 2026 (no bundle bump)
 
 - Reconciled generic source policies and replaced stale v0.42.0 baseline statements with inventory-based source identity.

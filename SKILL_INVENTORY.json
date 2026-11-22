@@ -2,7 +2,7 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.43.0",
+  "bundle_version": "0.44.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
@@ -55,6 +55,10 @@
     {
       "id": "loom-foo-editorial-review",
       "version": "0.4.1"
+    },
+    {
+      "id": "loom-foo-email-intake",
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-evidence-acquisition",
@@ -110,7 +114,7 @@
     },
     {
       "id": "loom-foo-link-intake",
-      "version": "0.7.0"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-narrative-design",

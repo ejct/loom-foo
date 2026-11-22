@@ -82,8 +82,8 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
 
     def test_bundle_version_and_skill_versions(self):
         inventory = self.manifest("SKILL_INVENTORY.json")
-        self.assertEqual("0.43.0", inventory["bundle_version"])
-        self.assertEqual(40, len(inventory["skills"]))
+        self.assertEqual("0.44.0", inventory["bundle_version"])
+        self.assertEqual({x["id"] for x in inventory["skills"]}, {p.name for p in (ROOT / "skills").iterdir() if p.is_dir()})
         for rel in MANIFESTS + ("gemini-extension.json",):
             with self.subTest(manifest=rel):
                 self.assertEqual(inventory["bundle_version"], self.manifest(rel)["version"])

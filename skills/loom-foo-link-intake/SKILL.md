@@ -4,7 +4,7 @@ description: "Retrieve content behind a bare URL or supplied video, playlist, Gi
 compatibility: "Agent Skills clients with a browsing/retrieval tool; optional connected transcript providers, source connectors and ASR. No fixed paid service, API key or core runtime required."
 metadata:
   family: "knowledge"
-  version: "0.7.0"
+  version: "0.8.0"
   project: "loom-foo"
 ---
 
@@ -27,6 +27,7 @@ metadata:
 
 - **Trigger:** bare HTTP(S) link; explicit "поглянь на це посилання", "що у відео?", "розбери цей YouTube", "summarize this URL", or failed link ingestion recovery. Trigger when a substantive requested analysis requires first acquiring content from a linked source, even if a domain specialist owns the subsequent analysis.
 - **Not primary owner:** an existing transcript/body supplied in full (analyze directly); general research without a supplied link; speech-to-text processing (`loom-foo-audio-transcription`, EXTERNAL and usable only when separately installed); evidence adjudication (`loom-foo-evidence-review`); user-requested knowledge intake (`loom-foo-knowledge-intake`, read-only candidate preparation; canonical persistence requires its owner); or operative GitHub mutations (`loom-foo-github-operations`, EXTERNAL). If an external owner is absent, state that exact limit and do not simulate its execution. Source-native connectors take precedence for private documents.
+- **Email sources:** For a private Gmail/Outlook message URL, identify the email referent through an authorized native connector, never a public webpage fetch. `loom-foo-email-intake` owns message/thread/real-world episode reconstruction when available; this skill retains generic bare-link identification. An explicit email-history question normally selects Email Intake directly. A named handoff is not proof the sibling was loaded.
 - **Composition:** acquire the source and pass a bounded Source Intake to the task's specialist without demanding a second user message. For material named-project handoffs, pass the verified current project identity, authority source/coverage and any current knowledge-retrieval receipt so downstream specialists can reuse this context without duplicate reads. Skills are independently loaded; a reference to another skill does not prove it ran. Use a fallback when the preferred specialist isn't available.
 
 ## 1. Bind the actual referent and request
