@@ -1,6 +1,6 @@
 # Attribution and source licensing
 
-**Scope:** public, unreleased generic `loom-foo` source candidate. This file does not certify that all copyright interests have been assigned to any single publisher.
+**Scope:** public, unreleased generic `loom-foo` source candidate. The owner-confirmed rename does not itself imply a transfer of intellectual-property rights; external contributions require their own rights and notices.
 
 ## License
 
@@ -8,7 +8,7 @@ The generic source currently carries the [MIT License](LICENSE) with the propose
 
 > Copyright (c) 2026 ejct and contributors
 
-Earlier copyright wording remains traceable in historical Git records, which may now be publicly accessible, but is not in the current generic source candidate. This updated notice is a **candidate attribution**, pending confirmation that its rights holders authorize replacing the historical wording. If a third-party contribution requires preservation of an earlier notice, its applicable original notice must be retained in the eventual release. **Do not publish until this rights/notice question is resolved.**
+The maintainer confirmed on 22 November 2026 that the earlier product name identifies **the same owner-maintained project**, not a separate publisher or third-party rights holder. The current attribution to `ejct and contributors` reflects this continuing project identity; the former wording remains visible in historical Git records. **The rename itself is not an outstanding copyright-permission blocker.** This confirmation does not independently establish rights to every possible outside contribution. Preserve the original license and copyright notices of any distinct third-party material if such material is included.
 
 ## Third-party material
 

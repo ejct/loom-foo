@@ -32,16 +32,16 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
         self.assertEqual("ejct", codex["interface"]["developerName"])
         self.assertEqual(root["extensions"]["com.openai"]["interface"], codex["interface"])
 
-    def test_current_mit_notice_and_unresolved_original_rights(self):
+    def test_current_mit_notice_and_owner_confirmed_rename(self):
         license_text = self.read("LICENSE")
         self.assertTrue(license_text.startswith("MIT License\n"))
         self.assertIn("Copyright (c) 2026 ejct and contributors", license_text)
         self.assertIn("The above copyright notice and this permission notice", license_text)
         self.assertIn("WITHOUT WARRANTY", license_text)
         attribution = self.read("ATTRIBUTION.md")
-        self.assertIn("pending confirmation", attribution)
         self.assertIn("third-party", attribution)
-        self.assertIn("Do not publish", attribution)
+        self.assertIn("same owner-maintained project", attribution)
+        self.assertNotIn("pending confirmation that its rights holders authorize replacing", attribution)
 
     def test_no_brand_retained_in_current_generic_source(self):
         old_name = "Loom" + "Loom"
