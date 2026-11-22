@@ -2,7 +2,7 @@
 name: loom-foo-drafting
 description: "Draft or substantially rewrite practical prose for an audience and purpose, preserving facts and voice. Not proofreading or narrative-only analysis."
 metadata:
-  version: "0.5.1"
+  version: "0.7.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible guidance for multilingual written artifacts; no paid API, persistent storage or other skill is required."
@@ -16,6 +16,9 @@ compatibility: "Portable Agent Skills-compatible guidance for multilingual writt
 **Optional conceptual collaboration (L1).** When the user requests a substantially new communication concept or repeated drafts are fixated on a rejected message mechanism, optionally use `loom-foo-creative-reasoning` for conceptual alternatives before drafting. Preserve facts, commitments, target voice and Drafting ownership. Do not escalate copyediting, simple rewriting, localization or routine prose production. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
 
 
+
+**Conditional cross-family composition (L1).** When drafting a project-dependent artifact and missing prior facts, accepted decisions or terminology would materially alter its claims, consult `loom-foo-knowledge-retrieval` on authorized sources read-only. For a disputed or consequential assertion backed by an already available bounded evidence package, consult `loom-foo-evidence-review` for the scoped claim assessment; routine direct verification need not invoke it. Drafting retains prose ownership and preserves attribution, privacy and source fidelity. Do not require lookup or research for ordinary short copy, style edits, or a fully supplied brief.
+
 ## Critical contract
 
 Own the **actual prose artifact**: write, rewrite, adapt or translate text so it accomplishes the user's communicative purpose in the requested audience, voice, language and medium. Deliver the requested artifact itself, not just advice or an outline, when it is possible to draft it.
@@ -27,9 +30,10 @@ Own the **actual prose artifact**: write, rewrite, adapt or translate text so it
 
 ## 1. Activation and sibling boundaries
 
-**Use** for new copy, a complete draft from notes, professional correspondence, project descriptions, sections of case studies, bios, product/UX microcopy, technical explanations, user documentation, localization, transcreation and substantial requested prose revision.
+**Use** for new copy, a complete draft from notes, professional correspondence, project descriptions, sections of case studies, bios, product descriptions and other non-interface copy, technical explanations, user documentation, localization, transcreation and substantial requested prose revision.
 
 **Prefer another owner** when the main outcome is:
+- **Interface content tied to a real UI task, control, system state or action consequence** → `loom-foo-ux-writing` when available. UX Writing owns in-product labels, messages and reusable content patterns; Drafting owns general prose and marketing text even when the subject is a product. Plain grammatical proofreading without a UX decision remains Editorial Review. Do not load UX Writing for ordinary prose, translation or a complete source-preserving rewrite without interaction-state reasoning.
 - Finding/categorizing orthographic/grammatical/style problems without replacing the source, or minor proofreading → `loom-foo-editorial-review` where available.
 - Choosing what the document should argue, which section follows which, or a whole narrative/evidence structure → `loom-foo-narrative-design` where available.
 - Agent-task authority, work scope, acceptance criteria or runtime projection → `loom-foo-agent-task-design`; this skill can improve prose clarity, not reassign task ownership or alter approvals.
@@ -75,4 +79,4 @@ If a transformation cannot be performed without violating protected content, avo
 
 - [Language and genre](references/LANGUAGE_AND_GENRE.md) — controlled multilingual drafting, genre and rewrite invariants.
 - [Agent-directed artifacts](references/AGENT_ARTIFACTS.md) — boundaries for instructions to other agents or runtimes.
-- Optional publisher-side fixture `tests/cases.jsonl` (not bundled in the generic distribution) contains candidate prompts and acceptance properties, not observed model test results.
+- [Representative cases](tests/cases.jsonl) — candidate prompts and acceptance properties, not observed model test results.

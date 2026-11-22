@@ -3,7 +3,7 @@ name: loom-foo-information-design
 description: "Design evidence-grounded diagrams, infographics or technical explanations with truthful visual encoding. Not general posters or data analysis."
 metadata:
   family: "design"
-  version: "0.4.0"
+  version: "0.5.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible; can use verified tables/charts/SVG/document tools, or provide bounded explanations when rendering is unavailable."
 ---
@@ -12,6 +12,9 @@ compatibility: "Agent Skills-compatible; can use verified tables/charts/SVG/docu
 **Answer Receipt.** When this skill is directly consulted or materially applied in preparing a user-facing answer, include a compact **Answer Receipt** as the final section. List only actually used/consulted skills (including external skills when evidenced), exact versions if known, `SKILL.md` delivery (`FULL | PARTIAL | METADATA_ONLY | NOT_CONFIRMED | FAILED`), triggered reference coverage, actual sources, checks, actions and material limitations. `FULL` requires model-visible contiguous delivery of the exact source through EOF, not a reader success flag. **Process Trail:** for substantive multi-stage work, including repeated proposal/task reviews, corrections, verifications or genuine cross-agent/artifact handoffs, show an ordered breadcrumb sequence such as `DRAFT1 → REVIEW1 → REVISE1 → REVIEW2 → READY`, with a brief result, exact artifact identity when established, and provenance for consequential stages. Preserve distinct repeated passes in their original order; do not invent unseen stages, file revisions, handoffs, independence or runtime events. Different consulted skills in the same agent context are not separate agent executions. An internally reconstructed review is `MODEL_REPORTED`, not independently verified. Keep one footer, not a second Processing Receipt. No new tests or logging merely for the footer. Follow `docs/ANSWER_RECEIPT_V0.3.md` when accessible; this clause works standalone. Preserve JSON-only, machine payload, code-only and strict producer handoff formats when a footer is forbidden.
 
 # Information Design
+
+
+**Conditional knowledge/evidence composition (L1).** If the diagram depends on materially missing accepted definitions, entity relationships or decisions from an authorized project history, consult `loom-foo-knowledge-retrieval` read-only. If a bounded existing evidence package supports consequential quantitative/causal claims and its meaning is unsettled, consult `loom-foo-evidence-review` (or the stronger domain/data specialist for underlying calculations) before asserting the claims visually. Information Design remains responsible for accurate information topology and production. A source-complete illustration or straightforward data display needs no extra skill.
 
 ## Result contract
 

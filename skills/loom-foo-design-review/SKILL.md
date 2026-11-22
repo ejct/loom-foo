@@ -3,7 +3,7 @@ name: loom-foo-design-review
 description: "Critique a complete existing visual/interactive design artifact with prioritized findings. Not automatic editing or narrowly scoped diagnostics."
 metadata:
   family: "design"
-  version: "0.4.0"
+  version: "0.6.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills; independent reviewer contexts, screenshot access, browser and Figma preview are optional and host-dependent."
 ---
@@ -12,6 +12,11 @@ compatibility: "Portable Agent Skills; independent reviewer contexts, screenshot
 **Answer Receipt.** Finish user-facing prose with one compact receipt naming only actually consulted/applied skills and versions, `SKILL.md` model-visible delivery (`FULL | PARTIAL | METADATA_ONLY | NOT_CONFIRMED | FAILED`), triggered L2 coverage, sources, checks, actions and limits. `FULL` requires complete contiguous exact text to EOF; a successful tool fetch alone is insufficient. Use ordered **Process Trail** for actual material review/repair/recheck stages, with artifact identity and honest `SAME_CONTEXT` versus observed separate actors. Never invent independent reviews, tests, host routing, publication or external effects. Omit the footer only for strict machine/code-only output contracts.
 
 # Design Review — critical design assessment
+
+
+**Conditional knowledge/evidence composition (L1).** When reviewing an existing visual/interactive artifact and approved intent or historical project constraints are materially unavailable, consult `loom-foo-knowledge-retrieval` on authorized sources; preserve accepted/proposed status. When bounded existing usability/analytics evidence could materially change a finding, consult `loom-foo-evidence-review` for scoped support, contradictions and limitations. Design Review owns the critique. Do not require a research plan, evidence package or retrieval for ordinary heuristic critique or a directly observable defect.
+
+**Conditional UX-content diagnosis (L1).** In a review of an existing interface, when a material finding concerns what a control label, error, status or recovery message causes the user to understand or decide, consult `loom-foo-ux-writing` for focused interface-content assessment and proposed strings. Design Review retains ownership of the integrated critique, priorities and evidence limitations. Pure punctuation/grammar belongs to `loom-foo-editorial-review`; avoid both specialist handoffs for a complete source-grounded critique without a consequential content issue.
 
 ## Critical contract
 

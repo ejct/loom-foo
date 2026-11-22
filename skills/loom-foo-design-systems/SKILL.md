@@ -3,7 +3,7 @@ name: loom-foo-design-systems
 description: "Architect, audit or evolve design tokens, components, semantics and governance across a system. Not a single screen/component build."
 metadata:
   family: "design"
-  version: "0.4.0"
+  version: "0.6.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible design-system reasoning; Figma, code repositories and token converters are optional tool-bound specialists."
 ---
@@ -12,6 +12,11 @@ compatibility: "Agent Skills-compatible design-system reasoning; Figma, code rep
 **Answer Receipt.** When this skill is directly consulted or materially applied in preparing a user-facing answer, include a compact **Answer Receipt** as the final section. List only actually used/consulted skills (including external skills when evidenced), exact versions if known, `SKILL.md` delivery (`FULL | PARTIAL | METADATA_ONLY | NOT_CONFIRMED | FAILED`), triggered reference coverage, actual sources, checks, actions and material limitations. `FULL` requires model-visible contiguous delivery of the exact source through EOF, not a reader success flag. **Process Trail:** for substantive multi-stage work, including repeated proposal/task reviews, corrections, verifications or genuine cross-agent/artifact handoffs, show an ordered breadcrumb sequence such as `DRAFT1 → REVIEW1 → REVISE1 → REVIEW2 → READY`, with a brief result, exact artifact identity when established, and provenance for consequential stages. Preserve distinct repeated passes in their original order; do not invent unseen stages, file revisions, handoffs, independence or runtime events. Different consulted skills in the same agent context are not separate agent executions. An internally reconstructed review is `MODEL_REPORTED`, not independently verified. Keep one footer, not a second Processing Receipt. No new tests or logging merely for the footer. Follow `docs/ANSWER_RECEIPT_V0.3.md` when accessible; this clause works standalone. Preserve JSON-only, machine payload, code-only and strict producer handoff formats when a footer is forbidden.
 
 # Design Systems — system-level design architecture
+
+
+**Conditional project-knowledge composition (L1).** When auditing/evolving a multi-consumer design system and accepted token definitions, migration decisions or project-wide constraints are materially missing, consult `loom-foo-knowledge-retrieval` from authorized canonical sources before proposing propagation or a breaking change. Keep source-of-truth precedence and read-only retrieval explicit; a retrieved proposal is not accepted system policy. Do not retrieve an archive for a local, source-complete component/token task. Design Systems retains ownership of the system contract and its verification.
+
+**Conditional content-pattern collaboration (L1).** When a system-wide component or pattern contract needs reusable UI terminology, action labels, feedback/state copy or content rules that materially affect user decisions, consult `loom-foo-ux-writing` for the content contract. Design Systems retains ownership of component semantics, tokens, cross-product governance and versioning; UX Writing owns in-product wording and reusable content patterns. A local text edit or token-only change does not require either an additional owner or mandatory handoff.
 
 ## Result contract
 

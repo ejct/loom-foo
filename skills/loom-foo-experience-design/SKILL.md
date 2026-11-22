@@ -3,7 +3,7 @@ name: loom-foo-experience-design
 description: "Design product UX flows, interaction models, journeys and behavior. Not visual branding, code implementation or read-only design critique."
 metadata:
   family: "design"
-  version: "0.5.0"
+  version: "0.7.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible; research participants, browser/Figma/prototype execution and analytics are optional and must not be simulated as real evidence."
 ---
@@ -15,6 +15,11 @@ compatibility: "Agent Skills-compatible; research participants, browser/Figma/pr
 
 **Optional conceptual collaboration (L1).** When an interaction problem requires a meaningfully different mental model or flow principle, optionally use `loom-foo-creative-reasoning` for reframing/divergence, then retain ownership of the UX flow, states and prototype. Normal flow refinement, usability corrections and approved behavior implementation remain here without creative escalation. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
 
+
+
+**Conditional cross-family composition (L1).** For continuing UX work with materially missing accepted requirements, project decisions or interaction history, consult `loom-foo-knowledge-retrieval` read-only on authorized project sources. For a consequential unresolved usability hypothesis whose answer can change a flow decision, consult `loom-foo-research-design` to prepare a minimal credible evidence plan; do not launch a study by implication. For an already available bounded user-study or analytics evidence package requiring interpretation, consult `loom-foo-evidence-review` for claim-level support and limitations. Experience Design owns flow, state model and prototype. A routine UX refinement or sufficient source needs none of these handoffs.
+
+**Conditional interface-content collaboration (L1).** When a flow or state model requires a material decision about user-facing labels, messages, guidance or recovery language, consult `loom-foo-ux-writing` for an interface-content result grounded in the actual user action, system state and consequences. Experience Design retains ownership of behavior, state transitions and interaction architecture; UX Writing cannot invent missing features or success states. Do not escalate settled strings, content-free flow work or routine interaction changes.
 
 ## Result contract
 
