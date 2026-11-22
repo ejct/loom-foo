@@ -1,5 +1,12 @@
 # Changelog
 
+## Generic source 0.50.1 — 2026-11-22 (SOURCE PREVIEW)
+
+- Followed ChatGPT-first delivery: existing private ChatGPT plugin updated to 0.50.1, then private canonical source to 0.50.1, then public generic source to 0.50.1.
+- Existing portable Skill bytes and individual versions remain unchanged; installed copies of Cross-context Transfer 0.6.1, Evidence Review 0.5.1, Proposal Refinement 0.10.1, Research Design 0.7.1, Specification Design 0.6.1 now exactly match the generic `SKILL.md` files.
+- Preserved private Knowledge profiles, logos, public release gate and independent runtime identity. No tag, GitHub Release, marketplace submission or consumer pin update.
+
+
 ## Generic source 0.50.0 — 2026-11-22 (VERSION CORRECTION; SOURCE PREVIEW)
 
 - Corrected the unauthorized `0.47.0` generic bundle version assignment to **0.50.0 / 42 Skills**, matching the already-installed owner-private ChatGPT plugin's bundle label. The portable Skill contracts and individual versions are unchanged.
