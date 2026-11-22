@@ -1,11 +1,13 @@
 # Changelog — loom-foo-email-intake
 
-## 0.8.0 — 2026-11-22 — first standalone source candidate
+## 0.9.0 — 2026-11-22 — monitored-consumer evidence integration
 
-**ADDED:** read-only, provider-neutral Email Intake for grounded lookup, correspondence episode reconstruction, semantic delta and conditional security inspection, with a Gmail reference and task-scoped evidence/coverage reporting.
+**ADDED:** explicitly authorized parent-owned recurring-monitor composition, `Email Evidence Packet v1`, per-surface coverage/failure fields, reuse of caller-enumerated IDs, `SKILL_NOT_LOADED` fallback and linked-consumer compatibility checks. Parent retains scheduling, alert gates, cross-run dedup and state writes. Deep episode/security inspections remain conditional.
 
-**TRANSFERRED:** previously developed email-monitor mechanisms for coverage, episode identity, temporal fidelity and untrusted-content boundaries. Monitor-specific hourly cadence, alert/silence rules, private cases and optional persistent state are deliberately excluded.
+**PRESERVED:** independent read-only source lookup, Gmail adapter, privacy and prompt-injection limits; no independent task or mail mutation. No claim of guaranteed host routing/automatic execution or actual comparative quality lift.
 
-**VERSION PROVENANCE:** this is the first standalone Email Intake version. Number 0.8.0 acknowledges antecedent methods, not prior published v0.1.0–v0.7.0 standalone releases. See `LINEAGE.md`.
+## 0.8.0 — 2026-11-22 — first standalone skill candidate
 
-**NOT CLAIMED:** static checks are not evidence of automatic skill routing, production mail execution, improved outcomes or public distribution approval. No private installed plugin or existing monitor is modified by this source candidate.
+**ADDED:** independently triggered read-only Email Intake, provider-neutral source-grounded email evidence, Gmail and coverage references, episode reconstruction, provenance and delta, conditional security inspection, failure states and initial static fixtures.
+
+**HISTORY:** 0.8.0 was first standalone candidate drawing from operational Email Monitor 02/03 experience; it does not imply standalone 0.1.0–0.7.0 releases. See LINEAGE.md.

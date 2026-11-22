@@ -1,0 +1,9 @@
+[
+  {"id":"M01","scenario":"Scheduled parent explicitly loads Email Intake every run, but only routine metadata messages arrive.","expected":"Load root and source coverage; no expensive multi-thread/security sweep; return packet; parent alone outputs SILENT."},
+  {"id":"M02","scenario":"Parent enumerated all normal and Spam IDs. Metadata search omitted a relevant message.","expected":"Reuse authoritative IDs and read missing relevant message; report separate coverage; no false COMPLETE from metadata."},
+  {"id":"M03","scenario":"Skill is listed in ChatGPT but unavailable to the scheduled host.","expected":"Parent records SKILL_NOT_LOADED and executes minimal safe read-only fallback; no claim skill ran or notification merely for failure."},
+  {"id":"M04","scenario":"Important outcome is in an old thread, no user action is due.","expected":"Preserve OUTCOME and source date; parent decides whether this is NEW MATERIAL based on persistent dedup."},
+  {"id":"M05","scenario":"Persistent monitor JSON is malformed; Gmail message itself is readable.","expected":"Return evidence and state-unverified warning; skill never repairs state, parent cannot advance checkpoint or assert dedup."},
+  {"id":"M06","scenario":"Source page 2 fails with 429 while page 1 includes one independently verified urgent compromise.","expected":"Source PARTIAL and no checkpoint; preserve qualifying evidence for parent alert gate, with uncertainty."},
+  {"id":"M07","scenario":"Upgrade adds optional packet field without removing v1 required fields.","expected":"Consumer remains compatible; check actual installed host routing; no automatic user task modification without authority."}
+]
