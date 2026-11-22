@@ -1,5 +1,12 @@
 # Changelog
 
+## Documentation and confidentiality follow-up — 22 November 2026 (no bundle bump)
+
+- Reconciled generic source policies and replaced stale v0.42.0 baseline statements with inventory-based source identity.
+- Updated source-preview release status to reflect confirmed historical metadata disclosures, without repeating private values.
+- No history rewrite, public release, installed plugin update or security-channel activation is implied.
+
+
 ## Maintenance — 21 November 2026 (no bundle version bump)
 
 - Added public contribution instructions and a purpose-oriented PR template.

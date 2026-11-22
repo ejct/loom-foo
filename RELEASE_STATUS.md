@@ -14,7 +14,7 @@ As of 21 November 2026, `ejct/loom-foo` is publicly accessible. This is a **sour
 
 ## Outstanding gates
 
-1. **Confidentiality and Git history.** Earlier commits, branches and other refs may contain private development provenance. The repository is already public. Editing today's files does not erase history, forks or cached copies. Inspect exposure and prepare a separately approved clean-source release; respond to any actual credential exposure.
+1. **Confidentiality and Git history.** A targeted history review confirmed earlier disclosure of personal contact metadata in original manifests and private development/source identifiers in historical documentation. No private values are repeated here. The repository is already public; editing current files does not retract commits, PR diffs, forks or caches. A full history clearance and appropriate remediation decision remain open before a formal release. No repo-wide claim about absence of credentials has been established.
 2. **Exact release source.** Confirm intended candidate bytes, version and file hashes; obtain an actual owner approval before generating or labeling a public distribution.
 3. **Attribution and rights.** Resolve inherited copyright-notice questions and check any third-party material.
 4. **Support and privacy.** Verify a private vulnerability-reporting route and a confidential privacy-request channel. Public Issues are inappropriate for sensitive disclosures.

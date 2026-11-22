@@ -4,7 +4,7 @@
 
 Security reports concerning the generic `loom-foo` package, its Agent Skills, optional scripts, release artifacts, or associated `foo-loom` project-installation tooling are in scope.
 
-The current development baseline is `loom-foo v0.42.0`. Older versions and independent third-party AI runtimes may have different security properties; disclose the exact affected package and host when reporting.
+The current generic source candidate is identified by the bundle version in [SKILL_INVENTORY.json](SKILL_INVENTORY.json); installed plugins and tagged releases may differ. Specify the exact affected package, version, and AI host when reporting.
 
 ## Reporting vulnerabilities
 
