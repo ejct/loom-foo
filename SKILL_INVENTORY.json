@@ -2,7 +2,7 @@
   "schema": 1,
   "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.46.0",
+  "bundle_version": "0.47.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
@@ -38,27 +38,27 @@
     },
     {
       "id": "loom-foo-design",
-      "version": "0.7.0"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-design-review",
-      "version": "0.4.0"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-design-systems",
-      "version": "0.4.0"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-drafting",
-      "version": "0.5.1"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-editorial-review",
-      "version": "0.4.1"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-email-intake",
-      "version": "0.8.0"
+      "version": "0.9.0"
     },
     {
       "id": "loom-foo-evidence-acquisition",
@@ -74,11 +74,11 @@
     },
     {
       "id": "loom-foo-experience-design",
-      "version": "0.5.0"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-failure-learning",
-      "version": "0.9.0"
+      "version": "0.10.0"
     },
     {
       "id": "loom-foo-graphic-design",
@@ -102,7 +102,7 @@
     },
     {
       "id": "loom-foo-information-design",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-knowledge-intake",
@@ -118,7 +118,7 @@
     },
     {
       "id": "loom-foo-narrative-design",
-      "version": "0.5.1"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-onboarding",
@@ -163,6 +163,10 @@
     {
       "id": "loom-foo-typography",
       "version": "0.4.0"
+    },
+    {
+      "id": "loom-foo-ux-writing",
+      "version": "0.2.0"
     },
     {
       "id": "loom-foo-work-decomposition",

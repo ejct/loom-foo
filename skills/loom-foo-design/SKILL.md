@@ -3,7 +3,7 @@ name: loom-foo-design
 description: "Create integrated cross-disciplinary visual/product design where no narrower specialist owns the whole result. Not a mandatory design router."
 metadata:
   family: "design"
-  version: "0.7.0"
+  version: "0.8.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills-compatible guidance; specialist tools and editable design environments are optional, host-dependent."
 ---
@@ -15,6 +15,9 @@ compatibility: "Portable Agent Skills-compatible guidance; specialist tools and 
 
 **Optional conceptual collaboration (L1).** Use `loom-foo-creative-reasoning` only when a multidisciplinary design task has a genuinely unresolved conceptual principle, meaningfully different mechanisms matter, or repeated attempts are conceptually fixated. The narrow subject owner still delivers the artifact. Do not use for routine production, agreed concept refinements, local rendering fixes, or simply to increase novelty. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
 
+
+
+**Conditional cross-family composition (L1).** For integrated design work, when missing accepted project decisions or constraints could alter the artifact, consult `loom-foo-knowledge-retrieval` using an authorized source index. When an unresolved consequential design assumption requires an evidence plan, consult `loom-foo-research-design`; when a bounded existing evidence package requires claim assessment, consult `loom-foo-evidence-review`. Design retains ownership of the requested artifact. No mandatory lookup, study or reviewer for ordinary production, a source-complete brief or a minor visual edit; no private-data disclosure or knowledge writes implied.
 
 ## Critical contract
 

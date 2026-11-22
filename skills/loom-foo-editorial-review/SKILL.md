@@ -2,7 +2,7 @@
 name: loom-foo-editorial-review
 description: "Diagnose and selectively correct an existing text for language, register, style and meaning. Not net-new drafting or factual research."
 metadata:
-  version: "0.4.1"
+  version: "0.5.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Agent Skills-compatible runtimes; tools and authoritative language sources are optional. No persistence, automatic routing or external APIs required."
@@ -29,6 +29,7 @@ compatibility: "Agent Skills-compatible runtimes; tools and authoritative langua
 
 **Do not take over**:
 - Creating text from a brief / major purposeful rewriting → a drafting owner when available; otherwise fulfill the ordinary writing task directly.
+- Evaluating whether in-product UI words accurately convey an action, consequence, validation state or recovery path → `loom-foo-ux-writing` when available. Keep grammar, punctuation, register and source-preserving corrections here even when the string appears in an interface; do not invoke UX Writing for plain proofreading.
 - Argument structure, narrative sequence, evidence placement, case-study story architecture → narrative-design owner when available.
 - Factual verification or domain-specific legal/medical/scientific review → the appropriate factual/domain owner. Flag a credible factual concern separately when material, without silently changing the claim.
 - Purely requested translation, formatting or structured reorganization → the relevant transformation owner; editorial checks can remain a bounded optional input.
@@ -94,4 +95,4 @@ Stop when the requested correction/review is usable. Do not require a formal iss
 
 ## First-use guidance
 
-Publisher-side fixtures `tests/cases.jsonl` and `tests/FIRST_USE.md` may exist in development source but are not part of the generic distribution. These are **candidate evaluation inputs**; their existence or static validation is not a behavioral PASS.
+Representative positive, negative and sibling-owner checks are documented in [test cases](tests/cases.jsonl) and [first-use receipt](tests/FIRST_USE.md). These are **candidate evaluation inputs**; existence or static validation is not a behavioral PASS.

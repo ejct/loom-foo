@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible ChatGPT/agent clients. May use available 
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.9.0"
+  version: "0.10.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -26,6 +26,8 @@ metadata:
 3. **Reconstruct evidence:** Separate `OBSERVED` (actual trace/report), `EXPECTED` (source/user contract), `INFERRED` (hypothesis) and `UNKNOWN`. Check rival causes, including routing, context-delivery, composition, runtime/tool, policy/authority, semantic rules and evaluator defects. A user report proves a report, not the claimed cause. Missing access to older chats is `NOT_OBSERVABLE`, not permission to invent history.
 4. **Minimal intervention:** Check existing skill owner and already-existing rules. A missed activation is generally a routing/delivery candidate rather than proof that `SKILL.md` semantics are wrong. Prefer one repaired prompt/description/fixture/tool/context handoff to new layers, global logs or unrelated changes. A single incident does not establish general prevalence.
 5. **Truthful close:** Explain what failed, what was restored, what evidence supports/limits the diagnosis, what small delta is proposed, and what was *actually persisted*. Do not claim independent validation from a model-authored receipt. Avoid long ceremonies when one correction suffices.
+
+**Conditional evidence-to-repair composition (L1).** For a retrospective claim about which skills, files, checks or actions actually ran, consult `loom-foo-execution-inspector` when its narrower evidence inspection is materially needed; do not call it merely to produce a receipt or as a required incident preflight. When a traced recurring failure is specifically in skill activation, owner boundaries, delivery or the reusable skill contract, consult `loom-foo-skill-engineering` for the smallest justified repair; a single missed activation is not itself proof that the SKILL.md body is defective. Failure Learning retains incident causality and original-task recovery; inspector findings do not execute new tests, and skill changes do not establish runtime routing until observed. An ordinary local correction needs neither specialist.
 
 ## Conditional method index (read BEFORE affected analysis)
 

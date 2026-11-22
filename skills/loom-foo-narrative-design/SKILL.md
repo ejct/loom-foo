@@ -2,7 +2,7 @@
 name: loom-foo-narrative-design
 description: "Structure the argument, narrative and reader progression of a written work. Not proofreading, ordinary prose drafting or visual layout."
 metadata:
-  version: "0.5.1"
+  version: "0.6.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible procedural guidance; source retrieval and document tools are optional and host-dependent."
@@ -15,6 +15,9 @@ compatibility: "Portable Agent Skills-compatible procedural guidance; source ret
 
 **Optional conceptual collaboration (L1).** When a story or argument genuinely needs a different organizing principle or narrative lens, optionally consult `loom-foo-creative-reasoning` for structurally different concepts; Narrative Design owns reader progression and the delivered outline/story. Never mutate source facts, accepted thesis or agreed sequencing for novelty; normal edits do not trigger it. If `loom-foo-creative-reasoning` is unavailable, continue with normal subject-owner methods where possible; do not pretend that it was loaded or add an obligatory handoff.
 
+
+
+**Conditional cross-family composition (L1).** For project histories, UX case studies or proposals where missing accepted decisions, chronology or outcomes could alter the argument, consult `loom-foo-knowledge-retrieval` read-only on authorized sources. If a bounded body of existing evidence underlies disputed consequential claims, consult `loom-foo-evidence-review` for support/uncertainty before placing those claims in the narrative. Narrative Design owns the argument and structure; do not invent findings, turn a proposal into an outcome, or require research for source-complete restructuring.
 
 ## Critical contract
 
@@ -78,4 +81,4 @@ State concrete unresolved source gaps rather than sending the user into an open-
 
 - [Narrative methods](references/NARRATIVE_METHODS.md) — genre-appropriate structures, information dependencies and quality checks.
 - [Case studies](references/CASE_STUDIES.md) — evidence, attribution, trade-offs and publication limits.
-- Optional publisher-side fixture `tests/cases.jsonl` (not bundled in the generic distribution) contains proposed routing/behavioral examples, not independent runtime outcomes.
+- [Representative cases](tests/cases.jsonl) — proposed routing/behavioral examples; not independent runtime outcomes.

@@ -1,5 +1,14 @@
 # Changelog
 
+## Generic source 0.47.0 — 2026-11-22 (SOURCE PREVIEW, NOT RELEASED)
+
+- Reconciled the verified installed owner-private ChatGPT 0.50.0 into **42 public-safe portable Skills**, following ChatGPT-first delivery order. Installed plugin and source bundle remain independently versioned.
+- Added UX Writing 0.2.0; incorporated Email Intake 0.9.0 monitored-consumer evidence composition.
+- Updated Design 0.8.0, Design Review 0.6.0, Design Systems 0.6.0, Drafting 0.7.0, Editorial Review 0.5.0, Experience Design 0.7.0, Failure Learning 0.10.0, Information Design 0.5.0, Narrative Design 0.6.0.
+- Preserved 0.45.0–0.46.0 generic-only source improvements and kept private Knowledge Intake/Retrieval profiles, installed assets, private identifiers and other owner-only content out of public source.
+- Not a tagged release, public plugin installation, marketplace submission, approved release hash, or cross-host runtime validation.
+
+
 ## 0.46.0 — source integration (22 November 2026; no tagged distribution)
 
 - Updated `loom-foo-project-integration` from 0.4.1 to 0.5.0 with explicit partial-setup diagnosis, safe repair preflight and project-local continuation semantics.

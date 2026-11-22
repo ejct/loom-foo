@@ -1,25 +1,26 @@
-# Email Intake v0.8.0 — Method lineage
+# Email Intake v0.8.0 — method lineage
 
-This is the **first independently packaged** `loom-foo-email-intake` skill. Version 0.8.0 recognizes substantial predecessor engineering and the owner's explicit versioning decision. It does not imply earlier standalone v0.1.0–v0.7.0 releases.
+This is the **first independently packaged** `loom-foo-email-intake` skill. Version 0.8.0 recognizes substantial antecedent engineering and the owner's explicit versioning decision. It is **not** a claim that Email Intake v0.1.0–v0.7.0 shipped or that a separate monitor's SemVer sequence transfers automatically.
 
-## Adapted predecessor mechanisms
+## Predecessor capabilities adapted to the new owner
 
-| Development phase | Reusable mechanism | Transfer boundary |
+| Development phase | Reusable mechanism | Transfer limit |
 | --- | --- | --- |
-| Semantic email triage research | Separate requests, commitments, decisions, outcomes and time-of-knowledge | Scenario coverage is not proven deployment quality |
-| Multiple email-monitor iterations | Reconstruct real-world episodes across threads; identify meaningful deltas | Notification thresholds are not intake filters |
-| Retrieval hardening | Enumerate provider pages, inspect source coverage, distinguish folder and thread gaps | No automatic hourly windows or account-wide crawls |
-| State recovery | Keep optional persistence distinct from source truth and completion claims | Email Intake does not maintain monitor state |
-| Trust inspection | Treat messages and quoted content as untrusted; distinguish attempted injection from observed effects | No LLM-only security guarantee |
-| Skill handoff | Return a compact evidence packet with provenance and uncertainties | No implicit mail sending or knowledge-canon write |
+| Semantic triage research | Distinguish user requests, stated obligations, commitments, outcomes and information; preserve as-of-time evidence | Evaluation scenarios are not proof of deployment quality |
+| Repeated email-monitor iterations | Treat a real-world case as an episode across multiple threads; use semantic deltas rather than email counts | Monitoring alert thresholds do not filter historical intake |
+| Mailbox retrieval hardening | Enumerate source ID pages, handle missing messages, separate mail folders, make scoped completeness claims | No fixed hourly windows or account-wide crawl |
+| Source-state recovery | Keep optional persistent state separate from source facts; avoid silent corruption or false dedup checkpoints | Email Intake does not create or update monitor state |
+| Injection and manipulation inspection | Treat all mail, quoted text and remote content as untrusted; distinguish attempts from independently observed effects | A model inspecting hostile content is not a sandbox |
+| Cross-skill evidence handoff | Return compact source-grounded evidence with provenance, confidence and gaps | Knowledge admission and outgoing email are owned elsewhere |
 
-## Version and release boundary
+## Version and validation boundary
 
-- `0.8.0` is the first standalone **source candidate** dated 2026-11-22, reflecting the maturity of predecessor methods, not a fabricated sequence of standalone releases.
-- A predecessor email-monitor workflow was developed through multiple versions. That workflow and its private source history are separate from this skill's releases.
-- Behavioral SemVer for subsequent changes is based on Email Intake's own activation, outputs and permissions; the containing loom-foo bundle has an independent version.
-- Static fixtures and source checks do not establish host routing, live Gmail execution, human usefulness or cross-provider equivalence.
+- Skill ID: `loom-foo-email-intake`.
+- First standalone **source candidate**: `0.8.0` (2026-11-22).
+- Chosen development-series version reflects breadth of predecessor work; it is not an eighth published standalone release.
+- Candidate tests check only source integrity and expected contracts, not actual automatic activation, live Gmail execution, delivered notifications or measured improvement.
+- Future changes use Behavioral SemVer for **this skill's** contracts; the Loom-foo bundle version is independent.
 
-## Public-source privacy
+## Confidentiality
 
-No actual correspondence, private incident records, mailbox IDs, owner-specific exclusions, persistent state locators, private release IDs or credentials are included. Detailed source evidence remains private.
+The portable package contains no actual emails, user-specific episode identifiers, personal alert exclusions, monitor run logs, private storage IDs, private release IDs or authentication tokens. Detailed predecessor evidence belongs in authorized private project sources, not the public skill source.

@@ -6,7 +6,7 @@
 
 Досліджуйте продуктову ідею. Удосконалюйте інтерфейс. Перевіряйте докази. Плануйте зміни. Ставте чіткі завдання агентам розробки. Перевіряйте, що саме вони виконали.
 
-**loom-foo** — це набір із **41 портативної навички Agent Skills**. Кожна навичка визначає, коли її доречно використовувати, як працювати із завданням, який результат отримати та яких обмежень дотримуватися. Можна застосувати одну навичку або поєднати кілька, якщо вони доповнюють одна одну.
+**loom-foo** — це набір із **42 портативні навички Agent Skills**. Кожна навичка визначає, коли її доречно використовувати, як працювати із завданням, який результат отримати та яких обмежень дотримуватися. Можна застосувати одну навичку або поєднати кілька, якщо вони доповнюють одна одну.
 
 ## Почніть із реального завдання
 
@@ -34,10 +34,10 @@
 | **Дослідження та докази** | [Research Design](skills/loom-foo-research-design/SKILL.md) · [Evidence Acquisition](skills/loom-foo-evidence-acquisition/SKILL.md) · [Evidence Review](skills/loom-foo-evidence-review/SKILL.md) | Плани досліджень, простежувані докази, обґрунтовані висновки |
 | **Рішення та планування** | [Problem Understanding](skills/loom-foo-problem-understanding/SKILL.md) · [Decision Reconciliation](skills/loom-foo-decision-reconciliation/SKILL.md) · [Project Planning](skills/loom-foo-project-planning/SKILL.md) | Чітко сформульовані проблеми, обґрунтовані рішення, придатні до виконання плани |
 | **Інженерія та робота з агентами** | [Architecture Design](skills/loom-foo-architecture-design/SKILL.md) · [Agent Task Design](skills/loom-foo-agent-task-design/SKILL.md) · [Change Verification](skills/loom-foo-change-verification/SKILL.md) | Архітектурні альтернативи, технічні завдання для агентів, перевірка на основі доказів |
-| **Тексти та комунікація** | [Drafting](skills/loom-foo-drafting/SKILL.md) · [Narrative Design](skills/loom-foo-narrative-design/SKILL.md) · [Editorial Review](skills/loom-foo-editorial-review/SKILL.md) | Готові тексти, продумана аргументація, точкові редакторські правки |
+| **Тексти та комунікація** | [Drafting](skills/loom-foo-drafting/SKILL.md) · [UX Writing](skills/loom-foo-ux-writing/SKILL.md) · [Narrative Design](skills/loom-foo-narrative-design/SKILL.md) · [Editorial Review](skills/loom-foo-editorial-review/SKILL.md) | Готові тексти, продумана аргументація, точкові редакторські правки |
 | **Знання та безперервність роботи** | [Knowledge Retrieval](skills/loom-foo-knowledge-retrieval/SKILL.md) · [Email Intake](skills/loom-foo-email-intake/SKILL.md) · [Handoff](skills/loom-foo-handoff/SKILL.md) · [Execution Inspector](skills/loom-foo-execution-inspector/SKILL.md) | Контекст із джерелами, передавання стану між сесіями, перевірка заявленого виконання |
 
-Інші навички охоплюють креативне мислення, візуальну айдентику, іконки, типографіку, дизайн-системи, перенесення підходів між сферами, аналіз помилок, розробку навичок тощо. Перегляньте [усю 41 навичку](skills/) або їхні точні версії у [SKILL_INVENTORY.json](SKILL_INVENTORY.json).
+Інші навички охоплюють креативне мислення, візуальну айдентику, іконки, типографіку, дизайн-системи, перенесення підходів між сферами, аналіз помилок, розробку навичок тощо. Перегляньте [усі 42 навички](skills/) або їхні точні версії у [SKILL_INVENTORY.json](SKILL_INVENTORY.json).
 
 ## Як працюють навички
 
