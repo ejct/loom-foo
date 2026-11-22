@@ -82,7 +82,7 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
 
     def test_bundle_version_and_skill_versions(self):
         inventory = self.manifest("SKILL_INVENTORY.json")
-        self.assertRegex(inventory["bundle_version"], r"^\\d+\\.\\d+\\.\\d+$")
+        self.assertRegex(inventory["bundle_version"], r"^[0-9]+[.][0-9]+[.][0-9]+$")
         self.assertEqual({x["id"] for x in inventory["skills"]}, {p.name for p in (ROOT / "skills").iterdir() if p.is_dir()})
         for rel in MANIFESTS + ("gemini-extension.json",):
             with self.subTest(manifest=rel):
