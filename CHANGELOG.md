@@ -1,5 +1,12 @@
 # Changelog
 
+## Maintainer clarification — 22 November 2026 (no bundle version bump)
+
+- Recorded owner confirmation that the prior product name describes the same project; current MIT attribution is not blocked by the rename alone.
+- Recorded acceptance of previously identified historic contact/provenance exposure without rewriting Git history; further unknown secrets remain subject to review.
+- Kept independent third-party rights, graphics, security contact, exact release bytes and host validation as separate gates.
+
+
 ## 0.44.0 — source integration (22 November 2026; no tagged distribution)
 
 - Added `loom-foo-email-intake` 0.8.0: read-only mailbox evidence, episode reconstruction, deltas, optional Gmail and security references; anonymized predecessor-method lineage.

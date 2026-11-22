@@ -15,9 +15,9 @@ As of 22 November 2026, `ejct/loom-foo` is publicly accessible. This is a **sour
 
 ## Outstanding gates
 
-1. **Confidentiality and Git history.** A targeted history review confirmed earlier disclosure of personal contact metadata in original manifests and private development/source identifiers in historical documentation. No private values are repeated here. The repository is already public; editing current files does not retract commits, PR diffs, forks or caches. A full history clearance and appropriate remediation decision remain open before a formal release. No repo-wide claim about absence of credentials has been established.
+1. **Confidentiality and Git history — accepted known exposure.** A targeted review confirmed personal contact metadata and private development identifiers in historical commits. On 22 November 2026 the maintainer chose to retain the existing public history and accept those known disclosures without rewriting history. This is **not** an assertion of full history clearance or absence of credentials in every Git object. Reopen remediation if a real secret or materially different sensitive exposure is later found.
 2. **Exact release source.** Confirm intended candidate bytes, version and file hashes; obtain an actual owner approval before generating or labeling a public distribution.
-3. **Attribution and rights.** Resolve inherited copyright-notice questions and check any third-party material.
+3. **Attribution and rights.** The maintainer confirmed that the prior product name refers to the same project, so the rename/notice wording alone is not a third-party rights blocker. Review any independently sourced code, assets or contributions before including them in a release.
 4. **Support and privacy.** Verify a private vulnerability-reporting route and a confidential privacy-request channel. Public Issues are inappropriate for sensitive disclosures.
 5. **Directory artwork.** Approved logo/composer assets are still deferred and may be required by native directory submissions.
 6. **Host validation.** Test installation and routing in relevant runtimes before claiming automatic selection or cross-host parity. Passing static CI is not runtime evidence.
