@@ -17,6 +17,11 @@ Thanks for helping improve the Agent Skills collection. You can suggest a change
 4. Run the applicable checks and report **which checks actually ran**. Document material risks, missing tests, and any behavior that remains unverified.
 5. Wait for the PR to be reviewed and merged by a maintainer. GitHub Actions checks run on PRs; a green source check does not prove runtime discovery or skill effectiveness.
 
+
+## Failed checks
+
+Before pushing, run the applicable local checks where the execution environment supports them; otherwise record which checks could not run and why. If CI fails, inspect the exact failing job and first causal error. Distinguish a source defect, stale test contract, environment/resource blocker, evidenced transient failure, or unknown cause. Repair the established cause, preserve protective checks, and run affected local checks before another push. Do not repeat an unchanged deterministic failure or rerun the same SHA without evidence that conditions changed. Record the failed run, cause, corrective action, actual verification and remaining limits in the PR or working session; keep public reports free of private details.
+
 ## Versioning and checks
 
 | Change | Expected maintenance |
