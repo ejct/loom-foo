@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. External/project sources and spe
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.6.1"
+  version: "0.8.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -38,6 +38,8 @@ Define target decision and bounded source corpus, preserve source identity and c
 - **Consequential transfer needs adversarial challenge, empirical claim boundaries or specialist composition** → `references/PD_TRANSFER_ASSURANCE.md` (source H2 sections 18,19,20,23).
 
 **No-trigger:** a short, resolved ordinary case does not require all detailed references merely because this skill was selected. Existing specialist references linked inside these materials remain conditional on their original situations. A moved section does not grant new permissions or replace the owning L1 safeguards.
+
+**Conditional cross-language composition (L1).** If transferring an evidence-backed mechanism across linguistic or cultural contexts materially depends on whether source and target concepts match, consult `loom-foo-translation-analysis` on the relevant terms/passages, context, intended target and possible divergent senses; consult `loom-foo-translation` only if a needed rendering is missing. Preserve the source concept, alternatives, evidence limits and target-specific adaptation separately. Cross-Context Transfer owns the transfer mechanism and fit, not translation quality itself. A cross-language source alone or ordinary mechanism transfer with settled terminology is a non-trigger. If unavailable, bound the claim of equivalence and do not treat similar labels as equivalent mechanisms; avoid cycling back to the same comparison.
 
 ## 1. Determine intent
 
@@ -115,6 +117,10 @@ Task disposition:
 Read `references/CORPUS_COVERAGE.md` for consequential work.
 
 For open-ended landscape or cross-domain discovery, treat the initial source set and search vocabulary as provisional. New materially relevant solution classes, terms, independent discovery channels, or references may expand the declared search scope. Record such expansions and exclusions proportionately; do not retroactively claim that a changing candidate universe was an exhaustive fixed corpus. For bounded source/transfer requests, preserve the specified scope instead of expanding it by default.
+
+## Conditional frontier reconciliation
+
+For material multi-source or continuation work, keep the existing corpus manifest and material-reference frontier recoverable with stable source identity, checked portions/method, remaining portions and disposition/next action. Reconcile new material reference candidates into the declared scope or record why they are excluded, deferred or blocked; a candidate is not a verified result or new action authority. When discoveries accumulate faster than checked material, prefer useful deep reads and neglected material branches before adding more leads; avoid repeated queries without a changed rationale. Continue authorized material work within the current episode until the declared coverage/closure gate, a real blocker, or a host boundary. Preserve exact remaining work rather than claiming convergence. For open discovery report known coverage and protocol limits, never a global percentage; deduplicate overlapping records and preserve scope changes. Do not impose this on trivial transfers.
 
 ## 7. Freeze mutable source identity
 

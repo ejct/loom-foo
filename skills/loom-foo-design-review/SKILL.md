@@ -3,7 +3,7 @@ name: loom-foo-design-review
 description: "Critique a complete existing visual/interactive design artifact with prioritized findings. Not automatic editing or narrowly scoped diagnostics."
 metadata:
   family: "design"
-  version: "0.6.0"
+  version: "0.7.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills; independent reviewer contexts, screenshot access, browser and Figma preview are optional and host-dependent."
 ---
@@ -63,6 +63,10 @@ Identify: actual artifact(s) and version, user's job, target audience, device/me
 4. **Find and challenge meaningful issues.** For a potential defect, localize a specific observed symptom, plausible mechanism, user consequence and a counterexample or competing explanation where material. Distinguish hard defects, evidence-backed concerns, design hypotheses, stylistic preferences and missing evidence. Read `references/REVIEW_METHOD.md` for severity and reasoning.
 5. **Prioritize and suggest remedies.** Focus on material issues; explain trade-offs and present a concrete targeted correction. Allow `NO_MATERIAL_ISSUES_FOUND`. Don't produce a fake defect to fill a quota or use an unexplained numeric score.
 6. **Produce the review artifact.** Give a concise overall judgment anchored to the exact reviewed state, then prioritized findings using `references/FINDINGS_AND_DELIVERY.md` when complexity requires. State what was actually checked and what cannot be concluded. Stop; do not silently implement fixes.
+
+**Conditional process coverage.** For a materially multi-state or multi-surface audit, bind the declared review scope and select representative surfaces plus relevant complete user journeys, including consequential error/recovery, role, device and alternate-channel states. Identify states by meaningful behavior/context, not URL alone. Record actually inspected states and critical gaps; expand the sample when new material state types appear. Do not equate sample coverage with product-wide conformance, or require a formal sampling plan for a local critique.
+
+**Conditional final-proof reconciliation.** When reviewing an actual formatted or exported publication against an approved source, bind both versions and inspect required content, relevant secondary elements (captions, alternatives, attribution, cross-references, navigation and links), and rendered layout in the intended medium where possible. In later proof rounds focus on requested corrections and their plausible collateral effects. Distinguish textual findings, export/layout defects and untested properties; consult the relevant specialist only when its distinct result is needed. Do not infer accessibility, production conformance or recipient behavior from a parser or preview, or mandate another review after a routine edit.
 
 ## Required epistemic distinctions
 

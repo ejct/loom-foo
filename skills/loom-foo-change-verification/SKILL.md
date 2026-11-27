@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Repository/project sources, test
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.8.0"
+  version: "0.9.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -138,6 +138,8 @@ Distinguish:
 - property not covered.
 
 Passing all executed checks does not license claims about undeclared/uncovered properties.
+
+**Conditional revision and obligation reconciliation.** For material multi-criterion or repeated verification, preserve criterion identity, candidate/contract revision, checked surface/fidelity and evidence; deduplicate repeated checks and distinguish performed check from PASS. A failing test may complete an execution obligation while the required behavior remains FAIL. When a controlling revision or material dependency changes, retain earlier evidence as historical and identify affected criteria needing recheck; do not infer unrelated invalidation or reuse a verdict for a different subject without establishing applicability. Preserve NOT_COVERED/INCONCLUSIVE, blockers and remaining checks separately from the verification disposition. Do not alter criteria or turn read-only verification into remediation.
 
 ## 17. No remediation during read-only verification
 

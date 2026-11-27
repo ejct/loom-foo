@@ -8,6 +8,8 @@ Do not conflate the user's chat language, source language, expected final langua
 
 Examples of variants needing attention: UK/US spelling and punctuation for public-facing copy; polite address, case forms and euphony in Ukrainian; date and number formatting only when user authorizes locale adaptation (avoid changing quantities or legal identifiers); local industry terms vs source terms. No embedded language profile proves authoritative normative correctness. Use current primary sources or dictionaries where normative certainty is consequential. For unverified low-resource languages, state limits rather than claim fluent or standardized output.
 
+**Ownership:** The table below describes fidelity constraints, not a routing rule. `loom-foo-translation` owns source-faithful translation and locale rendering when available; `loom-foo-translation-analysis` owns source/target comparison. Drafting owns newly authored prose, substantial authorized audience adaptation and transcreation. Translation is a fallback only if its specialist is unavailable.
+
 ## Transformation contract
 
 | Operation | What can change | What stays invariant unless explicitly authorized |
