@@ -4,7 +4,7 @@ description: "Design, write, or critique user-facing product interface content i
 metadata:
   family: "writing"
   project: "loom-foo"
-  version: "0.2.0"
+  version: "0.5.0"
 compatibility: "Portable Agent Skills guidance; screenshots, design files, source code, research and localization tools are optional."
 ---
 
@@ -19,13 +19,18 @@ Own **interface content decisions**: the words, labels, messages and reusable co
 **Activation:** the requested decision concerns the meaning, wording, presentation or consistency of text inside a product interface (including nonvisual accessible labels) **and** depends materially on a UI control, state, user task or action consequence. An isolated button can qualify when its operation is known. Do not activate merely because the user mentions a website or supplies text.
 
 **Sibling boundaries:**
-- `loom-foo-drafting` owns general practical prose, emails, documents, marketing copy, and translation/rewrite without interface-state reasoning. For in-product microcopy with state/consequence constraints, UX Writing owns the interface result. If Drafting is absent, handle only in-scope UI content here.
+- `loom-foo-drafting` owns general practical prose, emails, documents, marketing copy, and substantial rewriting. For in-product microcopy with state/consequence constraints, UX Writing owns the interface result. If Drafting is absent, handle only in-scope UI content here.
+- `loom-foo-translation` owns source-faithful cross-language rendering of settled UI strings or other supplied text; `loom-foo-translation-analysis` owns comparative translation diagnosis. UX Writing retains interface-content decisions that depend on product behavior or consequences. No mandatory dependency.
 - `loom-foo-editorial-review` owns grammar, local style and spelling correction without a UX behavior judgment.
 - `loom-foo-experience-design` owns interaction flows, state transitions, screen behavior and IA. UX Writing may flag a design prerequisite but must not invent that feature or silently redesign the flow.
 - `loom-foo-design-systems` owns component architecture, tokens and cross-product governance. UX Writing owns reusable **content** contracts; refer system-wide component or governance changes to Design Systems.
 - `loom-foo-narrative-design` owns long-form argument and reader progression; this skill covers in-product guidance and staged disclosure where tied to a task.
 
 No sibling is a mandatory dependency; work with available context and mark the limit of unsupported claims.
+
+**Conditional cross-language collaboration (L1).** When source UI wording and behavior are settled but another locale is required, consult `loom-foo-translation` with exact strings, key/placeholder definitions, screen/state, actual action, audience, locale and approved terminology. If a translated string could change a user's understanding of consequences, consent, obligation, recovery or availability, consult `loom-foo-translation-analysis` with both versions and the true product state; use findings to make the content decision. UX Writing retains product-content ownership; do not ask the translator to invent behavior. Ordinary monolingual copy or settled multilingual strings without a new decision need no consultation. If unavailable, provide conditional alternatives and preserve uncertainty; actual rendering and accessibility require runtime checks.
+
+**Conditional terminology collaboration (L1).** When a reusable product vocabulary decision depends on a materially unresolved concept/sense, domain definition or cross-language term relation, consult `loom-foo-terminology` with the exact product object/action, state, usage, language and controlling decisions. Use its scoped term evidence, then make the UI content decision here. Ordinary settled copy or simple glossary lookup needs no consultation. Do not delegate actual product behavior, label acceptance or canonical writes; return concrete UX constraints to a Terminology caller rather than re-entering the same question. If unavailable, mark unresolved distinctions and use supported options.
 
 ## Critical invariants
 

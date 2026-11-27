@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Can consume accepted specificati
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -129,6 +129,10 @@ Do **not** normally include:
 - dates/story points/estimates.
 
 `loom-foo-agent-task-design` owns the executable Task Brief.
+
+## Conditional obligation traceability
+
+For accepted multi-unit work where omissions or partial completion matter, map each material accepted obligation (requirement, deliverable, check or invariant) to the Work Unit(s) that address it, the applicable acceptance evidence and genuine integration gate. Retain unresolved obligations with their blocking dependency or authority boundary; an open question or optional proposal is not automatically accepted work. Keep IDs recoverable and avoid duplicate coverage credit when units share an obligation. Distinguish unit completion from plan/root outcome closure. Use the existing Work Plan at its natural resolution; no extra task, register, live scheduling or mandatory verification unit for a simple coherent task.
 
 ## 10. Preserve upstream ownership
 
