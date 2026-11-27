@@ -3,7 +3,7 @@ name: loom-foo-information-design
 description: "Design evidence-grounded diagrams, infographics or technical explanations with truthful visual encoding. Not general posters or data analysis."
 metadata:
   family: "design"
-  version: "0.5.0"
+  version: "0.7.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible; can use verified tables/charts/SVG/document tools, or provide bounded explanations when rendering is unavailable."
 ---
@@ -30,6 +30,8 @@ Use when the central challenge is to explain, compare, connect or show a process
 - `loom-foo-design-review` owns critique-only requests.
 - Product flows as interactive behavior belong to `loom-foo-experience-design`; explanatory flow diagrams can belong here.
 
+**Conditional cross-language collaboration (L1).** If an information artifact needs a source-faithful multilingual presentation, consult `loom-foo-translation` with exact labels/claims, definitions, units, intended locale and visual constraints. If translations might change grouping, causal relations, units, categories or inference, consult `loom-foo-translation-analysis` with the anchored versions and intended information topology. Information Design retains hierarchy and visual encoding ownership; Translation does not authorize changes to underlying facts or relationships. Ordinary same-language visualization and cosmetic reflow need neither consultation. When unavailable, preserve original terms/units and flag unresolved equivalence rather than silently altering the information structure; no recursive redesign.
+
 ## Procedure
 
 1. **Declare the message and evidence.** Identify audience/question, one primary claim or explanation, data grain, sources and reliability. Tag observed facts, derived figures, assumptions and unknowns. Never fill missing evidence with plausible values.
@@ -38,6 +40,8 @@ Use when the central challenge is to explain, compare, connect or show a process
 4. **Create real artifact.** Prefer deterministic controlled text/data layers (e.g. chart definitions, SVG, presentation or vector tools) over a generative picture when numerical precision matters. Use a separate image-generation layer only for non-factual illustration. Supply source editability where requested.
 5. **Validate what viewers actually see.** Compare all labels/numbers with evidence. Inspect chart geometry, legends, ambiguous links, grouping, readability, clipping and small-size rendering; test whether the visual supports the claimed takeaway. Repair material defects and re-inspect if feasible.
 6. **Deliver.** Give actual figure/source, concise interpretation, source identities, visible uncertainties and tested vs untested properties. For unsupported precision constraints provide an honest bounded alternative.
+
+**Conditional nonvisual equivalence.** When the requested medium and audience require access to a complex figure without seeing it, provide an equivalent explanation and, where necessary, navigable structured data or relationships. Preserve the values, units, comparisons, exceptions and uncertainty needed for the intended task. Choose a medium-appropriate association and reading path; do not flatten essential table/heading structure into a plain accessible description alone. Inspect the actual delivered representation and label untested assistive-technology behavior; a text alternative or parser pass is not conformance certification.
 
 ## Proportionate internal QA
 

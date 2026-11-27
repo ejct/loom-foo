@@ -1,10 +1,10 @@
 ---
 name: loom-foo-knowledge-intake
-description: "Prepare source-grounded reusable knowledge deltas from an authorized corpus. Read-only candidate preparation; not canonical writes or lookup."
+description: "Prepare source-grounded knowledge candidates from authorized project or historical corpora. Read-only; not canonical writes or lookup."
 compatibility: "Portable Agent Skills-compatible clients; knowledge-source and write permissions depend on the runtime."
 metadata:
   family: "knowledge"
-  version: "0.6.0"
+  version: "0.10.0"
   project: "loom-foo"
   authority: "read-only"
 ---
@@ -34,6 +34,10 @@ When an authorized source-specific intake profile is available and relevant, fol
 
 Explicit source-specific reconciliation or adjudication remains with the authorized target owner. A request for broad preservation can authorize a separately owned writing workflow, but this read-only skill does not self-promote or persist its own candidate.
 
+**Conditional cross-language composition (L1).** When a candidate knowledge item depends on an exact unfamiliar-language passage, consult `loom-foo-translation` for that passage with its source identity, edition, language and context. If a proposed historical claim, relation, chronology or meaning changes across versions, consult `loom-foo-translation-analysis` with the actual source and target. Keep original/transcription, translation, interpretation and extracted claim distinct and linked to provenance; use the historical profile where applicable. Knowledge Intake retains read-only candidate preparation; no canonical persistence or new access is authorized. Do not translate every source or rerun a completed translation. If inaccessible or unsupported, preserve the source gap and uncertainty; never reconstruct an original silently.
+
+**Conditional terminology collaboration (L1).** When preparing authorized knowledge candidates materially requires resolving competing term senses, definitions or a reusable glossary/term record, consult `loom-foo-terminology` for that distinct scoped linguistic result. Knowledge Intake retains source-grounded project/concept capture; preserve proposed vs accepted status and actual evidence. Ordinary concept capture and glossary lookup need no specialist. A term record does not authorize admission, persistence or a new source read. If Terminology is the caller, return the bounded existing candidate evidence rather than asking it to repeat the term analysis; if unavailable mark unresolved equivalence.
+
 ## 2. Modes
 
 **PORTFOLIO_CAPTURE:** Enumerate identities discoverable within a *selected authorized corpus*, not all possible systems. Build source-grounded candidate cards for real projects/concepts, including relationships, aliases, recorded decisions, implementation/observed outcomes, rejected approaches, open questions, privacy boundaries and source coverage. A metadata-only entry is `DISCOVERED_ONLY`, never fully captured. Independent subprojects and identity ambiguities must remain explicit.
@@ -47,6 +51,8 @@ Explicit source-specific reconciliation or adjudication remains with the authori
 Start from the current project-native entrypoint or known manifest, then read relevant original documents. Capture title, source URI or private-safe locator, as-of/revision, authority/lifecycle (`AUTHORITATIVE`, `ACCEPTED`, `PROPOSAL`, `RESEARCH`, `EVIDENCE`, `HISTORICAL`, `EXTERNAL`, `UNKNOWN`) and read coverage (`FULL_REVIEWED`, `PARTIAL`, `METADATA_ONLY`, `INACCESSIBLE`). Keep permissions and the owner of source authority separate from claims about knowledge relevance.
 
 Do not infer identity from folder naming, close spelling, thematic overlap or current timestamp. Verify rename/continuation/sibling relations through controlling lineage, owner correction or current records. Preserve contradictory or incomplete source coverage honestly.
+
+**Conditional restricted-material reuse.** When an intake candidate draws on restricted research or participant materials, carry forward material source-specific use, audience, processor, retention and withdrawal restrictions from the actual applicable policy or consent. Check them against the intended downstream use before including the material; prefer permitted minimized or genuinely anonymized derivatives when appropriate. Unknown or expired permission is not permission. Keep restricted or unresolved items outside that use; do not authorize deletion, disclose raw data or claim anonymization/compliance without evidence.
 
 ## 4. Extract and compare
 

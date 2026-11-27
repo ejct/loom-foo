@@ -4,7 +4,7 @@ description: "Audit claimed agent execution, skill reads, tools and checks again
 compatibility: "Agent Skills-compatible; runtime telemetry and source history may be absent."
 metadata:
   family: "engineering"
-  version: "0.4.0"
+  version: "0.5.0"
   project: "loom-foo"
 ---
 
@@ -41,6 +41,8 @@ Do **not** activate for ordinary drafting, design, coding, routine final-answer 
 - **Evidence vs investigation:** asking where proof lives is allowed. Running a test to create new proof, repairing source, changing a release, or opening unrelated accounts is outside this skill.
 - **Comprehension vs delivery:** a complete source read does not prove correct use, and a good output does not prove that a skill was selected.
 - **Privacy vs provenance:** provide event IDs, paths, versions, hashes or minimal quotations where useful; do not reproduce private source bodies solely for an audit.
+
+**Conditional coverage/closure inspection.** When an inspected claim asserts complete coverage, research closure or goal achievement, compare the declared scope/criterion and subject revision with observable executed checks and evidence; identify remaining or inaccessible units, unexplained exclusions, duplicated coverage and stale claims where visible. Separate execution completed, outcome achieved, and coverage justified; an open corpus has no known global denominator. Report NOT_CONFIRMED where traces/state are unavailable. Do not invent a new audit schema, rerun tests, repair, or infer all unknown branches merely to fill the receipt.
 
 ## Answer Receipt / Process Trail
 

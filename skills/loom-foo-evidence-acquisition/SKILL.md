@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Web/search tools, project source
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.5.0"
+  version: "0.8.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -37,6 +37,8 @@ Execute the exact current acquisition contract under independently checked actio
 - **A multi-party handoff, candidate test, special output or consequential completion requires detailed downstream disposition** → `references/PD_ACQUISITION_OUTPUT.md` (source H2 sections 18,19,20).
 
 **No-trigger:** a short, resolved ordinary case does not require all detailed references merely because this skill was selected. Existing specialist references linked inside these materials remain conditional on their original situations. A moved section does not grant new permissions or replace the owning L1 safeguards.
+
+**Conditional cross-language composition (L1).** If an already authorized acquired source passage is necessary for the evidence plan and must be rendered into the working language to be usable, consult `loom-foo-translation` on the exact readable passage, source locator/edition, language and context. Preserve the original/transcription and translated derivative separately, with provenance, translator/method when known, coverage and uncertainties; acquisition remains owner of the Evidence Package. Ordinary reading or collection of usable foreign-language evidence needs no full translation. If acquisition is itself answering a Translation/Analysis request for attestation or a source, return the actual source and locator rather than re-entering the same translation question. If specialist or readable source is unavailable, mark the translation gap and continue only with independently usable evidence. Do not exceed access, disclosure or plan authority.
 
 ## 1. Routing gate
 
@@ -160,6 +162,12 @@ Critical invariant:
 `COMPLETE_ZERO != FAILED`.
 
 A valid zero result may be important evidence.
+
+## Conditional coverage and execution continuity
+
+For material multi-item or interrupted acquisition, preserve planned obligation identity and actual source/version/segment, method/fidelity, inspected vs remaining extent, outcome and evidence locator. A search hit, metadata read, failed access or plan is not completed inspection. Count valid complete-zero only for its actually checked scope; do not double-count overlap or mix unit kinds. Keep new material leads as candidates for reconciliation, not authority to expand the plan. While authorized actionable items remain, continue within the current execution episode instead of stopping for a progress report; prioritize neglected or partially checked items when useful, avoid duplicate attempts unless a changed method/subject justifies them. On genuine interruption or blocker return recoverable remaining items, reasons and next actions through the existing Evidence Package; separate execution completion, acquisition coverage and claim sufficiency. Do not invent background execution or a new registry; preserve the fast path.
+
+**Conditional inspected-evidence binding.** For a consequential source-derived observation or coverage claim, record the actual inspected source segment or a recoverable pointer that resolves to that segment and its material revision/representation. Verify that the recorded observation is supported by the delivered content, not merely a URL, citation identifier, retrieval success, preview, metadata or model-authored summary. If the exact support cannot be recovered, narrow the evidence state and mark the affected obligation unresolved; never reconstruct a missing source span or treat the label `ACQUIRED` as proof. Preserve privacy and copyright through a minimal authorized excerpt or stable locator rather than unnecessary full capture.
 
 ## 13. Keep package readiness separate from evidence sufficiency
 

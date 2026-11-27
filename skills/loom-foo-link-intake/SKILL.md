@@ -4,7 +4,7 @@ description: "Retrieve content behind a bare URL or supplied video, playlist, Gi
 compatibility: "Agent Skills clients with a browsing/retrieval tool; optional connected transcript providers, source connectors and ASR. No fixed paid service, API key or core runtime required."
 metadata:
   family: "knowledge"
-  version: "0.8.0"
+  version: "0.10.0"
   project: "loom-foo"
 ---
 
@@ -27,7 +27,7 @@ metadata:
 
 - **Trigger:** bare HTTP(S) link; explicit "поглянь на це посилання", "що у відео?", "розбери цей YouTube", "summarize this URL", or failed link ingestion recovery. Trigger when a substantive requested analysis requires first acquiring content from a linked source, even if a domain specialist owns the subsequent analysis.
 - **Not primary owner:** an existing transcript/body supplied in full (analyze directly); general research without a supplied link; speech-to-text processing (`loom-foo-audio-transcription`, EXTERNAL and usable only when separately installed); evidence adjudication (`loom-foo-evidence-review`); user-requested knowledge intake (`loom-foo-knowledge-intake`, read-only candidate preparation; canonical persistence requires its owner); or operative GitHub mutations (`loom-foo-github-operations`, EXTERNAL). If an external owner is absent, state that exact limit and do not simulate its execution. Source-native connectors take precedence for private documents.
-- **Email sources:** For a private Gmail/Outlook message URL, identify the email referent through an authorized native connector, never a public webpage fetch. `loom-foo-email-intake` owns message/thread/real-world episode reconstruction when available; this skill retains generic bare-link identification. An explicit email-history question normally selects Email Intake directly. A named handoff is not proof the sibling was loaded.
+- **Email-link boundary:** if a supplied Gmail/Outlook or other correspondence link requires message/thread/episode reconstruction, use `loom-foo-email-intake` when installed and authorized mailbox read access exists. That skill owns email evidence and cross-thread context; Link Intake owns generic URL acquisition only. Do not pass public webpages, generic files, marketing email examples, or fully supplied email text to Email Intake by default. Missing email access is an evidence limit, not permission to guess message content.
 - **Composition:** acquire the source and pass a bounded Source Intake to the task's specialist without demanding a second user message. For material named-project handoffs, pass the verified current project identity, authority source/coverage and any current knowledge-retrieval receipt so downstream specialists can reuse this context without duplicate reads. Skills are independently loaded; a reference to another skill does not prove it ran. Use a fallback when the preferred specialist isn't available.
 
 ## 1. Bind the actual referent and request
@@ -46,6 +46,8 @@ metadata:
 - Before invoking a costed capability, inspect current availability, quoted price and user cost limits. A known historical route may have expired; never rely on it as if guaranteed. Retry a transient error only if a bounded retry can plausibly fix it. Otherwise switch source/transport/provider while preserving source identity and authority.
 - Do not infer `NO_TRANSCRIPT` from one provider's HTTP 403, `RequestBlocked`, unavailable endpoint or successful outer response with inner error.
 
+**Conditional historical web intake.** When the requested evidence is a historical page or website state, distinguish requested date/window from actual observed capture or publisher-archived revision, original URL from archive locator, and archived body from index/metadata or live fallback. Confirm material linked resources separately if needed; record differing capture dates, missing assets and unverified interactive or visual behavior. Try a lawful equivalent archive or publisher-hosted historical copy when the requested replay fails, but do not silently substitute a different date, live page or unrelated snapshot. A cache/access error does not establish absence of a capture. Preserve the authorized disclosure boundary; do not submit private URLs to public archives or create new captures without authority. Ordinary current-page intake needs no archival lookup.
+
 ## 3. Distinguish acquisition from interpretation
 
 For each source preserve, to the extent material and actually available:
@@ -56,6 +58,8 @@ For each source preserve, to the extent material and actually available:
 - Failure classification (`NO_CAPTIONS_CONFIRMED`, `PROVIDER_BLOCKED`, `AUTH_REQUIRED`, `NOT_FOUND`, `NETWORK_ERROR`, `NOT_ATTEMPTED`, `UNKNOWN`) and what would change it. Preserve direct source links and timestamps for substantial claims.
 
 See `references/COVERAGE_AND_HANDOFF.md` for a compact, optional Source Intake representation. No new global database/schema is required.
+
+**Conditional cross-language composition (L1).** When the user requests translation of a supplied linked text/caption, or a material acquired passage needs rendering for the requested answer, consult `loom-foo-translation` on the acquired readable text and locator/timestamps. If a translated caption or version could change a consequential conclusion and both versions are available, consult `loom-foo-translation-analysis` for a scoped comparison. Preserve original track identity, language, auto-caption/ASR/translated provenance, coverage and timestamps; do not claim original speech or visual inspection from a translated track. Link Intake owns acquisition and correct routing; a source already usable for summary needs no full translation. If only translated captions exist, state that the original is missing; if a specialist is unavailable, bound interpretation. Do not bypass access or rights or return the same acquisition request recursively.
 
 ## 4. Answer or hand off without goal substitution
 

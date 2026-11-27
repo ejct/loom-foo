@@ -3,7 +3,7 @@ name: loom-foo-graphic-design
 description: "Create or revise posters, campaigns, covers and editorial compositions with exact content, format adaptations and controlled local edits. Not identity-system redesign, infographics or critique-only tasks."
 metadata:
   family: "design"
-  version: "0.5.0"
+  version: "0.6.0"
   project: "loom-foo"
 compatibility: "Agent Skills-compatible guidance; actual editing, illustration, page layout and export tools vary by host."
 ---
@@ -48,6 +48,8 @@ When the user asks to “make the spacing wider,” “move only this element,�
 - For **new ratios or languages**, keep information priority, voice, brand grammar and specified assets invariant; permit necessary reflow, crop and new line breaks. Never pretend all pixel positions or line breaks can remain identical across different ratios/text lengths.
 - Keep exact text outside a visual generation step where possible; inspect every delivered variant for actual characters, amounts, citations/attribution, crop and safe areas. Distinguish editable final source from raster concept output.
 - If the requested accuracy cannot be reached by available tools, return the strongest honest artifact and identify the exact unsatisfied property; do not claim preservation or production verification without checks.
+
+**Conditional production handoff.** When an editable or production package is requested, inventory the actual required source, linked assets, exports, fonts and provider specifications; compare that inventory with the delivered files and their link resolution or bytes where material. Distinguish permission to embed or render from permission to redistribute source assets, especially fonts; do not bundle restricted or unverified assets. Preserve required attribution and flag missing dependencies, substitutions and recipient-side checks. A manifest, visually correct export or successful packaging command alone is not proof of a complete, licensed or print-ready handoff. Ordinary single-image delivery needs no package inventory.
 
 ## Embedded QA, not a review pipeline
 

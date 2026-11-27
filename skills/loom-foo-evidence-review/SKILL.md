@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Evidence Packages, source artifa
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.5.1"
+  version: "0.7.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -36,6 +36,8 @@ Map exact claims to attributable evidence point by point, preserve countereviden
 - **The assessment is handed to a downstream decision owner and decision/acceptance boundaries must remain explicit** → `references/PD_EVIDENCE_REVIEW_HANDOFF.md` (source H2 sections 18).
 
 **No-trigger:** a short, resolved ordinary case does not require all detailed references merely because this skill was selected. Existing specialist references linked inside these materials remain conditional on their original situations. A moved section does not grant new permissions or replace the owning L1 safeguards.
+
+**Conditional cross-language composition (L1).** When support for a consequential claim depends on whether a supplied translation preserves a source term, quotation, logical scope or ambiguity, consult `loom-foo-translation-analysis` on the exact source/target passages, edition and relevant context. If no target version exists and a rendering is materially required, use `loom-foo-translation` for the bounded passage first if available. Review owns the claim/evidence relation; retain linguistic findings and uncertainty as input, not an independent historical fact. No consultation for a source-complete claim where the linguistic issue is immaterial. When Review is answering an Analysis request to assess disputed linguistic evidence, return that scoped evidence judgment without asking Analysis to repeat the same comparison. Missing original or specialist means limit the affected inference, not invent evidence. No unauthorized data access or disclosure.
 
 ## 1. Routing gate
 
@@ -130,6 +132,8 @@ Critical distinctions:
 `NO_OBSERVED_EFFECT != EVIDENCE_OF_NO_EFFECT`
 
 See `references/SUPPORT_AND_UNCERTAINTY.md`.
+
+**Conditional source-lifecycle reassessment.** When a correction, retraction, changed revision or other material source-status event affects an existing assessment, bind the exact old/new source and affected spans/claims, reassess only materially dependent claims against surviving evidence, and flag affected downstream artifacts for their owner. Retain historical evidence and distinguish corrected content, reduced support, contradiction and unknown current status. A failed status lookup is not a retraction; an unaffected independent source is not invalidated by association. Do not rewrite project canon, erase history, or institute monitoring without authority.
 
 ## 13. Express uncertainty without fake precision
 

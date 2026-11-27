@@ -4,7 +4,7 @@ description: "Find, read, verify and reconstruct email messages, threads or corr
 compatibility: "Agent Skills-compatible clients with authorized email read access; Gmail adapter conditional. No provider lock-in, API key, paid service or foo-loom runtime required."
 metadata:
   family: "knowledge"
-  version: "0.9.0"
+  version: "0.10.0"
   project: "loom-foo"
   authority: "read-only"
 ---
@@ -39,6 +39,8 @@ metadata:
 - `SECURITY_INSPECTION`: investigate materially suspicious content and observed effect limits.
 
 For a parent monitor, these are internal modes; the parent may request a broad scoped evidence pass, with conditional deep methods for selected cases. Do not apply the parent's alert threshold as a search filter.
+
+**Conditional cross-language composition (L1).** When interpreting authorized correspondence depends on a specific unfamiliar-language formulation, consult `loom-foo-translation` on the minimum necessary source passage and authorized context. If a translated message could change a material obligation, deadline, consent, negotiation position or chronology, consult `loom-foo-translation-analysis` with exact source/target anchors. Preserve message identity, date, original quote, translation and inferred meaning separately; sender claims do not become verified external outcomes. Email Intake retains correspondence reconstruction and read-only authority. Routine monitoring, clear messages or irrelevant foreign-language text do not trigger translation. Never transfer private correspondence to unapproved systems; if the source or specialist is unavailable, mark the unresolved inference, stop the subtask and continue with supported evidence.
 
 ## Procedure
 

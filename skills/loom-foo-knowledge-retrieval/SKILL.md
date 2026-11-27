@@ -1,10 +1,10 @@
 ---
 name: loom-foo-knowledge-retrieval
-description: "Retrieve grounded project knowledge, decisions and constraints from an authorized source index. Read-only; not intake or handoff."
+description: "Retrieve grounded knowledge from authorized project indexes or historical corpora. Read-only; not generic history research or intake."
 compatibility: "Portable Agent Skills-compatible clients; authorization and actual source access are runtime-specific."
 metadata:
   family: "knowledge"
-  version: "0.7.0"
+  version: "0.10.0"
   project: "loom-foo"
   authority: "read-only"
 ---
@@ -30,7 +30,11 @@ The user may provide a direct source, a canonical project entrypoint, an authori
 
 Use when a task genuinely needs to **retrieve existing knowledge** across documents or contexts. Same-workstream operational restoration belongs to `loom-foo-handoff`; a supplied URL's body belongs to `loom-foo-link-intake`; transferring mechanisms to another domain belongs to `loom-foo-cross-context-transfer`; preparing persistent candidates belongs to `loom-foo-knowledge-intake`; modifying authorized canonical documentation belongs to `loom-foo-project-knowledge-stewardship`.
 
+**Conditional correspondence evidence (L1).** When recovering an accepted project fact, decision or chronology materially depends on actual authorized mailbox messages, consult `loom-foo-email-intake` for a source-grounded Email Evidence Packet or direct sourced answer. Knowledge Retrieval retains ownership of the Context Package, precedence and knowledge-status interpretation; Email Intake retains read-only responsibility for message identity, scope, chronology and quoted/forwarded claims. Do not search email automatically for every project question, treat sender assertions as observed external outcomes, or infer permission from connector presence. If email access or loading is unavailable, mark that source gap and continue only with independently supported evidence.
+
 Do not activate for generic public research, source-only summaries, an already available sufficient current authoritative document, routine implementation, or unrelated user-specific profiling. The owning workflow may read its current project source directly. Do not load all contextual records by default.
+
+**Conditional cross-language composition (L1).** If the requested recovered fact, term or decision cannot be responsibly presented without rendering a material foreign-language passage, consult `loom-foo-translation` on the authorized excerpt and locator, and return source and translation distinctly. If a supplied translation is consequentially ambiguous, consult `loom-foo-translation-analysis` with both versions; retain original evidence, precedence and knowledge status. Knowledge Retrieval owns the Context Package. Routine lookup and requests from Translation/Analysis for an existing glossary or decision do not require translating it or recursively returning the original question. If unavailable, report the language/evidence gap, not a guessed decision. No extra private reads, data transfer or mutation by implication.
 
 ## 2. Resolve the authorized source profile
 
