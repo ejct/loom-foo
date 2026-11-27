@@ -2,18 +2,15 @@
 
 **PUBLIC_SOURCE · PUBLICATION_BLOCKED · DISTRIBUTION_NOT_RELEASED**
 
-As of 22 November 2026, `ejct/loom-foo` is publicly accessible. This is a **source preview**, not a vetted tagged distribution or a marketplace release.
+As of 27 November 2026, `ejct/loom-foo` is publicly accessible. This is a **source preview**, not a vetted tagged distribution or a marketplace release.
 
 ## Current state
 
-- `main`: source candidate **0.50.1**, 42 independently versioned Agent Skills and five native host manifests.
-- Project Integration 0.5.0 adds partial setup detection and guarded recovery; actual local Core repair remains unverified.
-- Onboarding 0.3.0, Execution Inspector 0.4.0, Identity Design 0.5.0 and Graphic Design 0.5.0 are integrated as generic source changes; runtime activation remains unverified.
-- Generic Email Intake 0.9.0 adds a caller-owned recurring-monitor evidence composition; Link Intake 0.8.0 remains independently versioned. New UX Writing 0.2.0 owns in-product copy and content-design decisions. These sources were reconciled from an independently installed owner-private ChatGPT plugin; no public package or host-routing guarantee follows.
-- P1–P4 execution reliability source changes are integrated: routing-observation comparison, source-signed context slices, semantic delivery readback, and host-permission/oracle integrity guidance. Static and synthetic checks do not prove host routing or enforcement.
-- The owner-private ChatGPT plugin was updated first from **0.50.0 to 0.50.1 / 42 Skills** (five patch-aligned Skill roots), and this source preview then adopted the **0.50.1 bundle label**. The five changed installed Skill roots were read back byte-identical to generic Git. The public repository remains a *portable generic subset*: it excludes owner-only Knowledge profiles and binary assets. **Matching bundle versions do not assert identical full packages or installed routing behavior.** A private plugin installation is not a public distribution.
+- Source candidate **0.57.0**, 45 independently versioned Agent Skills and five native host manifests.
+- Added Translation, Translation Analysis and Terminology; expanded 27 existing skill versions across evidence, planning, language, design, engineering and knowledge work.
+- The separately installed owner-private ChatGPT plugin was observed at 0.57.0 before generic source reconciliation. The public source excludes owner-only Knowledge profiles and binary assets. Matching bundle labels do not establish identical archives, host routing or installation.
 - GitHub Issues is available for non-sensitive support; no confidential reporting channel has been verified.
-- There are **no published GitHub Releases** as of this status check.
+- No published GitHub Releases.
 
 ## Outstanding gates
 
