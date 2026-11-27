@@ -1,0 +1,12 @@
+# Translation chain analysis
+
+Receive actual ordered versions, profiles, declared transition type and direction, and available context/lineage metadata. If versions are missing, analyze only observed edges and explicitly identify gaps. Never fill a missing intermediate with a generated text and then describe it as observed.
+
+1. Compare every available adjacent pair independently with the transformation method. Distinguish documented translation, oral retelling, editorial revision, reconstruction, simulation and unknown dependency. Mark uncertain lineage as such.
+2. Compare endpoints directly. Trace each important property across versions: first observed change, continued availability, later changes, and final state. A later similar wording can be reintroduced or guessed; do not conclude that a lost distinction was transmitted continuously. Multiple changes can compensate, accumulate or interact. Do not sum arbitrary loss scores, assume monotonic degradation or use back translation as sole quality evidence.
+3. Distinguish per-step input from original-source context. For experimental chains, report observed isolation (`isolated`, `shared_context`, `unknown`); if prior content was visible, note contamination risk. Separate text-carried information from metadata and annotations available to the translator. Never claim a separate runtime or independent execution from a prompt alone.
+4. Explain the largest consequential transformations and their evidence; mark unknown cause when no access to translator decisions. For comparisons of routes, hold original, intended task and comparison conditions stable when feasible; report uncontrolled differences. Treat model-induced drift, language effects and historical conditioning as different hypotheses, not demonstrated causes.
+
+Example: A “you” → B informal singular → C generic “you” does not restore the original uncertainty about which person was meant; the final surface string matches but the intermediate decision is only evidenced by B. Final text again permits multiple readings; this is broadened availability, not proof that the original range was retained through the chain.
+
+Research precedent: Saba & Skiena, EMNLP 2025, https://aclanthology.org/2025.emnlp-main.524/ (repeated translation as a way to generate evaluation data; does not establish that our particular routes isolate language effects or improve user outcomes).
