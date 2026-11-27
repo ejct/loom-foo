@@ -15,7 +15,7 @@ class Contract(unittest.TestCase):
     def test_identity_version(self):
         self.assertEqual(ROOT.name, ID)
         head=self.skill.split('---',2)[1]
-        for x in [f'name: {ID}','version: "0.9.0"','family: "knowledge"','authority: "read-only"']:
+        for x in [f'name: {ID}','version: "0.10.0"','family: "knowledge"','authority: "read-only"']:
             self.assertIn(x,head)
     def test_all_references_exist(self):
         found=set(re.findall(r'references/([A-Z_]+\.md)',self.skill))
