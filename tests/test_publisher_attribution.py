@@ -77,7 +77,7 @@ class PublisherAttributionCandidateTests(unittest.TestCase):
     def test_rebranded_handoff_contract_is_not_an_old_protocol_claim(self):
         handoff = self.read("skills/loom-foo-handoff/SKILL.md")
         framing = self.read("skills/loom-foo-handoff/references/CHAT_TEXT_TRANSPORT.md")
-        self.assertIn('version: "0.9.0"', handoff)
+        self.assertIn('version: "0.11.0"', handoff)
         self.assertIn("Protocol: loom-foo Chat/Text Handoff v0.3", framing)
 
     def test_bundle_version_and_skill_versions(self):

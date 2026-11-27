@@ -1,8 +1,8 @@
 ---
 name: loom-foo-drafting
-description: "Draft or substantially rewrite practical prose for an audience and purpose, preserving facts and voice. Not proofreading or narrative-only analysis."
+description: "Draft or substantially rewrite practical prose for an audience and purpose, preserving facts and voice. Not primary translation, translation comparison, proofreading or narrative-only analysis."
 metadata:
-  version: "0.7.0"
+  version: "0.9.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible guidance for multilingual written artifacts; no paid API, persistent storage or other skill is required."
@@ -21,7 +21,7 @@ compatibility: "Portable Agent Skills-compatible guidance for multilingual writt
 
 ## Critical contract
 
-Own the **actual prose artifact**: write, rewrite, adapt or translate text so it accomplishes the user's communicative purpose in the requested audience, voice, language and medium. Deliver the requested artifact itself, not just advice or an outline, when it is possible to draft it.
+Own the **actual prose artifact**: write, rewrite or adapt text so it accomplishes the user's communicative purpose in the requested audience, voice, language and medium. Deliver the requested artifact itself, not just advice or an outline, when it is possible to draft it.
 
 - Preserve source facts, actors, uncertainty, consent, attribution, numbers, dates, promises, terms, referents and author intent. Never manufacture testimonials, research, awards, data, personal experiences or legally consequential assurances. Mark necessary placeholders or omit claims rather than pretending they are verified.
 - Differentiate **requested transformation** from unintended editing. Apply only authorized stylistic, substantive and translation changes; don't quietly improve unrelated sections or rewrite already accepted facts. A user asking for a minimal rewrite authorizes less change than one asking for a new version.
@@ -30,9 +30,10 @@ Own the **actual prose artifact**: write, rewrite, adapt or translate text so it
 
 ## 1. Activation and sibling boundaries
 
-**Use** for new copy, a complete draft from notes, professional correspondence, project descriptions, sections of case studies, bios, product descriptions and other non-interface copy, technical explanations, user documentation, localization, transcreation and substantial requested prose revision.
+**Use** for new copy, a complete draft from notes, professional correspondence, project descriptions, sections of case studies, bios, product descriptions and other non-interface copy, technical explanations, user documentation, substantial audience/cultural adaptation, transcreation and substantial requested prose revision.
 
 **Prefer another owner** when the main outcome is:
+- Source-faithful cross-language translation or historical-language rendering → `loom-foo-translation` when available; comparative translation diagnosis → `loom-foo-translation-analysis`. Retain drafting ownership for new prose, substantial audience adaptation or explicitly requested transcreation. The TRANSLATE fallback below applies only when the translation specialist is unavailable; do not require another skill.
 - **Interface content tied to a real UI task, control, system state or action consequence** → `loom-foo-ux-writing` when available. UX Writing owns in-product labels, messages and reusable content patterns; Drafting owns general prose and marketing text even when the subject is a product. Plain grammatical proofreading without a UX decision remains Editorial Review. Do not load UX Writing for ordinary prose, translation or a complete source-preserving rewrite without interaction-state reasoning.
 - Finding/categorizing orthographic/grammatical/style problems without replacing the source, or minor proofreading → `loom-foo-editorial-review` where available.
 - Choosing what the document should argue, which section follows which, or a whole narrative/evidence structure → `loom-foo-narrative-design` where available.
@@ -42,6 +43,8 @@ Own the **actual prose artifact**: write, rewrite, adapt or translate text so it
 
 Skills are independent. If another sibling is absent, produce a reasonable outcome directly rather than require a multi-skill process.
 
+**Conditional cross-language collaboration (L1).** When a broader writing task includes a consequential source-faithful cross-language rendering, consult `loom-foo-translation` on the exact source spans and intended audience/locale, and preserve the supplied claims, protected terms and obligations. If a material adaptation or translated quotation could shift the source meaning, consult `loom-foo-translation-analysis` for a bounded comparison; incorporate its findings without changing commitments. Drafting retains the new prose/adaptation outcome. Routine same-language rewriting or already settled translation does not trigger either consultation. When a specialist is unavailable, do only the bounded task supported by the source and flag consequential uncertainty; no repeated round trip.
+
 ## 2. Resolve a minimal writing brief
 
 Infer from the user input: purpose, audience, intended action/understanding, genre, medium, source facts, exact protected phrases, length constraints, voice/register, target language/locale, and transformation scope. Use available surrounding context only if actually accessible and permissible. Ask one question only for a genuinely blocking fact or material authorization. Otherwise draft with a safe assumption or a visible placeholder.
@@ -50,8 +53,8 @@ Choose the task's primary operation:
 
 - `DRAFT`: compose a fresh practical text from provided brief/facts.
 - `REWRITE`: transform an identified existing revision for a new purpose, style or clarity level.
-- `LOCALIZE`: adapt idiom, conventions, politeness and terminology to a target locale while preserving content obligations.
-- `TRANSLATE`: preserve source meaning and discourse function; make only translation-required changes.
+- `LOCALIZE`: substantial audience/cultural adaptation when explicitly requested; source-faithful locale rendering belongs to `loom-foo-translation` when available. Preserve content obligations.
+- `TRANSLATE` (fallback when the specialist is unavailable): preserve source meaning and discourse function; make only translation-required changes.
 - `TRANS-CREATE`: if explicitly requested, allow controlled conceptual/marketing adaptation, noting consequential meaning changes.
 - `CONTINUE`: extend a document while maintaining accepted voice, facts and scope.
 

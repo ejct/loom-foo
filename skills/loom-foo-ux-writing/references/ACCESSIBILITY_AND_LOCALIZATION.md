@@ -23,6 +23,8 @@ Prefer descriptive link names, visible form labels, accurate alt text for inform
 - For Ukrainian: do not translate English interface jargon word-for-word. Use natural Ukrainian grammatical case and verb aspect based on task; note uncertainties and consult authoritative language resources or the project's termbase when a disputed form matters. Do not present invented spelling rules as official norms.
 - For English: follow the actual product/platform voice and locale, rather than treating `en-US` conventions as obligatory for all products.
 
+**Conditional specialist handoff:** For settled source UI strings requiring faithful target-language rendering, provide the source, state/action, locale and protected tokens to `loom-foo-translation`. If a localized message could change the user’s understanding of consequences or recovery, use `loom-foo-translation-analysis` on the paired strings. UX Writing retains the product-content decision; do not conflate translator notes with actual implementation or accessibility evidence.
+
 ## Handoff
 
 When delivering a localized string set, keep stable provided keys and placeholders byte-for-byte; supply `source`, `locale`, `target`, `UI context`, `variable definitions` and `uncertainty` as needed. Actual rendering and assistive-technology tests belong to the implementation/runtime owner.

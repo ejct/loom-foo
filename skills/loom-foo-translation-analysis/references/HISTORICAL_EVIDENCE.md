@@ -1,0 +1,9 @@
+# Historical evidence
+
+For each version record actual source/edition, language/variety, date or range, region, genre, medium, speaker/audience if known and evidence of lineage. Do not infer original wording from a later translation. Distinguish attested reading, normalized transcription, reconstructed wording, and simulated text. A modern user sentence rendered into a historical dialect is simulated even if individual constructions are attested.
+
+A translation can differ because of textual variants, editorial changes, different source editions, oral transmission, genre adaptation or actual translation. Before assigning a difference to the translator, verify that compared versions are actually related and which underlying reading was available. If lineage is unknown, state a cross-version difference, not its historical cause. Do not conflate oral speech with written composition; do not treat a likely spoken language as proof of the specific words spoken.
+
+Check primary texts and critical editions, then dated regional grammar/dictionaries/corpora; note distance of proxy dialects and genre. Separate exact attestation from analogy and reconstructed sense. Evidence status: `attested`, `reconstructed`, `simulated`, `unsupported`; the status of components and whole text may differ. Cite the exact source locator where possible, not just the dictionary homepage. If unavailable, mark unresolved; do not invent examples, editions or ancient perspectives.
+
+Useful starting points: Comprehensive Aramaic Lexicon https://cal.huc.edu/ (unfinished, multiple dialects); Scaife ATLAS https://atlas.perseus.tufts.edu/ (Greek/Latin and other corpora); Yale guide https://guides.library.yale.edu/electronic_religion/languages. A source guide is not proof of an individual form. Treat religious and cultural claims with specificity; do not presume a universal historical worldview.

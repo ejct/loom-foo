@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Can use repository/project sourc
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.8.0"
+  version: "0.9.0"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->
@@ -28,6 +28,8 @@ metadata:
 4. State the selected candidate's responsibilities, state owners, key decisions, critical paths, constraints, failure/recovery, interfaces, trade-offs and assumptions. Use `SELECTED_FOR_REFINEMENT` as workflow status, **not** project adoption.
 5. Challenge consequential assumptions and failure cases in a bounded **same-context adversarial self-review** by default. Repair a specific wrong decision; reopen the whole architecture only for invalid thesis/drivers. Recheck affected invariants after revision. Defer premature choices; never require a reviewer agent or fixed multi-pass ritual.
 6. Close as `CONVERGED`, `VALIDATION_REQUIRED`, `BLOCKED` or `NON_CONVERGING` with a usable architecture and concise Design Closure. Empirical unknowns require an honest smallest probe, not theoretical PASS or automatic halt of independent safe work.
+
+**Conditional transition compatibility.** When evolving an interface, schema, data format or deployment with mixed versions, persistence or staged rollout, assess required intermediate states, actual reader/writer or producer/consumer compatibility and the point beyond which rollback can no longer preserve data or behavior. Define migration/recovery conditions and smallest relevant probes; consider expand–migrate–contract only when it fits. Do not infer safe rollback from endpoint correctness or a backup alone. A small atomic compatible change needs no staged migration plan.
 
 **Hard rules:** architecture design does not authorize canonical changes, commits, migration, deployment or release. A tool or separate skill being available does not establish actor independence. No guessed metrics, premature services or unrequested project-wide redesign. Preserve units/state/timebases when materially relevant.
 

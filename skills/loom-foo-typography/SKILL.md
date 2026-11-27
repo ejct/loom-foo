@@ -3,7 +3,7 @@ name: loom-foo-typography
 description: "Design or inspect typography, glyph coverage and rendering across scripts and media. Not complete visual critique or language proofreading."
 metadata:
   family: "design"
-  version: "0.4.0"
+  version: "0.5.0"
   project: "loom-foo"
 compatibility: "Portable Agent Skills guidance; actual font inspection, browser, layout and document tools are host-dependent."
 ---
@@ -39,6 +39,8 @@ Use when **typography is the central object or decision**: select or pair fonts,
 - Typeface design or font-engineering (outlines, interpolation, kerning tables, compiled OTF/TTF) -> separate production specialty and tools; never imply a font was compiled by delivering a logo or SVG.
 
 This skill works independently if other loom-foo skills are absent. Don't require the general Design skill to run first.
+
+**Conditional cross-language collaboration (L1).** When an actual approved multilingual layout has a material space/script constraint and a shorter or alternate target-language rendering is authorized, consult `loom-foo-translation` with exact source, current target, locale, protected meaning and observed space constraint. If an alternate formulation might change a consequential claim, consult `loom-foo-translation-analysis` on the pair. Typography owns glyphs, script, metrics and layout; do not edit content simply to fit or claim actual rendering from copy. If the caller is Translation asking for glyph/space assessment, return the concrete typographic constraint rather than re-requesting the same translation. Routine type work and unapproved copy changes are non-triggers; if no authorized rendering is available, adjust layout or report the constraint.
 
 ## Procedure: proportionate to task
 

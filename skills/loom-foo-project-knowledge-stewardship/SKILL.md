@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Project-native documents, reposi
 metadata:
   family: "knowledge"
   project: "loom-foo"
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -115,6 +115,8 @@ Update only surfaces whose stale state could materially cause:
 Do not search-and-replace every textual mention. Historical descriptions may remain historically accurate.
 
 For detailed rules read `references/CONSISTENCY_SURFACE.md`.
+
+**Conditional impact and continuity reconciliation.** When an authorized durable change materially affects an existing obligation, result, source revision or coverage claim, preserve its identity and historical evidence, update only the affected project-native status/remaining-work references, and flag stale or conflicting results for the owning verification/research operation. Distinguish observed execution, outcome and coverage. Do not declare a result accepted or a project closed, create a parallel frontier registry, or mutate dependent surfaces beyond authority. Use the existing minimum consistency set.
 
 ## 13. No-delta fast path
 

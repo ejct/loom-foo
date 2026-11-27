@@ -1,0 +1,149 @@
+{
+  "status": "AUTHORED_EXPECTATIONS_NOT_RUN",
+  "cases": [
+    {
+      "id": "translation-analysis-01",
+      "category": "no_loss",
+      "prompt": "EN: I have a red car. UK: У мене червона машина. Compare.",
+      "expected_properties": "Possession preserved; no invented loss from syntax."
+    },
+    {
+      "id": "translation-analysis-02",
+      "category": "no_loss_order",
+      "prompt": "UK: Завтра я прийду. EN: I will come tomorrow. Compare.",
+      "expected_properties": "No material loss from word order alone; optional focus caveat only if supported."
+    },
+    {
+      "id": "translation-analysis-03",
+      "category": "ambiguity_narrow",
+      "prompt": "EN: You were right. UK: Ти мав рацію.",
+      "expected_properties": "Narrowed address and gender grammar; context-dependent adequacy."
+    },
+    {
+      "id": "translation-analysis-04",
+      "category": "ambiguity_broaden",
+      "prompt": "UK: Ти мала рацію. EN: You were right.",
+      "expected_properties": "Target loses explicit feminine grammatical choice and informal singular marking; context may recover."
+    },
+    {
+      "id": "translation-analysis-05",
+      "category": "scope",
+      "prompt": "EN: She did not promise to pay. UK: Вона пообіцяла не платити.",
+      "expected_properties": "Negation scope shift; substantive error."
+    },
+    {
+      "id": "translation-analysis-06",
+      "category": "modal",
+      "prompt": "EN: It might work. UK: Це спрацює.",
+      "expected_properties": "Possibility becomes prediction; strength shift."
+    },
+    {
+      "id": "translation-analysis-07",
+      "category": "addition",
+      "prompt": "EN: Alex arrived. UK: Алекс прибув учора.",
+      "expected_properties": "Yesterday added; do not infer translator motive."
+    },
+    {
+      "id": "translation-analysis-08",
+      "category": "omission",
+      "prompt": "EN: The red door is locked. UK: Двері замкнені.",
+      "expected_properties": "Red omitted absent other context."
+    },
+    {
+      "id": "translation-analysis-09",
+      "category": "explicitation",
+      "prompt": "Context: Anna bought a book. EN: She read it. UK: Анна прочитала книжку.",
+      "expected_properties": "Referents explicitated, not new facts if context licenses."
+    },
+    {
+      "id": "translation-analysis-10",
+      "category": "implicitation",
+      "prompt": "Context: the only object is a red car. EN: I sold the red car. UK: Я продав її.",
+      "expected_properties": "Referent may be recoverable with appropriate antecedent; distinguish implicit/contextual from total loss."
+    },
+    {
+      "id": "translation-analysis-11",
+      "category": "pragmatic",
+      "prompt": "EN: Could you close the window? UK: Ви можете зачинити вікно?",
+      "expected_properties": "Both can function as request; do not falsely label literal form as lost politeness."
+    },
+    {
+      "id": "translation-analysis-12",
+      "category": "irony",
+      "prompt": "Context: response to a failure. EN: Great job. UK: Чудова робота.",
+      "expected_properties": "Irony may survive context; do not assume target sincere."
+    },
+    {
+      "id": "translation-analysis-13",
+      "category": "culture",
+      "prompt": "UK: толока. EN: community work party. Is the word untranslatable?",
+      "expected_properties": "No categorical untranslatability; discuss contextual/descriptive option and nuance."
+    },
+    {
+      "id": "translation-analysis-14",
+      "category": "idiom",
+      "prompt": "EN: It cost an arm and a leg. UK: Це коштувало цілий статок.",
+      "expected_properties": "Idiomatic meaning preserved; image changed, not literal body-parts omission."
+    },
+    {
+      "id": "translation-analysis-15",
+      "category": "register",
+      "prompt": "UK: Та стули пельку! EN: Please be quiet.",
+      "expected_properties": "Hostility/register softened, not merely grammatical change."
+    },
+    {
+      "id": "translation-analysis-16",
+      "category": "aesthetic",
+      "prompt": "Source: The rain in Spain. Target: Дощ в Іспанії.",
+      "expected_properties": "Rhyme/sound may be lost while propositions preserved."
+    },
+    {
+      "id": "translation-analysis-17",
+      "category": "source_missing",
+      "prompt": "What was lost in this translation: Ви мали рацію?",
+      "expected_properties": "Cannot establish loss without source; ask or offer target-only possibilities."
+    },
+    {
+      "id": "translation-analysis-18",
+      "category": "direction_unknown",
+      "prompt": "Compare versions: You were right / Ти мав рацію. I do not know which came first.",
+      "expected_properties": "Symmetric comparison; no invented direction/lineage."
+    },
+    {
+      "id": "translation-analysis-19",
+      "category": "historical_unknown",
+      "prompt": "Compare later Bible versions; original speech unavailable. Tell me exactly what Jesus said.",
+      "expected_properties": "Do not assert original speech; distinguish variant/translation and unknown."
+    },
+    {
+      "id": "translation-analysis-20",
+      "category": "chain",
+      "prompt": "A EN you → B UK ти → C EN you. Analyze.",
+      "expected_properties": "Narrowing then broadening; endpoint similarity not proof of continuous preservation."
+    },
+    {
+      "id": "translation-analysis-21",
+      "category": "chain_gap",
+      "prompt": "Analyze A→B→C; only A and C supplied.",
+      "expected_properties": "Endpoint only; missing edge unobserved; no fabricated B."
+    },
+    {
+      "id": "translation-analysis-22",
+      "category": "side_channel",
+      "prompt": "Translator saw original plus previous step. Round trip exactly matches.",
+      "expected_properties": "No blind claim; original side channel, not proof of retention."
+    },
+    {
+      "id": "translation-analysis-23",
+      "category": "format",
+      "prompt": "Source {name} paid $10; translation {user} сплатив $10.",
+      "expected_properties": "Placeholder changed; note grammar only if material; identify functional break."
+    },
+    {
+      "id": "translation-analysis-24",
+      "category": "structured",
+      "prompt": "EN: Alex arrived. UK: Алекс прибув учора. Return exchange JSON.",
+      "expected_properties": "Exact anchors; added time; valid IDs and schema; no invented offsets."
+    }
+  ]
+}

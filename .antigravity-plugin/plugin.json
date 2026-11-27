@@ -3,7 +3,7 @@
   "name": "loom-foo",
   "displayName": "Loom-foo",
   "description": "Clarify product ideas, improve designs, research evidence, plan work, and prepare AI-agent tasks with focused skills.",
-  "version": "0.50.1",
+  "version": "0.57.0",
   "suggestedPrompts": [
     "Help me turn a rough product idea into a focused concept and next steps.",
     "Review my interface design and suggest practical UX improvements.",

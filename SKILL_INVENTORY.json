@@ -1,20 +1,19 @@
 {
   "schema": 1,
-  "status": "generic_distribution_candidate_unapproved",
   "bundle": "loom-foo",
-  "bundle_version": "0.50.1",
+  "bundle_version": "0.57.0",
   "skills": [
     {
       "id": "loom-foo-agent-task-design",
-      "version": "0.20.0"
+      "version": "0.23.0"
     },
     {
       "id": "loom-foo-architecture-design",
-      "version": "0.8.0"
+      "version": "0.9.0"
     },
     {
       "id": "loom-foo-architecture-review",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-change-review",
@@ -22,7 +21,7 @@
     },
     {
       "id": "loom-foo-change-verification",
-      "version": "0.8.0"
+      "version": "0.9.0"
     },
     {
       "id": "loom-foo-creative-reasoning",
@@ -30,7 +29,7 @@
     },
     {
       "id": "loom-foo-cross-context-transfer",
-      "version": "0.6.1"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-decision-reconciliation",
@@ -42,7 +41,7 @@
     },
     {
       "id": "loom-foo-design-review",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-design-systems",
@@ -50,27 +49,27 @@
     },
     {
       "id": "loom-foo-drafting",
-      "version": "0.7.0"
-    },
-    {
-      "id": "loom-foo-editorial-review",
-      "version": "0.5.0"
-    },
-    {
-      "id": "loom-foo-email-intake",
       "version": "0.9.0"
     },
     {
+      "id": "loom-foo-editorial-review",
+      "version": "0.7.0"
+    },
+    {
+      "id": "loom-foo-email-intake",
+      "version": "0.10.0"
+    },
+    {
       "id": "loom-foo-evidence-acquisition",
-      "version": "0.5.0"
+      "version": "0.8.0"
     },
     {
       "id": "loom-foo-evidence-review",
-      "version": "0.5.1"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-execution-inspector",
-      "version": "0.4.0"
+      "version": "0.5.0"
     },
     {
       "id": "loom-foo-experience-design",
@@ -82,11 +81,11 @@
     },
     {
       "id": "loom-foo-graphic-design",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-handoff",
-      "version": "0.9.0"
+      "version": "0.11.0"
     },
     {
       "id": "loom-foo-icon-design",
@@ -102,23 +101,23 @@
     },
     {
       "id": "loom-foo-information-design",
-      "version": "0.5.0"
-    },
-    {
-      "id": "loom-foo-knowledge-intake",
-      "version": "0.6.0"
-    },
-    {
-      "id": "loom-foo-knowledge-retrieval",
       "version": "0.7.0"
     },
     {
+      "id": "loom-foo-knowledge-intake",
+      "version": "0.10.0"
+    },
+    {
+      "id": "loom-foo-knowledge-retrieval",
+      "version": "0.10.0"
+    },
+    {
       "id": "loom-foo-link-intake",
-      "version": "0.8.0"
+      "version": "0.10.0"
     },
     {
       "id": "loom-foo-narrative-design",
-      "version": "0.6.0"
+      "version": "0.7.0"
     },
     {
       "id": "loom-foo-onboarding",
@@ -134,11 +133,11 @@
     },
     {
       "id": "loom-foo-project-knowledge-stewardship",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "id": "loom-foo-project-planning",
-      "version": "0.8.0"
+      "version": "0.10.0"
     },
     {
       "id": "loom-foo-proposal-refinement",
@@ -146,7 +145,7 @@
     },
     {
       "id": "loom-foo-research-design",
-      "version": "0.7.1"
+      "version": "0.9.0"
     },
     {
       "id": "loom-foo-sanity-check",
@@ -154,23 +153,35 @@
     },
     {
       "id": "loom-foo-skill-engineering",
-      "version": "0.13.0"
+      "version": "0.14.0"
     },
     {
       "id": "loom-foo-specification-design",
-      "version": "0.6.1"
+      "version": "0.8.0"
     },
     {
-      "id": "loom-foo-typography",
-      "version": "0.4.0"
-    },
-    {
-      "id": "loom-foo-ux-writing",
+      "id": "loom-foo-terminology",
       "version": "0.2.0"
     },
     {
-      "id": "loom-foo-work-decomposition",
+      "id": "loom-foo-translation",
+      "version": "0.3.0"
+    },
+    {
+      "id": "loom-foo-translation-analysis",
+      "version": "0.3.0"
+    },
+    {
+      "id": "loom-foo-typography",
       "version": "0.5.0"
+    },
+    {
+      "id": "loom-foo-ux-writing",
+      "version": "0.5.0"
+    },
+    {
+      "id": "loom-foo-work-decomposition",
+      "version": "0.6.0"
     }
   ]
 }

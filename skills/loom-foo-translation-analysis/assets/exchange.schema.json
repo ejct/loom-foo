@@ -1,0 +1,388 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "operation": {
+      "enum": [
+        "translate",
+        "analyze"
+      ]
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "unsupported"
+      ]
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/version"
+      },
+      "minItems": 1
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "operation",
+    "status",
+    "versions",
+    "steps",
+    "findings",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "version": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile": {
+          "type": "object",
+          "properties": {
+            "period": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "dialect": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "speaker": {
+              "type": "string"
+            },
+            "audience": {
+              "type": "string"
+            },
+            "genre": {
+              "type": "string"
+            },
+            "context": {
+              "type": "string"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "evidence_status": {
+          "enum": [
+            "attested",
+            "reconstructed",
+            "simulated",
+            "unsupported"
+          ]
+        },
+        "source_locator": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "language"
+      ],
+      "additionalProperties": false
+    },
+    "step": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "translation",
+            "oral_retelling",
+            "composition",
+            "revision",
+            "reconstruction",
+            "simulation",
+            "unknown"
+          ]
+        },
+        "lineage": {
+          "enum": [
+            "documented",
+            "hypothetical",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "isolation": {
+          "enum": [
+            "isolated",
+            "shared_context",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "strategy": {
+          "type": "string"
+        },
+        "context_available": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "target_id",
+        "kind",
+        "lineage",
+        "isolation"
+      ],
+      "additionalProperties": false
+    },
+    "span": {
+      "type": "object",
+      "properties": {
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "occurrence": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "quote"
+      ],
+      "additionalProperties": false,
+      "dependentRequired": {
+        "start": [
+          "end"
+        ],
+        "end": [
+          "start"
+        ]
+      }
+    },
+    "finding": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "step_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/span"
+          }
+        },
+        "target_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/span"
+          }
+        },
+        "property": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dimension": {
+          "enum": [
+            "semantic",
+            "logical",
+            "pragmatic",
+            "cultural",
+            "social",
+            "temporal",
+            "emotional",
+            "stylistic",
+            "aesthetic",
+            "structural"
+          ]
+        },
+        "source_state": {
+          "enum": [
+            "explicit",
+            "implicit",
+            "possible",
+            "absent",
+            "unknown"
+          ]
+        },
+        "target_state": {
+          "enum": [
+            "explicit",
+            "implicit",
+            "possible",
+            "absent",
+            "unknown"
+          ]
+        },
+        "type": {
+          "enum": [
+            "preserved",
+            "lost",
+            "added",
+            "shifted",
+            "narrowed",
+            "broadened",
+            "explicitated",
+            "implicitated",
+            null
+          ]
+        },
+        "assessment": {
+          "enum": [
+            "structurally_conditioned",
+            "contextually_justified",
+            "stylistic_tradeoff",
+            "error",
+            "unresolved",
+            "not_applicable"
+          ]
+        },
+        "certainty": {
+          "enum": [
+            "supported",
+            "conditional",
+            "unresolved"
+          ]
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consequence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translatability": {
+          "enum": [
+            "direct",
+            "contextual",
+            "descriptive",
+            "annotated",
+            "tradeoff",
+            "unresolved"
+          ]
+        },
+        "decision_note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "step_id",
+        "source_id",
+        "target_id",
+        "source_spans",
+        "target_spans",
+        "property",
+        "dimension",
+        "source_state",
+        "target_state",
+        "type",
+        "assessment",
+        "certainty",
+        "explanation",
+        "consequence"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": null
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "certainty": {
+                "const": "unresolved"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Connected project sources and wr
 metadata:
   family: "planning"
   project: "loom-foo"
-  version: "0.9.0"
+  version: "0.11.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -95,7 +95,9 @@ It does not itself create:
 - permission to normalize conflicting external state;
 - permission to implement pending work.
 
-A missing durable effect may be performed only when that exact persistence transition was already authorized, unambiguous, repeat-safe, current state is checked, capability exists, and the result can be verified.
+**Routine authorized file operations.** Honor existing standing user authorization and task-based authority. Autonomously save, retrieve, copy, upload, download or transfer task-relevant checkpoint files and supporting materials between covered private workspaces and authorized recipients. Treat transport as an implementation detail, not a separate authorization event; do not require fresh task-specific or per-file approval for a covered operation or make the owner a manual courier when an authorized machine path exists. Carry existing authority positively into the continuation, without inventing or enlarging it. Respect explicit task restrictions, effective audience, source sensitivity, genuine connector limitations and mandatory host controls; never bypass denial. Do not silently change project canon or launch independent work.
+
+A missing durable effect beyond ordinary authorized file transport (e.g. accepting a decision, normalizing canonical state or applying a pending project mutation) may be performed only when that exact persistence transition was already authorized, unambiguous, repeat-safe, current state is checked, capability exists, and the result can be verified.
 
 ## 4. Project state vs handoff
 
@@ -104,6 +106,8 @@ Prefer current project-native continuity state such as `PROJECT_STATE.md` or est
 Do not turn persistent project state into a transcript.
 
 Do not make every handoff reproduce all observations/history.
+
+**Conditional frontier preservation.** For a genuine cross-context transfer of materially unfinished work, carry the existing accepted objective/scope, completed evidence-linked obligations (including valid negative checks), unresolved units/leads and dispositions, exact target/source revisions, blockers or return conditions, and next executable action. Preserve scope changes and stale/conflicting evidence; do not silently promote a partial read, finished operation, or previous self-report to outcome closure. Use project-native state by reference when retrievable; otherwise return a compact recoverable checkpoint and identify unavailable parts. Do not manufacture a handoff for routine same-executor continuation or grant new authority.
 
 ## 6. Observed vs prescribed state
 

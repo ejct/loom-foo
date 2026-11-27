@@ -2,7 +2,7 @@
 name: loom-foo-editorial-review
 description: "Diagnose and selectively correct an existing text for language, register, style and meaning. Not net-new drafting or factual research."
 metadata:
-  version: "0.5.0"
+  version: "0.7.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Agent Skills-compatible runtimes; tools and authoritative language sources are optional. No persistence, automatic routing or external APIs required."
@@ -32,10 +32,12 @@ compatibility: "Agent Skills-compatible runtimes; tools and authoritative langua
 - Evaluating whether in-product UI words accurately convey an action, consequence, validation state or recovery path → `loom-foo-ux-writing` when available. Keep grammar, punctuation, register and source-preserving corrections here even when the string appears in an interface; do not invoke UX Writing for plain proofreading.
 - Argument structure, narrative sequence, evidence placement, case-study story architecture → narrative-design owner when available.
 - Factual verification or domain-specific legal/medical/scientific review → the appropriate factual/domain owner. Flag a credible factual concern separately when material, without silently changing the claim.
-- Purely requested translation, formatting or structured reorganization → the relevant transformation owner; editorial checks can remain a bounded optional input.
+- Source-faithful translation → `loom-foo-translation`; comparative translation fidelity/loss analysis → `loom-foo-translation-analysis`; formatting or structured reorganization → its relevant owner. Editorial checks remain a bounded optional input.
 - Source-code correctness → coding/code-review owner; preserve code bytes unless explicit code-edit authority exists.
 
 The sibling skill may be unavailable. Do the bounded review independently rather than require it to be installed. Do not create a mandatory pipeline with drafting or narrative design.
+
+**Conditional cross-language collaboration (L1).** If the requested primary result is a source-faithful translation, use `loom-foo-translation`; if the review compares source and target meaning or identifies lost, added or changed information, use `loom-foo-translation-analysis`. When editing a target text and a proposed correction could change a consequential translated claim, consult Analysis with the source/target anchors if both are available; otherwise keep the concern conditional. Editorial Review owns target-language grammar, register and source-preserving corrections; ordinary proofreading of translated prose needs neither specialist. Stop after the requested corrections; preserve the original and do not manufacture an unseen source.
 
 ## 2. Establish the editorial brief
 
@@ -76,6 +78,8 @@ Judge meaning before choosing replacement. Confirm that a proposed edit does not
 Choose the normative profile only where the locale affects a concrete judgment. For Ukrainian, selectively read [uk-UA language profile](references/uk-UA.md); for English variants where the distinction matters, read [en-US/en-GB reference](references/en-US-en-GB.md). For other languages use applicable authoritative references when actually accessible; do not relabel Ukrainian prescriptions as universal. When uncertain or norm-contested, verify primary norms/lexicographic resources if tools are accessible and the stakes justify the check. If not, say exactly what was unverified.
 
 An official norm applies to the norm's jurisdiction/context; style, voice and house terminology are different types of authority. Do not invent normative source titles, § numbers or quotations. Verified sources must be from an actual consultation in the current evidence chain, with sufficient pinpointing; otherwise use `verified_source: null` in structured output.
+
+**Conditional editorial continuity.** For a substantial text or related documents where consistency matters, use the controlling house style or existing style sheet; when needed, maintain a small scoped record of established spellings, terminology, formatting conventions and approved exceptions. Distinguish proposed choices from accepted rules. When a consequential ambiguity cannot be resolved without changing authorial meaning, leave the affected wording intact and return a precise, actionable author query with context and alternatives where useful. Do not create a style sheet or require queries for routine unambiguous corrections.
 
 ## 6. Return the smallest useful result
 

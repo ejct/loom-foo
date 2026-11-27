@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Can use project/repository sourc
 metadata:
   family: "engineering"
   project: "loom-foo"
-  version: "0.5.0"
+  version: "0.6.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -92,6 +92,8 @@ Classify material inputs:
 Authority and observation are independent.
 
 Do not issue high-severity conclusions from weak evidence without lowering confidence or requesting validation.
+
+**Conditional transition lens.** For a consequential migration or rolling version change, trace material intermediate states, old/new consumer and producer combinations, new writes, partial migration and recovery. Check whether the proposed rollback target can read actual post-change state and preserve intervening effects; identify an irreversible boundary or missing evidence rather than assuming a backup establishes reversibility. Apply only when mixed-version or persistent-state risks matter; keep review findings distinct from remediation.
 
 ## 18. Closure
 

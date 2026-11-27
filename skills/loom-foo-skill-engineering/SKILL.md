@@ -3,7 +3,7 @@ name: loom-foo-skill-engineering
 description: "Assess, create, revise, compare or deliver Agent Skills and diagnose skill routing. Not ordinary coding or GitHub operations."
 metadata:
   family: "engineering"
-  version: "0.13.0"
+  version: "0.14.0"
   project: "loom-foo"
 compatibility: Agent Skills-compatible clients; existing specialist skills, creator tools, Git, CI, and runtime installation may be unavailable.
 ---
@@ -27,6 +27,8 @@ compatibility: Agent Skills-compatible clients; existing specialist skills, crea
 4. **Check and use:** Test source/refs/metadata and only material positive, negative, neighboring-owner, authority and privacy regressions. Measure STATIC, DISCOVERY, ROUTING, EXECUTION and FIELD separately; static PASS cannot prove routing. For an automatic-routing claim, require fresh-context observations of the host-selected owner and actual root/reference loading, not merely expected-owner fixtures or the model's own account. Missing host evidence remains NOT_CONFIRMED. Use first in a real authorized task after proportionate checks, not a mandated comparative campaign. Same-context self-review is not independent audit.
 5. **Deliver accurately:** Use Behavioral SemVer based on changed contract: PATCH for non-contract repair, MINOR for new compatible behavior/changed default, MAJOR for breaking after 1.x (0.x breaking → next MINOR + explicit note). Preserve old release, consumer pins, plugin identity/private overlays; update only authorized runtime, read back installed bytes. `ZIP ≠ INSTALLED`, `INSTALLED ≠ ROUTED`, `TEST PASS ≠ ACCEPTED`. Do not ship or merge to Git without authority.
 6. **Self-failure:** Recover user's active task first. Check `ROUTING`, `DELIVERY`, `COMPOSITION`, source and tool defects before editing a skill because of one output. Fix smallest evidenced cause and rerun affected regression.
+
+**Conditional behavioral coverage.** For a material skill-contract or composition change, identify affected behaviors and neighboring-owner/authority invariants; map each to actual static, execution or field evidence at the claimed fidelity. Preserve untested scenarios and limits, distinguish an expected fixture from a runtime observation, and reopen materially affected checks after contract/revision changes. Do not invent a coverage percentage for the space of possible user prompts, demand an optional comparative campaign, or expand routine bounded repairs into a portfolio-wide audit.
 
 ## Progressive disclosure and event-triggered routing
 

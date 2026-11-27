@@ -1,5 +1,12 @@
 # Changelog
 
+## Generic source 0.57.0 — 2026-11-27 (SOURCE PREVIEW)
+
+- Reconciled 45 portable skills with the independently installed 0.57.0 ChatGPT bundle: 27 existing skill versions advanced, 15 remain unchanged, and Translation, Translation Analysis and Terminology were added.
+- Extended cross-language methods, evidence binding, work coverage, continuity, review, verification and cross-runtime delivery guidance.
+- Corrected source inventory and all five manifest versions to reflect observed roots and bundle label; preserved generic terminology and excluded private runtime bindings and assets.
+- Reworked both README languages around one bundle, ordinary tasks and host-dependent skill selection. No tagged distribution, marketplace listing, runtime validation or consumer migration is claimed.
+
 ## Generic source 0.50.1 — 2026-11-22 (SOURCE PREVIEW)
 
 - Followed ChatGPT-first delivery: existing private ChatGPT plugin updated to 0.50.1, then private canonical source to 0.50.1, then public generic source to 0.50.1.

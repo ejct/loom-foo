@@ -1,0 +1,9 @@
+# Isolated translation steps
+
+For caller-owned sequential experiments. The skill executes one step; the caller owns sequencing, persistence and experimental controls. Do not claim isolation unless the host actually enforces it.
+
+For a blind step, expose to its translator only the immediate previous text, source and target profiles, declared strategy and permitted contextual information. Do not pass earlier versions, original text, prior analyses, expected endpoint or corrections unless the experiment explicitly allows it. A shared conversation cannot guarantee blindness: label `shared_context` or `unknown`. Only report `isolated` if the actual separate execution and input boundary are observed. Do not hide context by merely instructing the model to ignore messages it can see.
+
+Freeze each actual output before analysis or next step; don't silently replace it with an improved version. An analysis stage can see the complete chain, but its findings must not leak back into later blind translations. If a step fails or lacks linguistic support, preserve the failed/unresolved status; do not silently jump a language. If a caller allows contextual metadata to survive separately, record that; distinguish what is carried in the target text from a side channel.
+
+For a round trip, keep explicit ordered profiles and direction. Reverse transitions are fresh transformations, not inverse functions. An output that resembles the original does not demonstrate preservation of distinctions at every step. Keep route claims (`documented`, `hypothetical`, `mixed`, `unknown`) distinct from language rendering status. A documented route requires evidence for each claimed dependency; hypothetical arbitrary user text remains simulated. No need to build an orchestrator or use paid APIs to apply this method in a supported runtime.
