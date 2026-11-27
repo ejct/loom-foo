@@ -17,7 +17,7 @@ metadata:
   project: "loom-foo"
 
 
-  version: "0.6.1"
+  version: "0.8.0"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->
@@ -39,6 +39,10 @@ metadata:
 6. Return `SPEC_READY`, `NO_SPEC_DELTA`, `VALIDATION_REQUIRED`, `NEED_CONTEXT`, `PLANNING_REQUIRED` or `BLOCKED` as applicable. Neither `SPEC_READY` nor a generated delta makes the specification canonical.
 
 **Hard rules:** preserve accepted intent and existing obligations, never invent requirements or silently rewrite adjacent projects. **Use-first** applies to ordinary skill changes: do not require a no-skill comparison, blind holdout or promotion campaign unless a separate frozen evaluation/explicit comparative claim requires one. Integrity, authority, semantic and target-specific regression checks remain mandatory as appropriate.
+
+**Conditional cross-language assurance (L1).** When an actual translated specification or requirement could alter normative modality (MUST/SHOULD/MAY), negation, quantification, exceptions, permissions, state transitions or acceptance criteria, consult `loom-foo-translation-analysis` on the exact paired clauses and controlling revision. If a requested rendering does not yet exist, consult `loom-foo-translation` for that bounded text with protected identifiers and normative meaning. Specification Design retains ownership of the formal contract; the result is a finding/proposed wording, not authorization to adopt new requirements. A specification merely written in another language or routine monolingual editing is a non-trigger. If a source or specialist is unavailable, keep the original authoritative clause and flag the unresolved semantic constraint; stop the consultation after the affected requirement is addressed.
+
+**Conditional terminology collaboration (L1).** If a material specification obligation depends on an unresolved domain term, concept boundary or cross-context equivalence, consult `loom-foo-terminology` for anchored definitions, competing senses, boundary examples and evidence. Specification Design retains the normative behavior and controlling authority; a term candidate cannot adopt new semantics. Routine accepted definitions/lookup need no consultation. If Terminology is the caller, return the actual accepted constraint or unresolved decision, not a recursive term analysis; if unavailable preserve the ambiguity rather than inventing a requirement.
 
 ## Conditional method index
 

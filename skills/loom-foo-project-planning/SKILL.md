@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. Project documents, repositories,
 metadata:
   family: "planning"
   project: loom-foo
-  version: "0.8.0"
+  version: "0.10.0"
 ---
 
 <!-- loom-foo Answer Receipt v0.3: compact standalone projection -->
@@ -78,6 +78,12 @@ Check **first useful outcome** against planned activity: a research exercise, me
 Check whether accepted work is already ready for `loom-foo-work-decomposition`. If so, hand the accepted scope to that owner instead of duplicating its Work Unit Set. If a specialized artifact is the next milestone, name the right owner; do not covertly create architecture/spec/research decisions inside the route plan. A research item is a *gate* only if its answer is needed for an actual imminent decision or required integrity/safety boundary. Open questions are not automatically work units.
 
 A project's route can include authorized sequential execution in the same delegated episode. **A planning result is not an automatic stop boundary for a user-authorized execution request.** Keep executing through ordinary observe/repair/verify/continue steps within the established authority, rather than demanding another user turn, a new Task Brief, or a fresh plan. Equally, do not infer approval to spend, contact third parties, mutate shared data, merge, deploy, publish or accept decisions from permission to produce a plan.
+
+## Conditional coverage-aware replanning
+
+When material accepted work is incomplete or changed, revise the route from observed outstanding obligations, actual evidence/coverage, dependencies, access, authority and priorities. Distinguish known remaining work from candidate discoveries and unknown scope. If unresolved verification accumulates or a material branch stalls, compare feasible deepening, alternative methods and other branches; avoid duplicating already adequate work. Preserve completed evidence and flag only materially stale dependencies. Replan only when the route changes; do not become a live executor/scheduler, invent new tasks from optional questions, or require a plan update after every operation.
+
+**Conditional shared-capacity feasibility.** When proposed parallel work competes for a material constrained resource, distinguish logical readiness from resource-feasible concurrency. Account for known availability, existing unfinished work, shared environments, review/owner acceptance and integration capacity. Expose feasible sequencing or waiting and a practical next move; qualify forecasts when availability or duration is unknown. Preserve accepted outcomes and surface genuine priority decisions rather than inventing allocations or commitments. Do not add a live scheduler, mandatory WIP limit, duration estimate or replanning step for ordinary work.
 
 ## 8. Final checks
 

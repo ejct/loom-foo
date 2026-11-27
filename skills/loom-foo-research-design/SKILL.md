@@ -5,7 +5,7 @@ compatibility: Agent Skills-compatible clients. External sources, project contex
 metadata:
   family: "research"
   project: "loom-foo"
-  version: "0.7.1"
+  version: "0.9.0"
 ---
 
 <!-- Answer Receipt v0.3: compact standalone projection -->
@@ -25,6 +25,10 @@ metadata:
 4. State a fit-for-purpose oracle/measurement and what it misses; separate exploratory from confirmatory work and protect frozen treatments/stopping rules where required. Include positive, refuting and inconclusive interpretations plus claims that evidence can **never** license.
 5. Specify stopping/adaptation conditions and a natural execution handoff. Do not commence recruitment, spending, real experiments, publication or external state changes without proper authority. A plan's success is not evidence that the test ran.
 6. End `EVIDENCE_PLAN_READY`, `NO_NEW_EVIDENCE_NEEDED`, `NEED_CONTEXT`, `NEED_SPECIALIST_METHOD`, `NO_CREDIBLE_METHOD` or `PLANNING_REQUIRED`, with minimal useful detail.
+
+**Conditional coverage design.** For a materially multi-source, multi-question or multi-session Evidence Plan, define the intended coverage surface: questions/categories, closed corpus or open discovery space, source/segment and required method/fidelity, inclusion/exclusion, scope-change handling, and sufficient completion/stopping criteria. Name material unknown areas separately from known remaining units. Require a recoverable map of planned checks to observed results, valid negative results, gaps and blockers; an open search has no defensible global percentage. Plan alternative discovery channels or challenge checks when material; do not require a coverage register for a single direct check or impose an exhaustive review for a decision-sufficient experiment.
+
+**Conditional participant-data constraints.** When a plan collects or reuses identifiable or otherwise restricted participant material, bind the applicable consent/policy, permitted purposes, data classes, recipients/processors, retention and handling before selecting collection, reuse or sharing methods. Minimize collection and use approved de-identification where appropriate. If permission is unknown, exclude or isolate the affected use and continue authorized work; do not infer permission from access or claim legal compliance. Respect actual policy rather than imposing a universal consent or retention rule.
 
 **Hard rules:** no fixed research ceremony, numeric value-of-information scores, comparative benchmark or arbitrary number of trials for a cheap reversible question. No research design can imply acceptance, project authority or deployment. Don't confuse reproducibility, replicability, generalization, causality and validity.
 

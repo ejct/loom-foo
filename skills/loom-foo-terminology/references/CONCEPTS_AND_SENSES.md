@@ -1,0 +1,10 @@
+# Concepts, senses and definitions
+
+Use when a term's meaning, boundaries or domain-specific definition must be resolved. A concept represents a subject of knowledge in a scope; a lexical entry/form can have multiple senses; one concept can have several labels. These are working distinctions, not a mandatory ontology.
+
+1. Anchor actual occurrences, domain, language/register, audience, time and task. Identify whether the issue is a homonym, polysemy, overlapping concepts, synonym, competing definition, different level of specificity or changing terminology. Separate observed usage from proposed classification.
+2. Compare evidence appropriate to the scope: accepted specification, authoritative domain definitions, project resources, technical implementation/actual use, reputable corpora and lexical sources. Don't choose by search rank or frequency alone. Definitions from different institutions or periods can be legitimately divergent. Verify actual source and version when material.
+3. Articulate a concise definition and discriminating properties, excluding irrelevant implementation detail unless part of the concept. Where appropriate test positive examples, boundary cases and counterexamples; a definition that conflates two material concepts needs refinement. If behavioral/domain authority is missing, present candidates and questions for the responsible owner, not an invented domain decision.
+4. Map labels by scope: preferred where supported, admitted/contextual alternatives, discouraged/ambiguous usage with reasons, deprecated only with evidence. Do not ban synonyms universally or merge entries merely because labels match. When existing terminology is intentionally variable, describe its constraints.
+
+Synthetic example: `account` may mean an identity used for sign-in, or a billing entity containing multiple users. Test whether one billing entity can contain two sign-in identities. Record two concept candidates and context, not one blended definition. A project specification owner must settle actual semantics.

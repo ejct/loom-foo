@@ -2,7 +2,7 @@
 name: loom-foo-narrative-design
 description: "Structure the argument, narrative and reader progression of a written work. Not proofreading, ordinary prose drafting or visual layout."
 metadata:
-  version: "0.6.0"
+  version: "0.7.0"
   project: "loom-foo"
   family: "writing"
 compatibility: "Portable Agent Skills-compatible procedural guidance; source retrieval and document tools are optional and host-dependent."
@@ -33,13 +33,16 @@ Own the **meaningful architecture of a communication**: its thesis, reader quest
 **Use** for developing an article's argument, designing the arc of a UX/product case study, structuring a complex proposal, finding narrative gaps, prioritizing information, changing chapter/section order, mapping evidence to claims or planning alternate reader paths.
 
 **Prefer other owners** when the primary request is:
-- Writing a message, first draft, prose section, localization or a style rewrite from an established brief → `loom-foo-drafting` when available; ordinary drafting otherwise.
+- Writing a message, first draft, prose section, substantial audience adaptation or style rewrite from an established brief → `loom-foo-drafting` when available; ordinary drafting otherwise.
+- Source-faithful cross-language rendering/localization of a settled narrative → `loom-foo-translation`; comparative cross-language diagnosis → `loom-foo-translation-analysis`.
 - Proofreading, punctuation, grammar, terminology, line editing or checking a supplied passage → `loom-foo-editorial-review` when available.
 - Visual hierarchy, layout, slide design or typography as a visual artifact → `loom-foo-design` when available.
 - Product/system architecture, user research or formal requirements → the relevant non-writing specialist. A document about system architecture is not automatically a narrative-design job.
 - Agent task decomposition or authority-bound instructions → `loom-foo-agent-task-design` / appropriate project owner. Help clarify communication without redefining task authority.
 
 Compose only if the actual task needs multiple outputs. The other skills are never required dependencies.
+
+**Conditional cross-language collaboration (L1).** Where an existing argument or story must be carried into another language, `loom-foo-translation` owns source-faithful rendering, including settled narrative structure; Narrative Design owns any explicitly requested reorganization. If a consequential translated quotation or concept could change the thesis, causal relation or reader inference, consult `loom-foo-translation-analysis` with both versions and relevant context for a scoped finding. Retain exact attribution and separate any new adaptation from source claims. Routine same-language restructuring needs neither skill; when unavailable, flag the unsupported cross-language inference and retain the existing argument rather than silently rewriting it.
 
 ## 2. Establish a narrative brief
 
